@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: @eastern-blue;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding-bottom: 12px;
+}
+
+h3, address, a {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+// p {
+//   line-height: 1.5;
+//   font-size: 1.6rem;
+//   padding-bottom: 10px;
+// }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media @mobile {
+    // width: 90%;
+    // margin: 0 5%;
+  }
+}
