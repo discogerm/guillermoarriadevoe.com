@@ -140,13 +140,13 @@ body {
   background-color: #17A2B8;
 }
 h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   padding-bottom: 12px;
 }
 h3,
 address,
 a {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 img {
@@ -166,10 +166,12 @@ img {
 }
 .about-container {
   display: flex;
-  align-items: center;
+  border: 5px solid green;
+  width: 100%;
+  justify-content: space-between;
 }
 .about-container div {
-  border: 1px solid green;
+  border: 5px solid blue;
 }
 .about-container div h1 {
   font-weight: bold;
