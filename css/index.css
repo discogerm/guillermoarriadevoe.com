@@ -155,8 +155,8 @@ h6 {
 p,
 address,
 a {
-  font-size: 2.1rem;
-  padding-bottom: 10px;
+  font-size: 2rem;
+  padding-bottom: 11px;
   color: #89a4bb;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -187,7 +187,7 @@ img {
 }
 .about-container div a {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   transition: 0.5s;
 }
 .about-container div a:hover {
@@ -195,6 +195,11 @@ img {
 }
 .about-container div span {
   font-weight: 700;
+}
+.about-container .useful-links,
+.about-container .page-control {
+  display: flex;
+  align-items: center;
 }
 .about-container .lettering {
   text-align: center;
