@@ -181,6 +181,9 @@ img {
   width: 100%;
   justify-content: space-between;
 }
+.about-container .lettering {
+  text-align: center;
+}
 .about-container .lettering a {
   text-decoration: none;
   font-weight: 600;
@@ -197,31 +200,48 @@ img {
   display: flex;
   align-items: center;
 }
+.about-container .useful-links a,
+.about-container .page-control a {
+  color: rgba(0, 0, 0, 0);
+}
+.about-container .useful-links li:nth-child(1) {
+  background-image: url('../resources/linkedin.png');
+  background-color: #0077B5;
+}
+.about-container .useful-links li:nth-child(2) {
+  background-image: url('../resources/GitHub.png');
+  background-color: #333;
+}
 .about-container .useful-links li,
 .about-container .useful-links a {
   height: 55px;
   width: 55px;
   transition: 425ms;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .about-container .useful-links li:hover,
 .about-container .useful-links a:hover {
   width: 100px;
 }
-.about-container .useful-links li:nth-child(1) {
-  background-image: url('../resources/linkedin.png');
+.about-container .page-control li {
+  background-image: url('../resources/next-page.png');
   background-repeat: no-repeat;
-  background-color: #0077B5;
   background-position: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
-.about-container .useful-links li:nth-child(2) {
-  background-image: url('../resources/GitHub.png');
-  background-repeat: no-repeat;
-  background-color: #333;
-  background-position: center;
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
 }
-.about-container .useful-links a {
-  color: rgba(0, 0, 0, 0);
-}
-.about-container .lettering {
-  text-align: center;
+.about-container .page-control li:hover {
+  animation: bounce 0.2s;
+  animation-direction: alternate;
+  animation-iteration-count: 4;
 }
