@@ -134,20 +134,32 @@ html {
 }
 html,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Prata', serif;
 }
 body {
-  background-color: #17A2B8;
+  background-color: #011627;
 }
-h1 {
-  font-size: 3rem;
-  padding-bottom: 12px;
-}
+h1,
+h2,
 h3,
+h4,
+h5,
+h6 {
+  font-family: 'Prata', serif;
+  font-size: 3.4rem;
+  padding-bottom: 14px;
+  color: #89a4bb;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+}
+p,
 address,
 a {
-  font-size: 2rem;
+  font-size: 2.1rem;
   padding-bottom: 10px;
+  color: #89a4bb;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 img {
   max-width: 100%;
@@ -173,8 +185,16 @@ img {
 .about-container div {
   border: 5px solid blue;
 }
-.about-container div h1 {
-  font-weight: bold;
+.about-container div a {
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.about-container div a:hover {
+  background: rgba(137, 164, 187, 0.2);
+}
+.about-container div span {
+  font-weight: 700;
 }
 .about-container .lettering {
   text-align: center;
