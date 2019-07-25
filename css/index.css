@@ -178,28 +178,49 @@ img {
 }
 .about-container {
   display: flex;
-  border: 5px solid green;
   width: 100%;
   justify-content: space-between;
 }
-.about-container div {
-  border: 5px solid blue;
-}
-.about-container div a {
+.about-container .lettering a {
   text-decoration: none;
   font-weight: 600;
-  transition: 0.5s;
+  transition: 425ms;
 }
-.about-container div a:hover {
+.about-container .lettering a:hover {
   background: rgba(137, 164, 187, 0.2);
 }
-.about-container div span {
+.about-container .lettering span {
   font-weight: 700;
 }
 .about-container .useful-links,
 .about-container .page-control {
   display: flex;
   align-items: center;
+}
+.about-container .useful-links li,
+.about-container .useful-links a {
+  height: 55px;
+  width: 55px;
+  transition: 425ms;
+}
+.about-container .useful-links li:hover,
+.about-container .useful-links a:hover {
+  width: 100px;
+}
+.about-container .useful-links li:nth-child(1) {
+  background-image: url('../resources/linkedin.png');
+  background-repeat: no-repeat;
+  background-color: #0077B5;
+  background-position: center;
+}
+.about-container .useful-links li:nth-child(2) {
+  background-image: url('../resources/GitHub.png');
+  background-repeat: no-repeat;
+  background-color: #333;
+  background-position: center;
+}
+.about-container .useful-links a {
+  color: rgba(0, 0, 0, 0);
 }
 .about-container .lettering {
   text-align: center;

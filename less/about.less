@@ -1,16 +1,13 @@
 .about-container {
   display: flex;
-  border: 5px solid green;
   width: 100%;
   justify-content: space-between;
 
-  div {
-    border: 5px solid blue;
-
+  .lettering {
     a {
       text-decoration: none;
       font-weight: 600;
-      transition: 0.5s;
+      transition: 425ms;
 
       &:hover {
         background: @terminal-blue-light;
@@ -25,6 +22,37 @@
   .useful-links, .page-control {
     display: flex;
     align-items: center;
+  }
+
+  .useful-links {
+    li, a {
+      height: 55px;
+      width: 55px;
+      transition: 425ms;
+
+      &:hover {
+        width: 100px;
+      }
+    }
+
+    li:nth-child(1) {
+      background-image: url('../resources/linkedin.png');
+      background-repeat: no-repeat;
+      background-color: #0077B5;
+      background-position: center;
+
+    }
+
+    li:nth-child(2) {
+      background-image: url('../resources/GitHub.png');
+      background-repeat: no-repeat;
+      background-color: #333;
+      background-position: center;
+    }
+
+    a {
+      color: rgba(0,0,0,0);
+    }
   }
 
   .lettering {
