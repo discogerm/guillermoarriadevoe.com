@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from '../components/footer'
 
 const ContactPage = () => {
   return (
@@ -9,12 +10,13 @@ const ContactPage = () => {
           <a
             href="https://www.linkedin.com/in/guillermo-arria-devoe/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Connect on LinkedIn
           </a>
         </li>
         <li>
-          <a href="https://github.com/sapinspys" target="_blank">
+          <a href="https://github.com/sapinspys" target="_blank" rel="noopener noreferrer">
             Follow on Github
           </a>
         </li>
@@ -24,6 +26,7 @@ const ContactPage = () => {
           </a>
         </li>
       </ul>
+      <Footer></Footer>
     </div>
   )
 }
