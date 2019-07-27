@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
+
 import Footer from '../components/footer'
+import Header from '../components/header'
 
 const AboutPage = () => {
   return (
     <div>
+      <Header></Header>
       <h1>About Me</h1>
       <p>
         Actively seeking full-time opportunities in full-stack development. I am proficient with HTML, CSS, LESS/SASS pre-processing, JavaScript, ReactJS, NodeJS Express servers, SQLite databases created with KnexJS, and always eager to learn how to leverage new technology.
