@@ -16,5 +16,15 @@
 .nav-item {
   text-decoration: none;
   font-size: 0.9rem;
-  margin-right: 1.3rem;
+  margin-right: 1rem;
+  transition: 425ms;
+  padding: 0.2rem 1rem;
+}
+
+.nav-item:hover {
+  color: rgba(137, 164, 187, 0.9);
+}
+
+.active-nav-item {
+  background-color: rgba(137, 164, 187, 0.3);
 }
