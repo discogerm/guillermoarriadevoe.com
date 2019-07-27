@@ -7,27 +7,27 @@ const Header = () => {
   return (
     <header className={headerStyles.header}>
       <h1>
-        <Link to='/'>Spreading Meadows</Link>
+        <Link className={headerStyles.title} to='/'>Spreading Meadows</Link>
       </h1>
       <nav>
-        <ul>
+        <ul className={headerStyles.navList}>
           <li>
-            <Link className={headerStyles.link} to="/">
+            <Link className={headerStyles.navItem} to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.link} to="/about">
+            <Link className={headerStyles.navItem} to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.link} to="/blog">
+            <Link className={headerStyles.navItem} to="/blog">
               Blog
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.link} to="/contact">
+            <Link className={headerStyles.navItem} to="/contact">
               Contact
             </Link>
           </li>
