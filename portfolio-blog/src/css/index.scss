@@ -1,0 +1,14 @@
+// IMPORTS
+@import './reset.scss';
+
+// VARIABLES
+$night-owl: #011627;
+$terminal-blue: rgba(137, 164, 187, 1);
+
+* {
+  color: $terminal-blue;
+}
+
+body {
+  background-color: $night-owl;
+}
