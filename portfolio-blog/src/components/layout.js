@@ -1,18 +1,21 @@
-import React from 'react'
+import React from "react"
 
-import Footer from '../components/footer'
-import Header from '../components/header'
+import Footer from "../components/footer"
+import Header from "../components/header"
 
-import '../css/index.scss'
+import "../styles/index.scss"
+import layoutStyles from "./layout.module.scss"
 
-const Layout = (props) => {
+const Layout = props => {
   return (
-    <div>
-      <Header></Header>
-      {props.children}
+    <div className={layoutStyles.container}>
+      <div className={layoutStyles.content}>
+        <Header></Header>
+        {props.children}
+      </div>
       <Footer></Footer>
     </div>
   )
 }
 
-export default Layout;
+export default Layout
