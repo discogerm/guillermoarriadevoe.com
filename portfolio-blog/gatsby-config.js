@@ -19,5 +19,6 @@ module.exports = {
       }
     },
     'gatsby-transformer-remark' // BELOW PARSES RAW MD FROM ABOVE INTO DATA
+    // ABOVE ENABLES 'markdownRemark' FOR INDV POSTS and 'allMarkdownRemark' TO GET LIST OF POSTS 
   ]
 }
