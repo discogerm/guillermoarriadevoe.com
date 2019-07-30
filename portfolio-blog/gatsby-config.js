@@ -5,6 +5,10 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Spreading Meadows',
+    author: 'Guillermo Arria-Devoe'
+  },
   plugins: [
     'gatsby-plugin-sass'
   ]
