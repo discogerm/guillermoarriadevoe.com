@@ -11,12 +11,13 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
-    { // BELOW ENABLES `file` and `allFile` GRAPHQL QUERIES
+    { // BELOW ENABLES `file` and `allFile` GRAPHQL QUERIES (LOADS RAW FILES)
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
         path: `${__dirname}/src/` // NODE, GIVES US ACCESS TO SRC FOLDER
       }
-    }
+    },
+    'gatsby-transformer-remark' // BELOW PARSES RAW MD FROM ABOVE INTO DATA
   ]
 }
