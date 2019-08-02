@@ -18,7 +18,23 @@ module.exports = {
         path: `${__dirname}/src/` // NODE, GIVES US ACCESS TO SRC FOLDER
       }
     },
-    'gatsby-transformer-remark' // BELOW PARSES RAW MD FROM ABOVE INTO DATA
-    // ABOVE ENABLES 'markdownRemark' FOR INDV POSTS and 'allMarkdownRemark' TO GET LIST OF POSTS 
+    'gatsby-plug-sharp',
+    // PARSES RAW MD FROM ABOVE INTO DATA
+    // ALSO ENABLES 'markdownRemark' FOR INDV POSTS and 'allMarkdownRemark' TO GET LIST OF POSTS 
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    }
   ]
 }
