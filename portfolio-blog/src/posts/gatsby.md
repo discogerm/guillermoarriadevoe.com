@@ -5,6 +5,9 @@ date: "2019-07-30"
 
 In this post you will learn to create and deploy a simple blog with GatsbyJS
 
+<!-- Requires 3 plugins -->
+![Gatsby](./gatsby_logo.jpeg)
+
 ## Topics Covered
 
 1. GatsbyJS
