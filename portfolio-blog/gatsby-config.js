@@ -18,7 +18,7 @@ module.exports = {
         path: `${__dirname}/src/` // NODE, GIVES US ACCESS TO SRC FOLDER
       }
     },
-    'gatsby-plug-sharp',
+    'gatsby-plugin-sharp',
     // PARSES RAW MD FROM ABOVE INTO DATA
     // ALSO ENABLES 'markdownRemark' FOR INDV POSTS and 'allMarkdownRemark' TO GET LIST OF POSTS 
     {
