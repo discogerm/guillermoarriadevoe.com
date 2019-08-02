@@ -1,0 +1,30 @@
+@import '../styles/variables';
+
+.posts {
+  list-style-type: none;
+  margin:0;
+}
+
+.post {
+  margin: 1rem 0;
+
+  a {
+    background: $terminal-blue-dark;
+    display: block; // Control spacing?
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  a:hover{
+    background: $terminal-blue-darker;
+  }
+
+  h2 {
+    margin-bottom:0.2rem;
+  }
+
+  p{
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+}
