@@ -10,6 +10,13 @@ module.exports = {
     author: 'Guillermo Arria-Devoe'
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
     'gatsby-plugin-sass',
     { // BELOW ENABLES `file` and `allFile` GRAPHQL QUERIES (LOADS RAW FILES)
       resolve: 'gatsby-source-filesystem',
