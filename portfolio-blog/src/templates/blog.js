@@ -29,7 +29,9 @@ export const query = graphql`
     contentfulBlogPost(slug: {eq: $slug}) {
       title
       publishedDate(formatString: "MMMM Do, YYYY")
-      body
+      body {
+        json
+      }
     }
   }
 `;
@@ -41,6 +43,7 @@ const Blog = (props) => {
       <h1>{props.data.contentfulBlogPost.title}</h1>
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
       {/* <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div> */}
+      {documentToReactComponents(props.data.contentfulBlogPost.body.json)}
     </Layout>
   )
 }
