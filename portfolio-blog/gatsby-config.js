@@ -10,6 +10,7 @@ module.exports = {
     author: 'Guillermo Arria-Devoe'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-contentful',
       options: {
