@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Spreading Meadows',
+    title: 'Guillermo Arria-Devoe',
     author: 'Guillermo Arria-Devoe'
   },
   plugins: [
