@@ -5,26 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../components/layout'
 import Head from '../components/head'
 
-// No useStaticQuery for templates (uses slugs), FOR MARKDOWN
-// export const query = graphql`
-//   query ($slug: String!) {
-//     markdownRemark(
-//       fields: {
-//         slug: {
-//           eq: $slug
-//         }
-//       }
-//     ) {
-//       frontmatter {
-//         title
-//         date
-//       }
-//       html
-//     }
-//   }
-// `
-
-// FOR CONTENTFUL
+// CONTENTFUL QUERY
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: {eq: $slug}) {
@@ -36,7 +17,6 @@ export const query = graphql`
     }
   }
 `;
-
 
 const Blog = (props) => {
   const options = {
