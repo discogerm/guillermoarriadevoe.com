@@ -1,8 +1,13 @@
 .topContent {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 
   .introduction {
     width: 65%;
   }
+}
+
+.summary {
+  margin-bottom: 30px;
 }
