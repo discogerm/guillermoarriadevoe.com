@@ -1,23 +1,67 @@
-import React from 'react'
-import { Link } from 'gatsby' // GATSBY BUILT-IN ROUTING
+import React from "react"
+import { Link } from "gatsby" // GATSBY BUILT-IN ROUTING
 
-import Layout from '../components/layout'
-import Head from '../components/head'
+import Layout from "../components/layout"
+import Head from "../components/head"
 
 import headshot from "../assets/headshot.jpg"
-import styled from './index.module.scss'
+import styled from "./index.module.scss"
+
+import { makeStyles, withStyles } from "@material-ui/core/styles"
+import Button from "@material-ui/core/Button"
+import Icon from '@material-ui/core/Icon';
+
+
+const ConnectBtn = withStyles(theme => ({
+  root: {
+    backgroundColor: 'rgba(137, 164, 187, 0.2)',
+    '&:hover': {
+      backgroundColor: "rgba(137, 164, 187, 0.3)",
+    },
+  },
+}))(Button);
+
+
+const useStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1),
+  },
+  leftIcon: {
+    marginRight: theme.spacing(1),
+  },
+  rightIcon: {
+    marginLeft: theme.spacing(1),
+  }
+}));
 
 const IndexPage = () => {
+  const classes = useStyles()
+
   return (
     <Layout>
       <div>
-        <Head title="Home" /> 
+        <Head title="Home" />
         <div className={styled.topContent}>
-          <img src={headshot} alt="headshot" width="30%"/>
+          <img src={headshot} alt="headshot" width="30%" />
           <div className={styled.introduction}>
             <h1>Hello</h1>
-            <h2>I'm a full-stack developer, with a touch of designer, learning to turn data into valuable insight</h2> 
-            <p><Link to="/contact">Connect with me.</Link></p>
+            <h2>
+              I'm a full-stack developer, with a touch of designer, learning to
+              turn data into valuable insight
+            </h2>
+            {/* <Button variant="contained" className={classes.button}>
+              <Link className={styled.contactBtn} to="/contact">
+                Contact Me
+              </Link>
+            </Button> */}
+            <ConnectBtn
+              variant="contained"
+              color="primary"
+              className={classes.margin}
+            >
+              Connect
+              <Icon className={classes.rightIcon}>send</Icon>
+            </ConnectBtn>
           </div>
         </div>
         <div className={styled.summary}>
@@ -47,14 +91,18 @@ const IndexPage = () => {
           <h2>EXPERIENCE</h2>
           <ul>
             <li>Freelance web designer and developer</li>
-            <li>Team lead for Lambda School's full-stack web development cohorts</li>
+            <li>
+              Team lead for Lambda School's full-stack web development cohorts
+            </li>
             <li>5 years experience leading different teams to success</li>
-            <li><Link>Read more</Link></li>
+            <li>
+              <Link>Read more</Link>
+            </li>
           </ul>
         </div>
-      </div> 
+      </div>
     </Layout>
   )
 }
 
-export default IndexPage;
+export default IndexPage
