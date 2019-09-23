@@ -3,7 +3,7 @@
 .topContent {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 
   img {
     margin: 0;
@@ -18,11 +18,11 @@
       background: $terminal-blue-darker;
       padding: 0.8rem 1.1rem;
       transition: 425ms;
-      border-radius: 5%;
+      border-radius: 5px;
       font-size: .9rem;
       box-shadow: 2px 2px 0 black;
       font-weight: normal;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
 
       &:hover {
         background: $terminal-blue-dark;  

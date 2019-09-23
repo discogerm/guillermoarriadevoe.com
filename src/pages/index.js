@@ -32,36 +32,35 @@ const IndexPage = () => {
         <div className={styled.summary}>
           <h2>EXPERTISE</h2>
           <ul>
-            <li>HTML5, CSS3, single page applications</li>
-            <li>SQLite, server-side JavaScript</li>
-            <li>React, Redux, state management</li>
+            <li>Python, Pandas, data wrangling</li>
+            <li>Matplotlib, Seaborn, storytelling and visualization</li>
+            <li>Scikit-Learn, predictive modeling</li>
+            <li>HTML5, CSS3, React, Redux, single page applications, state management</li>
+            <li>Node.js, Express.js, REST APIs, server-side JavaScript</li>
             <li>User experience (UX) and user interface (UI) design</li>
-            <li>Node.js, Express.js, REST APIs</li>
-            <li>Team leadership, transparency, communication</li>
-            <li>Data wrangling with Python Pandas</li>
-            <li>Python, Pandas, Matplotlib, Scikit-Learn, Seaborn</li>
-            <li>Data wrangling, storytelling, predictive modeling</li>
           </ul>
         </div>
         <div className={styled.summary}>
           <h2>PRACTICES</h2>
           <ul>
-            <li>Agile software development</li>
-            <li>Collaborative project management</li>
-            <li>Focused, small, testable components</li>
-            <li>Consistent and semantic code</li>
+            <li>Collaboration, transparency, communication</li>
+            <li>Self-organized and outcome-orientied</li>
+            <li>Focused on customer needs and company goals</li>
+            <li>Consistent, semantic code with modularity in mind</li>
           </ul>
         </div>
         <div className={styled.summary}>
           <h2>EXPERIENCE</h2>
           <ul>
-            <li>Freelance web designer and developer</li>
+            <li>5 years experience leading succesful teams (habitat restoration & urban forestry)</li>
             <li>
-              Team lead for Lambda School's full-stack web development cohorts
+              Previous Team Lead for two of Lambda School's full-stack web development cohorts, WEB20 & WEBPT7
             </li>
-            <li>5 years experience leading different teams to success</li>
             <li>
-              <Link>Read more</Link>
+              Most recently, Section Lead for Lambda School's data science cohort, DS9
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/guillermo-arria-devoe/" target="__blank">Read more on LinkedIn</a>
             </li>
           </ul>
         </div>
