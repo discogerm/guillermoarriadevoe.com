@@ -17,19 +17,19 @@ const IndexPage = () => {
           <div className={styled.introduction}>
             <h1>Hello</h1>
             <h2>I'm a full-stack developer, with a touch of designer, learning to turn data into valuable insight</h2> 
-            <h2>Portland, Oregon</h2>
-            <p>Currently available for full-time, part-time, or contract opportunities. <Link to="/contact">Let's connect!</Link></p>
+            <p><Link to="/contact">Connect with me.</Link></p>
           </div>
         </div>
         <div className={styled.summary}>
           <h2>EXPERTISE</h2>
           <ul>
-            <li>Node.js, Express.js, SQLite, server-side JavaScript</li>
-            <li>HTML5, CSS3, JavaScript, single page applications</li>
+            <li>HTML5, CSS3, single page applications</li>
+            <li>SQLite, server-side JavaScript</li>
             <li>React, Redux, state management</li>
             <li>User experience (UX) and user interface (UI) design</li>
-            <li>RESTful APIs</li>
+            <li>Node.js, Express.js, REST APIs</li>
             <li>Team leadership, transparency, communication</li>
+            <li>Data wrangling with Python Pandas</li>
             <li>Python, Pandas, Matplotlib, Scikit-Learn, Seaborn</li>
             <li>Data wrangling, storytelling, predictive modeling</li>
           </ul>
