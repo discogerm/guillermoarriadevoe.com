@@ -9,18 +9,17 @@ import styled from "./index.module.scss"
 
 import { makeStyles, withStyles } from "@material-ui/core/styles"
 import Button from "@material-ui/core/Button"
-import Icon from '@material-ui/core/Icon';
-
+import Icon from "@material-ui/core/Icon"
 
 const ConnectBtn = withStyles(theme => ({
   root: {
-    backgroundColor: 'rgba(137, 164, 187, 0.2)',
-    '&:hover': {
+    backgroundColor: "rgba(137, 164, 187, 0.2)",
+    textDecoration: 'none',
+    "&:hover": {
       backgroundColor: "rgba(137, 164, 187, 0.3)",
     },
   },
-}))(Button);
-
+}))(Button)
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -31,8 +30,8 @@ const useStyles = makeStyles(theme => ({
   },
   rightIcon: {
     marginLeft: theme.spacing(1),
-  }
-}));
+  },
+}))
 
 const IndexPage = () => {
   const classes = useStyles()
@@ -44,11 +43,11 @@ const IndexPage = () => {
         <div className={styled.topContent}>
           <img src={headshot} alt="headshot" width="30%" />
           <div className={styled.introduction}>
-            <h1>Hello</h1>
+            <h1>Hello,</h1>
             <h2>
-              I'm a full-stack developer, with a touch of designer, learning to
-              turn data into valuable insight
+              I'm an experienced team leader with an academic background in environmental engineering.
             </h2>
+            <p>Currently learning to leverage data to direct strategic and operational decisions.</p>
             {/* <Button variant="contained" className={classes.button}>
               <Link className={styled.contactBtn} to="/contact">
                 Contact Me
@@ -58,8 +57,11 @@ const IndexPage = () => {
               variant="contained"
               color="primary"
               className={classes.margin}
+              href="/contact"
             >
-              Connect
+              <Link className={styled.button} to="/contact">
+                Connect
+              </Link>
               <Icon className={classes.rightIcon}>send</Icon>
             </ConnectBtn>
           </div>
