@@ -13,7 +13,7 @@ const IndexPage = () => {
       <div>
         <Head title="Home" />
         <div className={styled.topContent}>
-          <img src={headshot} alt="headshot" width="30%" />
+          {/* <img src={headshot} alt="headshot" width="30%" /> */}
           <div className={styled.introduction}>
             <h1>Hello,</h1>
             <h2>
@@ -21,9 +21,9 @@ const IndexPage = () => {
               environmental engineering.
             </h2>
             <p>
-              Currently learning to leverage data to direct strategic and
-              operational decisions.
+            After five years in habitat restoration, I was able to build the leadership skills and resiliency needed to make a difference in my community. As an environmental engineering student I learned to appreciate the infrastructures that keep our communities running. Nowadays I work full-time as a student leader for Lambda School and study data science part-time.
             </p>
+            <p>On my off-time I enjoy collecting records, turntablism, and strength training.</p>
             <Link className={styled.button} to="/contact">
               CONTACT ME
             </Link>
@@ -38,6 +38,9 @@ const IndexPage = () => {
             <li>HTML5, CSS3, React, Redux, single page applications, state management</li>
             <li>Node.js, Express.js, REST APIs, server-side JavaScript</li>
             <li>User experience (UX) and user interface (UI) design</li>
+            <li>
+              <a href="https://github.com/sapinspys" target="__blank">Follow me on GitHub</a>
+            </li>
           </ul>
         </div>
         <div className={styled.summary}>
