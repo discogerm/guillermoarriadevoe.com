@@ -21,9 +21,9 @@ const IndexPage = () => {
               environmental engineering.
             </h2>
             <p>
-            After five years in habitat restoration, I was able to build the leadership skills and resiliency needed to make a difference in my community. As an environmental engineering student I learned to appreciate the infrastructures that keep our communities running. Nowadays I work full-time as a student leader for Lambda School and study data science part-time.
+            After five years in habitat restoration, I was able to build the leadership skills and resiliency needed to make a difference. While studying as an environmental engineering student I developed an appreciation for mathematics and the complex systems that keep our communities functional. Nowadays I work full-time as a student leader for Lambda School and study data science part-time.
             </p>
-            <p>On my off-time I enjoy collecting records, turntablism, and strength training.</p>
+            <p>On my off-time I enjoy collecting records, hiking, and strength training.</p>
             <Link className={styled.button} to="/contact">
               CONTACT ME
             </Link>
