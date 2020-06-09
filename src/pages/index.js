@@ -17,13 +17,20 @@ const IndexPage = () => {
           <div className={styled.introduction}>
             <h1>Hello,</h1>
             <h2>
-              I'm an experienced team leader with an academic background in
-              environmental engineering.
+              I'm a software engineer and experienced team player with a background in environmentalism.
             </h2>
             <p>
-            After five years in habitat restoration, I was able to build the leadership skills and resiliency needed to make a difference. While studying as an environmental engineering student I developed an appreciation for mathematics and the complex systems that keep our communities functional. Nowadays I work full-time as a student leader for Lambda School and study data science part-time.
+              My professional career sprung its first roots in 2014 while serving to restore and protect native habitats in South Florida with a local non-profit organization. Nearly three years later I had led teams to restore entire ecosystems, managed multiple nurseries, coordinated effective grassroot movements, and earned the organization over $10,000.
             </p>
-            <p>On my off-time I enjoy collecting records, hiking, and strength training.</p>
+            <p>
+              Around the same time I began studying environmental engineering at Florida International University. There I cultivated a passion for the complex systems that keep our chaotic world in order. I graduated with a bachelor's degree and spent some time in research and urban forestry before deciding to make a jump to software engineering.
+            </p>
+            <p>
+              Through <a href="https://lambdaschool.com/" target="__blank">Lambda School</a> I was able to find the support, community, and resources necessary to succeed. Now after spending nearly a year learning all about the software development cycle and working in student leadership I have officially transferred to their data science program. There I'm currently learning how to leverage data, communicate effectively, and deliver data-driven results.
+            </p>
+            <p>
+              On my off-time I enjoy reading, discovering music, traveling, and spending time with my dearest friends and family.
+            </p>
             <Link className={styled.button} to="/contact">
               CONTACT ME
             </Link>
