@@ -1,10 +1,10 @@
-@import '../styles/variables';
+@import "../styles/variables";
 
 .header {
   padding: 1rem 0 2rem;
 }
 
-.title { 
+.title {
   font-size: 3rem;
   text-decoration: none;
 }
@@ -27,7 +27,6 @@
     background: $terminal-blue-dark;
   }
 }
-
 
 .active-nav-item {
   background-color: $terminal-blue-darker;
