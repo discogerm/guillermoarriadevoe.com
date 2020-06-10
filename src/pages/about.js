@@ -1,29 +1,26 @@
 import React from "react"
-import { Link } from "gatsby" // GATSBY BUILT-IN ROUTING
+// import { Link } from "gatsby" // GATSBY BUILT-IN ROUTING
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 
 import aboutStyles from "./about.module.scss"
+import IntroText from "../components/introText"
 
 const AboutPage = () => {
   return (
     <Layout>
       <div>
         <Head title="About" />
-        <div className={aboutStyles.topContent}>
-          <div className={aboutStyles.introduction}>
-            <p>
-              <b>Yo!</b> I'm a software engineer currently living in Sebring, Florida.
-              While I enjoy both building and designing apps, I also enjoy
-              classifying plants and practicing Data Science with my peers at{" "}
-              <a href="https://lambdaschool.com/" target="__blank">
-                Lambda School
-              </a>
-              .
-            </p>
-          </div>
-        </div>
+        <IntroText>
+          <b>Yo!</b> I'm a software engineer currently living in Sebring,
+          Florida. While I enjoy both building and designing apps, I also enjoy
+          classifying plants and practicing Data Science with my peers at{" "}
+          <a href="https://lambdaschool.com/" target="__blank">
+            Lambda School
+          </a>
+          .
+        </IntroText>
         <div className={aboutStyles.summary}>
           <h2>EDUCATION</h2>
           <ul>
