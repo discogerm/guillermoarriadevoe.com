@@ -3,9 +3,9 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import IntroText from "../components/introText"
 
 import aboutStyles from "./about.module.scss"
-import IntroText from "../components/introText"
 
 const AboutPage = () => {
   return (

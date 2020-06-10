@@ -1,25 +1,21 @@
-import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import React from "react"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
-import Layout from '../components/layout'
-import Head from '../components/head'
+import Layout from "../components/layout"
+import Head from "../components/head"
 
-import blogStyles from './blog.module.scss'
+import blogStyles from "./blog.module.scss"
+import IntroText from "../components/introText"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
-    query{
-      allContentfulBlogPost (
-        sort: {
-          fields: publishedDate,
-          order: DESC
-        }
-      ) {
-        edges{
-          node{
+    query {
+      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+        edges {
+          node {
             title
-            publishedDate (formatString:"MMMM Do, YYYY")
-            slug  
+            publishedDate(formatString: "MMMM Do, YYYY")
+            slug
           }
         }
       }
@@ -30,7 +26,9 @@ const BlogPage = () => {
     <Layout>
       <Head title="Journal"></Head>
       <div>
-        <h1>Guides, thoughts, and other notes.</h1>
+        <IntroText>
+          <b>Guides, thoughts, and other notes.</b> Sometimes I get inspired to write.
+        </IntroText>
         <ol className={blogStyles.posts}>
           {data.allContentfulBlogPost.edges.map(edge => (
             <li className={blogStyles.post}>
@@ -46,4 +44,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage;
+export default BlogPage
