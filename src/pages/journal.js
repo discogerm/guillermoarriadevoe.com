@@ -28,7 +28,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Blog"></Head>
+      <Head title="Journal"></Head>
       <div>
         <h1>Blog</h1>
         <ol className={blogStyles.posts}>
