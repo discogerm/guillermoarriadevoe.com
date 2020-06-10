@@ -3,11 +3,16 @@
 .topContent {
   display: flex;
   justify-content: space-between;
-  // margin-bottom: 50px;
+  margin-bottom: 2rem;
 
   .introduction {
     width: 65%;
-  }  
+
+    p {
+      font-size: 1.25em;
+      line-height: 1.6;
+    }
+  }
 }
 
 .summary {

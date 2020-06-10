@@ -13,9 +13,8 @@ const AboutPage = () => {
         <Head title="About" />
         <div className={aboutStyles.topContent}>
           <div className={aboutStyles.introduction}>
-            <h1>Cheers!</h1>
             <p>
-              I'm a software engineer currently living in Sebring, Florida.
+              <b>Yo!</b> I'm a software engineer currently living in Sebring, Florida.
               While I enjoy both building and designing apps, I also enjoy
               classifying plants and practicing Data Science with my peers at{" "}
               <a href="https://lambdaschool.com/" target="__blank">
