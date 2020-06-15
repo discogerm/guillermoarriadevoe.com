@@ -17,7 +17,7 @@ const AboutPage = () => {
           Florida. While I enjoy both building and designing apps, I'm also
           passionate about classifying plants and learning all about Data
           Science with my peers at{" "}
-          <a href="https://lambdaschool.com/" target="__blank">
+          <a href="https://lambdaschool.com/" target="__blank" rel="noopener">
             Lambda School
           </a>
           .
