@@ -13,10 +13,10 @@ const AboutPage = () => {
       <div>
         <Head title="About" />
         <IntroText>
-          <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in
-          Sebring, Florida. While I enjoy both building and designing apps, I
-          also thoroughly enjoy classifying plants and learning all about Data Science
-          with my peers at{" "}
+          <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in Sebring,
+          Florida. While I enjoy both building and designing apps, I also
+          thoroughly enjoy classifying plants and learning all about Data
+          Science with my peers at{" "}
           <a href="https://lambdaschool.com/" target="__blank">
             Lambda School
           </a>
@@ -26,16 +26,20 @@ const AboutPage = () => {
           <h2>EDUCATION</h2>
           <ul>
             <li>
-              5 years experience leading succesful teams (habitat restoration &
-              urban forestry)
+              <b>Lambda School</b>&nbsp;&nbsp;&nbsp;&nbsp;2019 - now
+              <br />
+              Data Science Track
             </li>
             <li>
-              Previous Team Lead for two of Lambda School's full-stack web
-              development cohorts, WEB20 & WEBPT7
+              <b>Lambda School</b>&nbsp;&nbsp;&nbsp;&nbsp;2018 - 2019
+              <br />
+              Full Stack Web Development Track
             </li>
             <li>
-              Most recently, Section Lead for Lambda School's data science
-              cohort, DS9
+              <b>Florida International University</b>
+              &nbsp;&nbsp;&nbsp;&nbsp;2013 - 2017
+              <br />
+              Bachelor of Science - Environmental Engineering
             </li>
           </ul>
         </div>
@@ -51,6 +55,18 @@ const AboutPage = () => {
             </li>
             <li>Node.js, Express.js, REST APIs, server-side JavaScript</li>
             <li>User experience (UX) and user interface (UI) design</li>
+            <li>
+              5 years experience leading succesful teams (habitat restoration &
+              urban forestry)
+            </li>
+            <li>
+              Previous Team Lead for two of Lambda School's full-stack web
+              development cohorts, WEB20 & WEBPT7
+            </li>
+            <li>
+              Most recently, Section Lead for Lambda School's data science
+              cohort, DS9
+            </li>
           </ul>
         </div>
         <div className={aboutStyles.summary}>
