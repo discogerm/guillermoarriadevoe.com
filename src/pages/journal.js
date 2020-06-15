@@ -27,7 +27,7 @@ const BlogPage = () => {
       <Head title="Journal"></Head>
       <div>
         <IntroText>
-          <b>Guides and meditations.</b> Sometimes I'm inspired to write:
+          <b>Guides and assorted meditations.</b> Sometimes I'm inspired to write:
         </IntroText>
         <ol className={blogStyles.posts}>
           {data.allContentfulBlogPost.edges.map(edge => (

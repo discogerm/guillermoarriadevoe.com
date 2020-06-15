@@ -13,9 +13,10 @@ const AboutPage = () => {
       <div>
         <Head title="About" />
         <IntroText>
-          <b>Yo!</b> I'm a software engineer currently living in Sebring,
-          Florida. While I enjoy both building and designing apps, I also enjoy
-          classifying plants and practicing Data Science with my peers at{" "}
+          <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in
+          Sebring, Florida. While I enjoy both building and designing apps, I
+          also thoroughly enjoy classifying plants and learning all about Data Science
+          with my peers at{" "}
           <a href="https://lambdaschool.com/" target="__blank">
             Lambda School
           </a>
