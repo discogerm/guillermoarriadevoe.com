@@ -44,6 +44,11 @@ const Footer = () => {
             GitHub
           </a>
         </li>
+        <li>
+          <a href="mailto:guillermo.arriadevoe@gmail.com">
+            Email
+          </a>
+        </li>
       </ul>
     </footer>
   )
