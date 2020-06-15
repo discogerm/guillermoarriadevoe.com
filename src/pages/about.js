@@ -14,7 +14,8 @@ const AboutPage = () => {
         <Head title="About" />
         <IntroText>
           <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in Sebring,
-          Florida. While I enjoy both building and designing apps, I'm also passionate about classifying plants and learning all about Data
+          Florida. While I enjoy both building and designing apps, I'm also
+          passionate about classifying plants and learning all about Data
           Science with my peers at{" "}
           <a href="https://lambdaschool.com/" target="__blank">
             Lambda School
@@ -43,38 +44,28 @@ const AboutPage = () => {
           </ul>
         </div>
         <div className={aboutStyles.summary}>
-          <h2>EXPERTISE</h2>
+          <h2>EXPERIENCE</h2>
           <ul>
-            <li>Python, Pandas, data wrangling</li>
-            <li>Matplotlib, Seaborn, storytelling and visualization</li>
-            <li>Scikit-Learn, predictive modeling</li>
             <li>
-              HTML5, CSS3, React, Redux, single page applications, state
-              management
-            </li>
-            <li>Node.js, Express.js, REST APIs, server-side JavaScript</li>
-            <li>User experience (UX) and user interface (UI) design</li>
-            <li>
-              5 years experience leading succesful teams (habitat restoration &
-              urban forestry)
+              <b>Lambda School</b>&nbsp;&nbsp;&nbsp;&nbsp; September 2019 - February 2020
+              <br />
+              Remote Section Lead
             </li>
             <li>
-              Previous Team Lead for two of Lambda School's full-stack web
-              development cohorts, WEB20 & WEBPT7
+              <b>Lambda School</b>&nbsp;&nbsp;&nbsp;&nbsp; April 2019 - August 2020
+              <br />
+              Remote Team Lead
             </li>
             <li>
-              Most recently, Section Lead for Lambda School's data science
-              cohort, DS9
+              <b>The Education Fund - Miami</b>&nbsp;&nbsp;&nbsp;&nbsp; June 2018 - October 2018
+              <br />
+              Independent Consultant
             </li>
-          </ul>
-        </div>
-        <div className={aboutStyles.summary}>
-          <h2>PRACTICES</h2>
-          <ul>
-            <li>Collaboration, transparency, communication</li>
-            <li>Self-organized and outcome-orientied</li>
-            <li>Focused on customer needs and company goals</li>
-            <li>Consistent, semantic code with modularity in mind</li>
+            <li>
+              <b>Florida International University</b>&nbsp;&nbsp;&nbsp;&nbsp; April 2017 - October 2017
+              <br />
+              Research Assistant
+            </li>
           </ul>
         </div>
       </div>
