@@ -1,15 +1,11 @@
 @import "../styles/variables";
 
-.header {
+.title-bar {
   padding: 1rem 0 2rem;
 }
 
-.title {
-  font-size: 3rem;
-  text-decoration: none;
-}
-
-.nav-list {
+.nav-menu {
+  border: 1px solid white;
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -18,17 +14,15 @@
 .nav-item {
   text-decoration: none;
   font-size: 0.9rem;
-  margin-right: 1rem;
-  transition: 425ms;
-  padding: 0.3rem 1.1rem;
+  transition: 150ms;
   border-radius: 2px;
+  font-weight: bold;
 
   &:hover {
-    background: $terminal-blue-dark;
+    color: white;
   }
 }
 
 .active-nav-item {
-  background-color: $terminal-blue-dark;
-  box-shadow: 2px 2px 0 black;
+  color: white;
 }
