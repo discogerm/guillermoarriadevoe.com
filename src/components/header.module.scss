@@ -1,21 +1,37 @@
 @import "../styles/variables";
 
 .title-bar {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 0 2rem;
 }
 
+nav {
+  border: 1px solid gray;
+  // display: flex;
+  // align-items: center;
+  // justify-self: flex-end;
+  width: 100%;
+}
+
 .nav-menu {
-  border: 1px solid white;
+  border: 1px solid blue;
   display: flex;
   list-style-type: none;
   margin: 0;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  
 }
 
 .nav-item {
+  border: 1px solid green;
   text-decoration: none;
   font-size: 0.9rem;
   transition: 150ms;
-  border-radius: 2px;
   font-weight: bold;
 
   &:hover {
