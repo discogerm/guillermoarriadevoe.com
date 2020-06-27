@@ -7,22 +7,33 @@
   flex-direction: column;
   align-items: center;
   font-size: 0.9em;
-  
+
   .site-footer-content {
-    max-width: 400px;
-    
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+
     p {
       text-align: center;
     }
 
     ul {
+      border: 1px solid white;
       display: flex;
+      justify-content: space-between;
       list-style-type: none;
       margin: 0;
+      // width: ;
+
+      li {
+        display: inline;
+      }
 
       a {
+        display: inline-block;
         text-decoration: none;
-        margin-right: 2rem;
         transition: 200ms;
         border-radius: 2px;
 

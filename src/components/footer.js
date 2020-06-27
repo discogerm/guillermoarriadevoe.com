@@ -9,8 +9,8 @@ const Footer = () => {
         <p>
           "A man's true delight is to do the things he was made for. He was made
           to show goodwill to his kind, to rise above the promptings of his
-          senses,to distinguish appearances from realities, and to pursue the
-          study of universal Nature and her works.
+          senses, to distinguish appearances from realities, and to pursue the
+          study of universal Nature and her works." - Marcus Aurelius
         </p>
         <ul>
           <li>
