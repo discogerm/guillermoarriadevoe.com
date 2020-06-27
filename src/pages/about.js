@@ -13,9 +13,7 @@ const AboutPage = () => {
       <div>
         <Head title="About" />
         <IntroText>
-          <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in Sebring,
-          Florida. While I enjoy both building and designing apps, I'm also
-          passionate about classifying plants and learning all about Data
+          <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in the sunshine state. I'm passionate about building and designing apps, classifying plants, and learning all about Data
           Science with my peers at{" "}
           <a href="https://lambdaschool.com/" target="__blank" rel="noopener">
             Lambda School
@@ -71,14 +69,14 @@ const AboutPage = () => {
               Research Assistant
             </li>
             <li>
-              <b>Urban Paradise Guild</b>&nbsp;&nbsp;&nbsp;&nbsp;
-              January 2017 - June 2017
+              <b>Urban Paradise Guild</b>&nbsp;&nbsp;&nbsp;&nbsp; January 2017 -
+              June 2017
               <br />
               Senior Intern
             </li>
             <li>
-              <b>Urban Paradise Guild</b>&nbsp;&nbsp;&nbsp;&nbsp;
-              April 2014 - January 2016
+              <b>Urban Paradise Guild</b>&nbsp;&nbsp;&nbsp;&nbsp; April 2014 -
+              January 2016
               <br />
               Volunteer Intern
             </li>
