@@ -1,38 +1,41 @@
 @import "../styles/variables";
 
-.title-bar {
-  border: 1px solid white;
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0 2rem;
+  flex-wrap: wrap;
 }
 
-nav {
-  border: 1px solid gray;
-  // display: flex;
-  // align-items: center;
-  // justify-self: flex-end;
-  width: 100%;
+.mh-logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 200ms;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+
+  &:hover {
+    color: white;
+  }
 }
 
-.nav-menu {
-  border: 1px solid blue;
-  display: flex;
+.main-nav ul {
+  text-align: center;
   list-style-type: none;
-  margin: 0;
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  
+  margin: 1em 0;
+}
+
+.main-nav li {
+  display: inline;
 }
 
 .nav-item {
-  border: 1px solid green;
+  display: inline-block;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: 150ms;
+  transition: 200ms;
   font-weight: bold;
+  padding: .5em 1.5em;
 
   &:hover {
     color: white;

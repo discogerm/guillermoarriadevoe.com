@@ -5,16 +5,16 @@ import headerStyles from "./header.module.scss"
 
 const Header = () => {
   return (
-    <header className={headerStyles.titleBar}>
+    <header className={headerStyles.mainHeader}>
       <Link
-        className={headerStyles.navItem}
+        className={headerStyles.mhLogo}
         activeClassName={headerStyles.activeNavItem}
         to="/"
       >
         GAD
       </Link>
-      <nav>
-        <ul className={headerStyles.navMenu}>
+      <nav className={headerStyles.mainNav}>
+        <ul>
           <li>
             <Link
               className={headerStyles.navItem}
