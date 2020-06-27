@@ -1,12 +1,11 @@
 @import '../styles/variables';
 
 .topContent {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 4em;
 
   .introduction {
-    max-width: 55%;
+    max-width: 100%;
+    text-align: center;
 
     p {
       font-size: 1.15em;
