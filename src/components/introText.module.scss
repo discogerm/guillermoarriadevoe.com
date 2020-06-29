@@ -2,18 +2,16 @@
 @import "../styles/media-queries";
 
 .topContent {
-  margin-bottom: 4em;
-  
-  .introduction {
+  margin: 3em 0;
 
-    @include respond-above(sm) {
-      padding: 0 1em;
-      text-align: center;
-    }
+  @include respond-above(sm) {
+    padding: 0 1em;
+    text-align: center;
+  }
 
-    p {
-      font-size: 1.15em;
-      line-height: 2rem;
-    }
+  p {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 2rem;
   }
 }
