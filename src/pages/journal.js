@@ -3,9 +3,9 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import IntroText from "../components/introText"
 
 import journalStyles from "./journal.module.scss"
-import IntroText from "../components/introText"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
