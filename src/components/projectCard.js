@@ -2,11 +2,13 @@ import React from "react"
 
 // import introTextStyles from "./introText.module.scss"
 
-const projectCard = props => {
+const ProjectCard = props => {
   return (
     <div>
-      <img src={require(`../assets/${props.imgUrl}`)} alt={props.imgAlt} />
-      <h2>{props.title}</h2>
+      {/* <img src={require(`../assets/${props.imgUrl}`)} alt={props.imgAlt} /> */}
+      <a href={props.url} target="__blank" rel="noopener">
+        <h2>{props.title}</h2>
+      </a>
       <p>{props.desc}</p>
       <a href={props.github} target="__blank" rel="noopener">
         GitHub
@@ -15,4 +17,4 @@ const projectCard = props => {
   )
 }
 
-export default projectCard
+export default ProjectCard
