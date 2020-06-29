@@ -20,6 +20,12 @@
   }
 
   .summary-content {
+    @include respond-above(sm) {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+    }
+
     ul {
       list-style-type: none;
       margin: 0;
@@ -28,6 +34,24 @@
       li {
         line-height: 2rem;
         margin-bottom: 1.2rem;
+      }
+    }
+
+    img {
+      display: none;
+      
+      @include respond-above(sm) {
+        max-width: 50%;
+        margin: auto 0;
+        align-self: center;
+        display: inline;
+        transform: rotate(25deg);
+        opacity: 0.8;
+        transition: 3s;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
       }
     }
   }

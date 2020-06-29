@@ -6,6 +6,8 @@ import IntroText from "../components/introText"
 
 import aboutStyles from "./about.module.scss"
 
+import face from "../assets/android-chrome-512x512.png"
+
 const AboutPage = () => {
   return (
     <Layout>
@@ -47,6 +49,7 @@ const AboutPage = () => {
                 Bachelor of Science - Environmental Engineering
               </li>
             </ul>
+            <img src={face} alt="sup"/>
           </div>
           <div className={aboutStyles.summaryContent}>
             <h2>EXPERIENCE</h2>
