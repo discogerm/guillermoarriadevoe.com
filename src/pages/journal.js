@@ -34,8 +34,8 @@ const BlogPage = () => {
           {data.allContentfulBlogPost.edges.map(edge => (
             <li className={journalStyles.post}>
               <Link to={`/blog/${edge.node.slug}`}>
-                <h3>{edge.node.title}</h3>
-                <p>{edge.node.publishedDate}</p>
+                <h3 className={journalStyles.postTitle}>{edge.node.title}</h3>
+                <p className={journalStyles.postDate}>{edge.node.publishedDate}</p>
               </Link>
             </li>
           ))}
