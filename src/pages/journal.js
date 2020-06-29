@@ -30,16 +30,20 @@ const BlogPage = () => {
           <b>Guides and assorted meditations.</b> Sometimes I'm inspired to
           write:
         </IntroText>
-        <ol className={journalStyles.posts}>
-          {data.allContentfulBlogPost.edges.map(edge => (
-            <li className={journalStyles.post}>
-              <Link to={`/blog/${edge.node.slug}`}>
-                <h3 className={journalStyles.postTitle}>{edge.node.title}</h3>
-                <p className={journalStyles.postDate}>{edge.node.publishedDate}</p>
-              </Link>
-            </li>
-          ))}
-        </ol>
+        <div>
+          <ol className={journalStyles.posts}>
+            {data.allContentfulBlogPost.edges.map(edge => (
+              <li className={journalStyles.post}>
+                <Link to={`/blog/${edge.node.slug}`}>
+                  <h3 className={journalStyles.postTitle}>{edge.node.title}</h3>
+                  <p className={journalStyles.postDate}>
+                    {edge.node.publishedDate}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </Layout>
   )

@@ -3,10 +3,9 @@
 
 .topContent {
   margin-bottom: 4em;
-
+  
   .introduction {
-    max-width: 100%;
-    
+
     @include respond-above(sm) {
       padding: 0 1em;
       text-align: center;
