@@ -24,10 +24,11 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Journal"></Head>
       <div>
+        <Head title="Journal" />
         <IntroText>
-          <b>Guides and assorted meditations.</b> Sometimes I'm inspired to write:
+          <b>Guides and assorted meditations.</b> Sometimes I'm inspired to
+          write:
         </IntroText>
         <ol className={journalStyles.posts}>
           {data.allContentfulBlogPost.edges.map(edge => (
