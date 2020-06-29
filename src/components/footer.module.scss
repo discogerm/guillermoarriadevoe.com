@@ -1,7 +1,7 @@
 @import "../styles/variables";
 @import "../styles/media-queries";
 
-.site-footer {
+footer {
   width: 100%;
   border-top: 3px solid #1f364d;
   display: flex;
@@ -10,7 +10,7 @@
   font-size: 0.8em;
   margin-top: 4em;
 
-  .site-footer-content {
+  .footer-content {
     display: flex;
     flex-direction: column;
     margin: 3em auto;
@@ -24,11 +24,11 @@
       text-align: left;
     }
 
-    .site-footer-quote {
+    .footer-quote {
       margin: 0;
     }
     
-    ul {
+    .footer-menu {
       display: flex;
       justify-content: space-between;
       list-style-type: none;

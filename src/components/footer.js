@@ -4,15 +4,15 @@ import footerStyles from "./footer.module.scss"
 
 const Footer = () => {
   return (
-    <footer className={footerStyles.siteFooter}>
-      <div className={footerStyles.siteFooterContent}>
-        <p className={footerStyles.siteFooterQuote}>
+    <footer>
+      <div className={footerStyles.footerContent}>
+        <p className={footerStyles.footerQuote}>
           "A man's true delight is to do the things he was made for. He was made
           to show goodwill to his kind, to rise above the promptings of his
           senses, to distinguish appearances from realities, and to pursue the
           study of universal Nature and her works." - Marcus Aurelius
         </p>
-        <ul>
+        <ul className={footerStyles.footerMenu}>
           <li>
             <a
               href="https://www.linkedin.com/in/guillermo-arria-devoe/"
