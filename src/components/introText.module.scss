@@ -1,12 +1,16 @@
-@import '../styles/variables';
+@import "../styles/variables";
+@import "../styles/media-queries";
 
 .topContent {
   margin-bottom: 4em;
 
   .introduction {
     max-width: 100%;
-    text-align: center;
-    padding: 0 1em;
+    
+    @include respond-above(sm) {
+      padding: 0 1em;
+      text-align: center;
+    }
 
     p {
       font-size: 1.15em;
