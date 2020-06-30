@@ -25,7 +25,7 @@ const AboutPage = () => {
         </IntroText>
         <div className={aboutStyles.summary}>
           <div className={aboutStyles.summaryContent}>
-            <h2>EDUCATION</h2>
+            <h2>Education</h2>
             <ul>
               <li>
                 <b>Lambda School</b>
@@ -52,7 +52,7 @@ const AboutPage = () => {
             <img src={face} alt="sup" />
           </div>
           <div className={aboutStyles.summaryContent}>
-            <h2>EXPERIENCE</h2>
+            <h2>Experience</h2>
             <ul>
               <li>
                 <b>Lambda School</b>

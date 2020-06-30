@@ -29,9 +29,28 @@
     border-radius: 0.5em;
     padding: 1.5em;
     margin-bottom: 2em;
-    
+
+    img {
+      display: none;
+
+      @include respond-above(sm) {
+        width: 20em;
+        margin: auto 0;
+        align-self: center;
+        display: inline;
+        // transform: rotate(25deg);
+        opacity: 0.8;
+        transition: 2s;
+        border-radius: 10em;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
     @include respond-above(sm) {
-      height: 10  0%;
+      height: 10 0%;
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -48,28 +67,9 @@
         margin-bottom: 1.2rem;
       }
 
-      li:last-child{
+      li:last-child {
         margin-bottom: 0;
       }
-    }
-  }
-}
-
-img {
-  display: none;
-  
-  @include respond-above(sm) {
-    width: 20em;
-    margin: auto 0;
-    align-self: center;
-    display: inline;
-    // transform: rotate(25deg);
-    opacity: 0.8;
-    transition: 2s;
-    border-radius: 10em;
-
-    &:hover {
-      transform: rotate(360deg);
     }
   }
 }
