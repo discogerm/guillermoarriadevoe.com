@@ -6,7 +6,7 @@ import IntroText from "../components/introText"
 
 import aboutStyles from "./about.module.scss"
 
-import face from "../assets/android-chrome-512x512.png"
+import face from "../assets/upg_colorado.jpg"
 
 const AboutPage = () => {
   return (
