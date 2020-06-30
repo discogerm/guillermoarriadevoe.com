@@ -4,13 +4,12 @@
 .card {
   border: 0.2em solid $border-blue;
   border-radius: 0.5em;
-  padding: 1em;
-  margin-bottom: 3em;
+  padding: 1.5em;
+  margin-bottom: 2em;
   transition: 200ms;
 
   @include respond-above(sm) {
       max-width: 48%;
-      margin-bottom: 2em;
   }
 
   &:hover {

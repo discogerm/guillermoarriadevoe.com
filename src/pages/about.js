@@ -24,6 +24,7 @@ const AboutPage = () => {
           .
         </IntroText>
         <div className={aboutStyles.summary}>
+          <img src={face} alt="sup" />
           <div className={aboutStyles.summaryContent}>
             <h2>EDUCATION</h2>
             <ul>
@@ -49,7 +50,6 @@ const AboutPage = () => {
                 Bachelor of Science - Environmental Engineering
               </li>
             </ul>
-            <img src={face} alt="sup"/>
           </div>
           <div className={aboutStyles.summaryContent}>
             <h2>EXPERIENCE</h2>
