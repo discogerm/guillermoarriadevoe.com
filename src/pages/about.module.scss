@@ -20,6 +20,10 @@
   }
 
   .summary-content {
+    border: 0.2em solid $border-blue;
+    border-radius: 0.5em;
+    padding: 1em;
+    
     @include respond-above(sm) {
       display: flex;
       flex-direction: column;
