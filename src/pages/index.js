@@ -6,6 +6,8 @@ import Head from "../components/head"
 import IntroText from "../components/introText"
 import ProjectCard from "../components/projectCard"
 
+import indexStyles from "./index.module.scss"
+
 const projects = [
   {
     url: "https://github.com/sapinspys/GAD-Portfolio-Website",
@@ -39,7 +41,7 @@ const IndexPage = () => {
           Guillermo Arria-Devoe is a Florida-based software engineer, currently
           enrolled in Lambda School's Data Science program and looking for work.
         </IntroText>
-        <div>
+        <div className={indexStyles.cardContainer}>
           {projects.map(p => (
             <ProjectCard
               url={p.url}

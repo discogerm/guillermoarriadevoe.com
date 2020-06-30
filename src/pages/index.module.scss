@@ -1,0 +1,10 @@
+@import "../styles//media-queries";
+
+.card-container {
+    @include respond-above(sm) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+}
