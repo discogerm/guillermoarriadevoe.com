@@ -1,18 +1,23 @@
 import React from "react"
 
-// import introTextStyles from "./introText.module.scss"
+import cardStyles from "./projectCard.module.scss"
 
 const ProjectCard = props => {
   return (
-    <div>
+    <div className={cardStyles.card}>
       {/* <img src={require(`../assets/${props.imgUrl}`)} alt={props.imgAlt} /> */}
-      <a href={props.url} target="__blank" rel="noopener">
-        <h2>{props.title}</h2>
-      </a>
-      <p>{props.desc}</p>
-      <a href={props.github} target="__blank" rel="noopener">
-        GitHub
-      </a>
+      <h2 className={cardStyles.cardTitle}>
+        <a href={props.url} target="__blank" rel="noopener">
+          {props.title}
+        </a>
+      </h2>
+      <p className={cardStyles.cardDes}>{props.desc}</p>
+      <div className={cardStyles.cardGithub}>
+        <img src="https://img.icons8.com/nolan/24/github.png" />
+        <a href={props.github} target="__blank" rel="noopener">
+          GitHub
+        </a>
+      </div>
     </div>
   )
 }

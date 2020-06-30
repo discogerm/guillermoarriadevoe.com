@@ -1,0 +1,40 @@
+@import "../styles/variables";
+
+.card {
+  border: 0.2em solid $border-blue;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 3em;
+
+  .card-title {
+  }
+
+  .card-desc {
+  }
+
+  .card-github {
+    display: flex;
+
+    img {
+      margin: 0;
+    }
+
+    a {
+      font-size: 0.9em;
+      color: $footer-link;
+      margin: auto 0.5em;
+
+      &:hover {
+        color: $terminal-blue;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+}

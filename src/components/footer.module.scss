@@ -3,7 +3,7 @@
 
 footer {
   width: 100%;
-  border-top: 3px solid #1f364d;
+  border-top: 0.2em solid $border-blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@ footer {
           transition: 200ms;
 
           &:hover {
-            color: white;
+            color: $terminal-blue;
           }
         }
       }
