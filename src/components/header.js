@@ -33,6 +33,15 @@ const Header = () => {
               Journal
             </Link>
           </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/photography"
+            >
+              Photography
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

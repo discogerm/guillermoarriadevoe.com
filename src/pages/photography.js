@@ -32,7 +32,7 @@ const projects = [
   },
 ]
 
-const IndexPage = () => {
+const Photography = () => {
   return (
     <Layout>
       <div>
@@ -56,4 +56,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Photography
