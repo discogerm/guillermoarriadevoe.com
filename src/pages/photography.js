@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 // import { Link } from "gatsby" // GATSBY BUILT-IN ROUTING
 
 import Layout from "../components/layout"
@@ -8,40 +8,35 @@ import ProjectCard from "../components/projectCard"
 
 import indexStyles from "./index.module.scss"
 
-const projects = [
-  {
-    url: "https://github.com/sapinspys/GAD-Portfolio-Website",
-    title: "Portfolio Site",
-    desc:
-      "The current website was built from scratch using JavaScript, SCSS, Gatsby.js, GraphQL, and Contentful.",
-    github: "https://github.com/sapinspys/GAD-Portfolio-Website",
-  },
-  {
-    url: "https://mentorsinternational.org/",
-    title: "Mentors International Training Reminders",
-    desc: "Web application for international microfinance training program.",
-    github: "https://github.com/mentors-international-schedule/client",
-  },
-  {
-    url:
-      "https://github.com/team-soup/Ill-Serve-Soup-Marketing-Page--Guillermo-Arria-Devoe",
-    title: "Everybody Eats! Soup Kitchen",
-    desc: "Marketing page for soup kitchen management software.",
-    github:
-      "https://github.com/team-soup/Ill-Serve-Soup-Marketing-Page--Guillermo-Arria-Devoe",
-  },
-]
+const site = "https://www.inaturalist.org"
+const client_id = "f7022a1d52ed0cfc580afb41853130e78f4739d6a297e8c52605061be38cda59"
+const client_secret = "625999f7a5746e0063ae69862b110c4b960e19a9efbf99c1350eec5d4024237e"
+const redirect_uri = "http://localhost:8000/photography"
+const username = "guillermoarriadevoe"
+const password = "greenday123"
+
+const payload = {
+  client_id,
+  client_secret,
+  grant_type: "password",
+  username,
+  password,
+}
 
 const Photography = () => {
+  const [page, setPage] = useState(1);
+  const [response, setResponse] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  
   return (
     <Layout>
       <div>
         <Head title="Home" />
         <IntroText>
-          Guillermo Arria-Devoe is a Florida-based software engineer, currently
-          enrolled in Lambda School's Data Science program and looking for work.
+          One of my favorite hobbies is identifying and researching interesting
+          species.
         </IntroText>
-        <div className={indexStyles.cardContainer}>
+        {/* <div className={indexStyles.cardContainer}>
           {projects.map(p => (
             <ProjectCard
               url={p.url}
@@ -50,7 +45,7 @@ const Photography = () => {
               github={p.github}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
