@@ -6,11 +6,14 @@ const Footer = () => {
   return (
     <footer>
       <div className={footerStyles.footerContent}>
-        <p className={footerStyles.footerQuote}>
+        {/* <p className={footerStyles.footerQuote}>
           "A man's true delight is to do the things he was made for. He was made
           to show goodwill to his kind, to rise above the promptings of his
           senses, to distinguish appearances from realities, and to pursue the
           study of universal Nature and her works." - Marcus Aurelius
+        </p> */}
+        <p className={footerStyles.footerQuote}>
+          "The world into which we are born is brutal and cruel, and at the same time one of divine beauty. Which element we think outweighs the other, whether meaninglessness or meaning, is a matter of temperament." - C.G. JUNG
         </p>
         <ul className={footerStyles.footerMenu}>
           <li>
