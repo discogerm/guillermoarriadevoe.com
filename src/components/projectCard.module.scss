@@ -5,7 +5,7 @@
   border: 0.2em solid $border-blue;
   border-radius: 0.5em;
   padding: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   transition: 200ms;
 
   @include respond-above(sm) {
