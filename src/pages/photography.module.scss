@@ -1,38 +1,26 @@
 @import "../styles/variables";
 
-.posts {
-  list-style-type: none;
+.photoGrid {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.post {
-  margin-bottom: 1.5em;
-
-  h2 {
-  }
-
-  a {
-    background: $friendly-blue;
-    display: block;
-    padding: 1.5em;
-    text-decoration: none;
-    border-radius: 0.2em;
+.photo {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  
+  img {
+    margin: 0;
+    width: 100%;
+    height: auto;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     transition: 200ms;
-
-    .post-title {
-      // font-weight: 500;
-
-      margin-bottom: 0.5rem;
-    }
-
-    .post-date {
-      font-size: 0.9rem;
-    }
   }
 
-  a:hover {
-    background: $friendly-blue-hover;
+  img:hover {
     transform: scale(1.05);
   }
 }
