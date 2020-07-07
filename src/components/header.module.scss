@@ -4,10 +4,12 @@
 .main-header {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // justify-content: space-between;
   margin: 1.5em 0 3em 0;
-  // border: 1px solid white;
+
+  @include respond-above(xs) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .mh-logo {
@@ -16,7 +18,11 @@
   transition: 200ms;
   font-weight: bold;
   letter-spacing: 0.3em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+
+  @include respond-above(xs) {
+    margin: 0;
+  }
 
   &:hover {
     color: white;
@@ -28,6 +34,11 @@
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+
+  @include respond-above(xs) {
+    margin: 0;
+    width: 20em;
+  }
 }
 
 .main-nav li {
@@ -49,5 +60,4 @@
 
 .active-nav-item {
   color: white;
-  // text-shadow: 0 5px 2px $friendly-blue-hover;
 }
