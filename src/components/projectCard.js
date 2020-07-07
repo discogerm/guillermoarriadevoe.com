@@ -13,7 +13,7 @@ const ProjectCard = props => {
       </h2>
       <p className={cardStyles.cardDes}>{props.desc}</p>
       <div className={cardStyles.cardGithub}>
-        <img src="https://img.icons8.com/nolan/24/github.png" />
+        <img src="https://img.icons8.com/nolan/24/github.png" alt="github" />
         <a href={props.github} target="__blank" rel="noopener">
           GitHub
         </a>
