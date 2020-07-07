@@ -27,7 +27,7 @@ const BlogPage = () => {
       <div>
         <Head title="Journal" />
         <IntroText>
-          <b>Guides and assorted meditations.</b> Sometimes I'm inspired to
+          Guides and assorted meditations. Sometimes I'm inspired to
           write:
         </IntroText>
         <div>
