@@ -6,7 +6,7 @@
   flex-direction: column;
   // align-items: center;
   // justify-content: space-between;
-  margin: 1em 0 3em 0;
+  margin: 1.5em 0 3em 0;
   // border: 1px solid white;
 }
 
@@ -16,6 +16,7 @@
   transition: 200ms;
   font-weight: bold;
   letter-spacing: 0.3em;
+  margin-bottom: 1em;
 
   &:hover {
     color: white;
@@ -26,8 +27,7 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin: 1em 0 0 0;
-  // width: 9.5em;
+  margin: 0;
 }
 
 .main-nav li {

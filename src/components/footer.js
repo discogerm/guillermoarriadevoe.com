@@ -13,7 +13,7 @@ const Footer = () => {
           study of universal Nature and her works." - Marcus Aurelius
         </p> */}
         <p className={footerStyles.footerQuote}>
-          "The world into which we are born is brutal and cruel, and at the same time one of divine beauty. Which element we think outweighs the other, whether meaninglessness or meaning, is a matter of temperament." - C.G. JUNG
+          "The world into which we are born is brutal and cruel, and at the same time one of divine beauty. Which element we think outweighs the other, whether meaninglessness or meaning, is a matter of temperament." - C.G. Jung
         </p>
         <ul className={footerStyles.footerMenu}>
           <li>
