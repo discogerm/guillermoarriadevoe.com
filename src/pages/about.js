@@ -46,7 +46,7 @@ const AboutPage = () => {
                 <br />
                 2013 - 2017
                 <br />
-                Bachelor of Science - Environmental Engineering
+                B.S. - Environmental Engineering
               </li>
             </ul>
             <img src={face} alt="sup" />
@@ -57,42 +57,42 @@ const AboutPage = () => {
               <li>
                 <b>Lambda School</b>
                 <br />
-                September 2019 - February 2020
+                Sept 2019 - Feb 2020
                 <br />
                 Remote Section Lead
               </li>
               <li>
                 <b>Lambda School</b>
                 <br />
-                April 2019 - August 2020
+                Apr 2019 - Aug 2020
                 <br />
                 Remote Team Lead
               </li>
               <li>
-                <b>The Education Fund - Miami</b>
+                <b>The Education Fund: Miami</b>
                 <br />
-                June 2018 - October 2018
+                Jun 2018 - Oct 2018
                 <br />
                 Independent Consultant
               </li>
               <li>
                 <b>Florida International University</b>
                 <br />
-                April 2017 - October 2017
+                April 2017 - Oct 2017
                 <br />
                 Research Assistant
               </li>
               <li>
                 <b>Urban Paradise Guild</b>
                 <br />
-                January 2017 - June 2017
+                Jan 2017 - Jun 2017
                 <br />
                 Senior Intern
               </li>
               <li>
                 <b>Urban Paradise Guild</b>
                 <br />
-                April 2014 - January 2016
+                Apr 2014 - Jan 2016
                 <br />
                 Volunteer Intern
               </li>
