@@ -24,16 +24,11 @@
     }
 
     img {
-      display: none;
-
-      @include respond-above(sm) {
-        display: inline;
-        // width: 20em;
-        margin: 0;
-        margin-top: 2em;
-        align-self: center;
-        border-radius: 2em;
-      }
+      width: 17em;
+      margin: 0;
+      margin-top: 2em;
+      align-self: center;
+      border-radius: 2em;
     }
 
     ul {
