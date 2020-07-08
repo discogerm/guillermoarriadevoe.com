@@ -6,14 +6,14 @@
     text-align: right;
 
     @include respond-above(xs) {
-      border-right: 0.5px solid $border-blue;
+      border-right: 0.1em solid $border-blue;
       padding-right: 1em;
     }
   }
 
   div:nth-child(1) {
     @include respond-above(xs) {
-      border-left: 0.5px solid $border-blue;
+      border-left: 0.1em solid $border-blue;
       padding-left: 1em;
     }
   }

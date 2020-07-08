@@ -1,16 +1,29 @@
 @import "../styles/variables";
+@import "../styles//media-queries";
 
 .posts {
   list-style-type: none;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: center;
 }
 
 .post {
   margin-bottom: 1em;
-
+  width: 100%;
+  
+  @include respond-above(sm) {
+    width: 49%;
+  }
+  
   a {
+    height: 10em;
     background: $friendly-blue;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1.5em;
     text-decoration: none;
     border-radius: 0.2em;
@@ -18,9 +31,7 @@
     transition: 200ms;
 
     .post-title {
-      // font-weight: 500;
-
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.5em;
     }
 
     .post-date {
