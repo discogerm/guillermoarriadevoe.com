@@ -19,31 +19,5 @@ module.exports = {
       }
     },
     'gatsby-plugin-sass',
-    { // BELOW ENABLES `file` and `allFile` GRAPHQL QUERIES (LOADS RAW FILES)
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'src',
-        path: `${__dirname}/src/` // NODE, GIVES US ACCESS TO SRC FOLDER
-      }
-    },
-    'gatsby-plugin-sharp',
-    // PARSES RAW MD FROM ABOVE INTO DATA
-    // ALSO ENABLES 'markdownRemark' FOR INDV POSTS and 'allMarkdownRemark' TO GET LIST OF POSTS 
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          'gatsby-remark-relative-images',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 750,
-              linkImagesToOriginal: false,
-              wrapperStyle: 'margin:0;'
-            }
-          }
-        ]
-      }
-    }
   ]
 }
