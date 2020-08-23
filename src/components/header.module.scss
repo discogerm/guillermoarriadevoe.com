@@ -25,7 +25,7 @@
   }
 
   &:hover {
-    color: $hover-lighten;
+    color: $tb-lighten;
   }
 }
 
@@ -54,10 +54,10 @@
   font-weight: bold;
 
   &:hover {
-    color: $hover-lighten;
+    color: $tb-lighten;
   }
 }
 
 .active-nav-item {
-  color: $hover-lighten;
+  color: $tb-lighten;
 }

@@ -3,7 +3,6 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
-import IntroText from "../components/introText"
 
 import blogStyles from "./index.module.scss"
 
@@ -30,13 +29,13 @@ const BlogPage = () => {
           <ol className={blogStyles.posts}>
             {data.allContentfulBlogPost.edges.map(edge => (
               <li className={blogStyles.post}>
-                <h3 className={blogStyles.postTitle}>{edge.node.title}</h3>
+                <h3 className={blogStyles.postTitle}>
+                  <Link to={`/blog/${edge.node.slug}`}>{edge.node.title}</Link>
+                </h3>
                 <p className={blogStyles.postDate}>{edge.node.publishedDate}</p>
                 <div className={blogStyles.postTags}>
-                  <span>Test, </span>
-                  <span>Test, </span>
-                  <span>Test, </span>
-                  <span>Test</span>
+                  <span>JavaScript</span> <span>Machine Learning</span>{" "}
+                  <span>Python</span> <span>Database</span>
                 </div>
                 <div className={blogStyles.postPreview}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.

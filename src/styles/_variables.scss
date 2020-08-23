@@ -8,4 +8,6 @@ $friendly-blue-hover: rgb(44, 71, 99);
 $footer-link: rgb(99, 128, 156);
 $border-blue: rgb(31, 54, 77);
 
-$hover-lighten: lighten(rgba(184, 203, 224, 1), 10%)
+$tb-darken: darken(rgba(184, 203, 224, 1), 25%);
+$tb-lighten: lighten(rgba(184, 203, 224, 1), 10%);
+$no-lighten: lighten(rgba(1, 22, 39, 1), 5%)
