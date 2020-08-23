@@ -15,6 +15,10 @@ const BlogPage = () => {
             title
             publishedDate(formatString: "MMMM Do, YYYY")
             slug
+            tags
+            preview {
+              preview
+            }
           }
         }
       }
@@ -40,14 +44,12 @@ const BlogPage = () => {
                   </p>
                 </div>
                 <div className={blogStyles.postTags}>
-                  <span>JavaScript</span> <span>Machine Learning</span>{" "}
-                  <span>Python</span> <span>Database</span>
+                  {edge.node.tags.map(tag => (
+                    <span>{tag}</span>
+                  ))}
                 </div>
                 <div className={blogStyles.postPreview}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Architecto, reprehenderit voluptatum dignissimos ipsum, minus
-                  voluptas rem ullam, expedita error aperiam officia distinctio
-                  quas incidunt sed!
+                  {edge.node.preview.preview}
                   <div className={blogStyles.postExpand}>
                     <Link to={`/blog/${edge.node.slug}`}>Read more...</Link>
                   </div>
