@@ -46,7 +46,7 @@ const Footer = () => {
           <li>
             <a href="mailto:guillermo.arriadevoe@gmail.com">
               <img
-                src="https://img.icons8.com/ultraviolet/40/000000/email-open.png"
+                src="https://img.icons8.com/ultraviolet/48/000000/email-open.png"
                 alt="email"
               />
             </a>
