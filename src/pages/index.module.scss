@@ -14,17 +14,21 @@
   // width: 100%;
 
   @include respond-above(sm) {
-    width: 49%;
+    // width: 49%;
   }
 
   .post-title {
     margin-bottom: 0.4em;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
 
     a {
       transition: 200ms;
       text-decoration: none;
+    }
+
+    @include respond-above(sm) {
+      font-size: 1.7rem;
     }
   }
 
@@ -34,6 +38,10 @@
     border: 1px solid $tb-darken;
     margin-bottom: 0.5em;
     font-size: 0.9rem;
+
+    @include respond-above(sm) {
+      font-size: 0.8rem;
+    }
   }
 
   .post-tags {
@@ -45,14 +53,21 @@
       font-size: 0.7rem;
       background: green;
       border-radius: 0.1em;
-      padding: 0.2em 0.5em;
+      padding: 0.2em 0.7em;
       font-weight: bold;
-      // margin-right: em;
+
+      @include respond-above(sm) {
+        font-size: 0.6rem;
+      }
     }
   }
 
   .post-preview {
     margin-bottom: 1.2em;
+
+    @include respond-above(sm) {
+      font-size: 0.9rem;
+    }
   }
 
   .post-expand {

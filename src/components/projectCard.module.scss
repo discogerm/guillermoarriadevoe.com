@@ -31,11 +31,12 @@
   }
 }
 
-a {
-  text-decoration: none;
-  transition: 200ms;
+// LEAKING STYLES
+// a {
+//   text-decoration: none;
+//   transition: 200ms;
 
-  &:hover {
-    color: white;
-  }
-}
+//   &:hover {
+//     color: white;
+//   }
+// }
