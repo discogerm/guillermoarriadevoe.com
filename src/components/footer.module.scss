@@ -4,36 +4,30 @@
 footer {
   width: 100%;
   border-top: 0.2em solid $border-blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-size: 0.8em;
   margin-top: 4em;
 
   .footer-content {
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
     margin: 4em auto;
     max-width: 90%;
     align-items: center;
-    text-align: center;
 
     @include respond-above(sm) {
       max-width: 39em;
       flex-direction: row;
       text-align: left;
     }
-
-    .footer-quote {
-      margin: 0;
-    }
     
     .footer-menu {
+      border: 1px solid white;
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      width: 22em;
-      margin: 2em 0 0 0;
+      width: 100%;
+      margin: 0;
 
       @include respond-above(sm) {
         flex-direction: column;
