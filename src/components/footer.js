@@ -13,7 +13,10 @@ const Footer = () => {
               target="__blank"
               rel="noopener"
             >
-              LinkedIn
+              <img
+                src="https://img.icons8.com/color/48/000000/linkedin.png"
+                alt="linkedin"
+              />
             </a>
           </li>
           <li>
@@ -22,20 +25,31 @@ const Footer = () => {
               target="__blank"
               rel="noopener"
             >
-              Instagram
+              <img
+                src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+                alt="instagram"
+              />
             </a>
           </li>
           <li>
             <a
-              href="https://github.com/sapinspys/"
+              href="https://github.com/arriadevoe/"
               target="__blank"
               rel="noopener"
             >
-              GitHub
+              <img
+                src="https://img.icons8.com/nolan/48/github.png"
+                alt="github"
+              />
             </a>
           </li>
           <li>
-            <a href="mailto:guillermo.arriadevoe@gmail.com">Email</a>
+            <a href="mailto:guillermo.arriadevoe@gmail.com">
+              <img
+                src="https://img.icons8.com/ultraviolet/40/000000/email-open.png"
+                alt="email"
+              />
+            </a>
           </li>
         </ul>
       </div>
