@@ -8,7 +8,6 @@ const Header = () => {
     <header className={headerStyles.mainHeader}>
       <Link
         className={headerStyles.mhLogo}
-        activeClassName={headerStyles.activeNavItem}
         to="/"
       >
         GAD
