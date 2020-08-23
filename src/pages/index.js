@@ -29,10 +29,16 @@ const BlogPage = () => {
           <ol className={blogStyles.posts}>
             {data.allContentfulBlogPost.edges.map(edge => (
               <li className={blogStyles.post}>
-                <h3 className={blogStyles.postTitle}>
-                  <Link to={`/blog/${edge.node.slug}`}>{edge.node.title}</Link>
-                </h3>
-                <p className={blogStyles.postDate}>{edge.node.publishedDate}</p>
+                <div className={blogStyles.postTitleContainer}>
+                  <h3 className={blogStyles.postTitle}>
+                    <Link to={`/blog/${edge.node.slug}`}>
+                      {edge.node.title}
+                    </Link>
+                  </h3>
+                  <p className={blogStyles.postDate}>
+                    {edge.node.publishedDate}
+                  </p>
+                </div>
                 <div className={blogStyles.postTags}>
                   <span>JavaScript</span> <span>Machine Learning</span>{" "}
                   <span>Python</span> <span>Database</span>

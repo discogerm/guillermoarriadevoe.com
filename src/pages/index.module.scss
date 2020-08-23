@@ -4,45 +4,48 @@
 .posts {
   list-style-type: none;
   margin: 0;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
 }
 
 .post {
   margin-bottom: 1.5em;
-  // width: 100%;
 
-  @include respond-above(sm) {
-    // width: 49%;
-  }
-
-  .post-title {
-    margin-bottom: 0.4em;
-    font-size: 1.8rem;
-    font-weight: 400;
-
-    a {
-      transition: 200ms;
-      text-decoration: none;
-    }
+  .post-title-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 
     @include respond-above(sm) {
-      font-size: 1.7rem;
+    }
+    
+    .post-title {
+      margin-bottom: 0.4em;
+      font-size: 1.8rem;
+      font-weight: 400;
+      
+      a {
+        transition: 200ms;
+        text-decoration: none;
+      }
+      
+      @include respond-above(sm) {
+        font-size: 1.7rem;
+      }
+    }
+  
+    .post-date {
+      display: inline-flex;
+      padding: 0.2em 0.5em;
+      border: 1px solid $tb-darken;
+      margin-bottom: 0.5em;
+      font-size: 0.9rem;
+  
+      @include respond-above(sm) {
+        font-size: 0.8rem;
+      }
     }
   }
 
-  .post-date {
-    display: inline-flex;
-    padding: 0.2em 0.5em;
-    border: 1px solid $tb-darken;
-    margin-bottom: 0.5em;
-    font-size: 0.9rem;
-
-    @include respond-above(sm) {
-      font-size: 0.8rem;
-    }
-  }
 
   .post-tags {
     border-bottom: 1px solid $tb-darken;
