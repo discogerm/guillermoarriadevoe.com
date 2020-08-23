@@ -48,9 +48,9 @@ const BlogPage = () => {
                   Architecto, reprehenderit voluptatum dignissimos ipsum, minus
                   voluptas rem ullam, expedita error aperiam officia distinctio
                   quas incidunt sed!
-                </div>
-                <div className={blogStyles.postExpand}>
-                  <Link to={`/blog/${edge.node.slug}`}>Read more...</Link>
+                  <div className={blogStyles.postExpand}>
+                    <Link to={`/blog/${edge.node.slug}`}>Read more...</Link>
+                  </div>
                 </div>
               </li>
             ))}
