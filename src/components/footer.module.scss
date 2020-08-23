@@ -8,17 +8,12 @@ footer {
   margin-top: 4em;
 
   .footer-content {
-    // display: flex;
-    // flex-direction: column;
     margin: 1em auto;
     margin-top: 2em;
     max-width: 80%;
-    // align-items: center;
 
     @include respond-above(sm) {
       max-width: 20em;
-      // flex-direction: row;
-      // text-align: left;
     }
     
     .footer-menu {
@@ -28,23 +23,20 @@ footer {
       width: 100%;
       margin: 0;
 
-      @include respond-above(sm) {
-        // flex-direction: column;
-        // margin: 0 0 0 4em;
-        // height: 9em;
-      }
-
       li {
         margin: 0;
         
         a {
-          color: $footer-link;
           text-decoration: none;
-          transition: 200ms;
-
-          &:hover {
-            color: $terminal-blue;
+          
+          img{
+            transition: 200ms;
+            
+            &:hover {
+              transform: scale(1.1)
+            }
           }
+
         }
       }
     }
