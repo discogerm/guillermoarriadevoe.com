@@ -26,10 +26,6 @@ const BlogPage = () => {
     <Layout>
       <div>
         <Head title="Blog" />
-        <IntroText>
-          Guides and assorted meditations. Sometimes I'm inspired to
-          write:
-        </IntroText>
         <div>
           <ol className={blogStyles.posts}>
             {data.allContentfulBlogPost.edges.map(edge => (

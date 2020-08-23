@@ -6,7 +6,7 @@ import Head from "../components/head"
 import IntroText from "../components/introText"
 import ProjectCard from "../components/projectCard"
 
-import indexStyles from "./index.module.scss"
+import indexStyles from "./projects.module.scss"
 
 const projects = [
   {
