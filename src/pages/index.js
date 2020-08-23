@@ -1,59 +1,52 @@
 import React from "react"
-// import { Link } from "gatsby" // GATSBY BUILT-IN ROUTING
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
 import IntroText from "../components/introText"
-import ProjectCard from "../components/projectCard"
 
-import indexStyles from "./index.module.scss"
+import journalStyles from "./index.module.scss"
 
-const projects = [
-  {
-    url: "https://github.com/sapinspys/GAD-Portfolio-Website",
-    title: "Portfolio Site",
-    desc:
-      "The current website was built from scratch using JavaScript, SCSS, Gatsby.js, GraphQL, and Contentful.",
-    github: "https://github.com/sapinspys/GAD-Portfolio-Website",
-  },
-  {
-    url: "https://mentorsinternational.org/",
-    title: "Mentors International Training Reminders",
-    desc: "Web application for international microfinance training program.",
-    github: "https://github.com/mentors-international-schedule/client",
-  },
-  {
-    url:
-      "https://github.com/team-soup/Ill-Serve-Soup-Marketing-Page--Guillermo-Arria-Devoe",
-    title: "Everybody Eats! Soup Kitchen",
-    desc: "Marketing page for soup kitchen management software.",
-    github:
-      "https://github.com/team-soup/Ill-Serve-Soup-Marketing-Page--Guillermo-Arria-Devoe",
-  },
-]
+const BlogPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+        edges {
+          node {
+            title
+            publishedDate(formatString: "MMMM Do, YYYY")
+            slug
+          }
+        }
+      }
+    }
+  `)
 
-const IndexPage = () => {
   return (
     <Layout>
       <div>
-        <Head title="Home" />
+        <Head title="Journal" />
         <IntroText>
-          Guillermo Arria-Devoe is a Florida-based software engineer, currently
-          enrolled in Lambda School's Data Science program and looking for work.
+          Guides and assorted meditations. Sometimes I'm inspired to
+          write:
         </IntroText>
-        <div className={indexStyles.cardContainer}>
-          {projects.map(p => (
-            <ProjectCard
-              url={p.url}
-              title={p.title}
-              desc={p.desc}
-              github={p.github}
-            />
-          ))}
+        <div>
+          <ol className={journalStyles.posts}>
+            {data.allContentfulBlogPost.edges.map(edge => (
+              <li className={journalStyles.post}>
+                <Link to={`/blog/${edge.node.slug}`}>
+                  <h3 className={journalStyles.postTitle}>{edge.node.title}</h3>
+                  <p className={journalStyles.postDate}>
+                    {edge.node.publishedDate}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </Layout>
   )
 }
 
-export default IndexPage
+export default BlogPage
