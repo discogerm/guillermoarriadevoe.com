@@ -25,7 +25,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <div>
-        <Head title="Journal" />
+        <Head title="Blog" />
         <IntroText>
           Guides and assorted meditations. Sometimes I'm inspired to
           write:
