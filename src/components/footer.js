@@ -14,7 +14,7 @@ const Footer = () => {
               rel="noopener"
             >
               <img
-                src="https://img.icons8.com/color/48/000000/linkedin.png"
+                src="https://img.icons8.com/color/32/000000/linkedin.png"
                 alt="linkedin"
               />
             </a>
@@ -26,7 +26,7 @@ const Footer = () => {
               rel="noopener"
             >
               <img
-                src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+                src="https://img.icons8.com/fluent/32/000000/instagram-new.png"
                 alt="instagram"
               />
             </a>
@@ -38,7 +38,7 @@ const Footer = () => {
               rel="noopener"
             >
               <img
-                src="https://img.icons8.com/nolan/48/github.png"
+                src="https://img.icons8.com/nolan/32/github.png"
                 alt="github"
               />
             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
           <li>
             <a href="mailto:guillermo.arriadevoe@gmail.com">
               <img
-                src="https://img.icons8.com/ultraviolet/48/000000/email-open.png"
+                src="https://img.icons8.com/ultraviolet/32/000000/email-open.png"
                 alt="email"
               />
             </a>
