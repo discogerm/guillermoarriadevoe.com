@@ -9,7 +9,7 @@
   transition: 200ms;
 
   @include respond-above(sm) {
-      max-width: 49%;
+    max-width: 49%;
   }
 
   .card-github {
@@ -20,6 +20,8 @@
     }
 
     a {
+      text-decoration: none;
+      transition: 200ms;
       font-size: 0.9em;
       color: $footer-link;
       margin: auto 0.5em;
@@ -30,13 +32,3 @@
     }
   }
 }
-
-// LEAKING STYLES
-// a {
-//   text-decoration: none;
-//   transition: 200ms;
-
-//   &:hover {
-//     color: white;
-//   }
-// }

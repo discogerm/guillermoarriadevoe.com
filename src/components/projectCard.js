@@ -6,11 +6,7 @@ const ProjectCard = props => {
   return (
     <div className={cardStyles.card}>
       {/* <img src={require(`../assets/${props.imgUrl}`)} alt={props.imgAlt} /> */}
-      <h2 className={cardStyles.cardTitle}>
-        <a href={props.url} target="__blank" rel="noopener">
-          {props.title}
-        </a>
-      </h2>
+      <h2 className={cardStyles.cardTitle}>{props.title}</h2>
       <p className={cardStyles.cardDes}>{props.desc}</p>
       <div className={cardStyles.cardGithub}>
         <img src="https://img.icons8.com/nolan/24/github.png" alt="github" />
