@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import IntroText from "../components/introText"
 
-import journalStyles from "./index.module.scss"
+import blogStyles from "./index.module.scss"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,12 +31,12 @@ const BlogPage = () => {
           write:
         </IntroText>
         <div>
-          <ol className={journalStyles.posts}>
+          <ol className={blogStyles.posts}>
             {data.allContentfulBlogPost.edges.map(edge => (
-              <li className={journalStyles.post}>
+              <li className={blogStyles.post}>
                 <Link to={`/blog/${edge.node.slug}`}>
-                  <h3 className={journalStyles.postTitle}>{edge.node.title}</h3>
-                  <p className={journalStyles.postDate}>
+                  <h3 className={blogStyles.postTitle}>{edge.node.title}</h3>
+                  <p className={blogStyles.postDate}>
                     {edge.node.publishedDate}
                   </p>
                 </Link>
