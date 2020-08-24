@@ -14,91 +14,17 @@ const AboutPage = () => {
       <div>
         <Head title="About" />
         <IntroText>
-          <b>Yo!</b> I'm Guillermo. I'm an engineer currently living in the
-          sunshine state. I'm passionate about building and designing apps,
-          classifying plants, and learning all about Data Science with my peers
-          at{" "}
-          <a href="https://lambdaschool.com/" target="__blank" rel="noopener">
-            Lambda School
-          </a>
-          .
+          <b>Hi,</b> my name is Guillermo. I'm a software engineer currently
+          residing in sunny Central Florida. I was born in Caracas, Venezuela
+          but I have lived in Florida since I was a boy. My guiding purpose in
+          life is to leverage modern technology to create a brighter future for
+          humanity and the environment. I'm also a passionate hobby ecologist
+          and surfer, spending most of my free time in the ocean or exploring
+          new trails. <br />
+          <br /> This website was built from scratch by myself using modern web
+          development technology. It is a living document of my experiences and
+          I hope you enjoy it. Thanks for stopping by!
         </IntroText>
-        <div className={aboutStyles.summary}>
-          <div className={aboutStyles.summaryContent}>
-            <h2>Education</h2>
-            <ul>
-              <li>
-                <b>Lambda School</b>
-                <br />
-                2019 - now
-                <br />
-                Data Science Track
-              </li>
-              <li>
-                <b>Lambda School</b>
-                <br />
-                2018 - 2019
-                <br />
-                Full Stack Web Development Track
-              </li>
-              <li>
-                <b>Florida International University</b>
-                <br />
-                2013 - 2017
-                <br />
-                B.S. - Environmental Engineering
-              </li>
-            </ul>
-            <img src={face} alt="sup" />
-          </div>
-          <div className={aboutStyles.summaryContent}>
-            <h2>Experience</h2>
-            <ul>
-              <li>
-                <b>Lambda School</b>
-                <br />
-                Sept 2019 - Feb 2020
-                <br />
-                Remote Section Lead
-              </li>
-              <li>
-                <b>Lambda School</b>
-                <br />
-                Apr 2019 - Aug 2020
-                <br />
-                Remote Team Lead
-              </li>
-              <li>
-                <b>The Education Fund: Miami</b>
-                <br />
-                Jun 2018 - Oct 2018
-                <br />
-                Independent Consultant
-              </li>
-              <li>
-                <b>Florida International University</b>
-                <br />
-                April 2017 - Oct 2017
-                <br />
-                Research Assistant
-              </li>
-              <li>
-                <b>Urban Paradise Guild</b>
-                <br />
-                Jan 2017 - Jun 2017
-                <br />
-                Senior Intern
-              </li>
-              <li>
-                <b>Urban Paradise Guild</b>
-                <br />
-                Apr 2014 - Jan 2016
-                <br />
-                Volunteer Intern
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </Layout>
   )
