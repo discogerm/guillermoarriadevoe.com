@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import SocialMenu from "./socialMenu"
+
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
@@ -51,6 +53,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <SocialMenu />
       </nav>
     </header>
   )

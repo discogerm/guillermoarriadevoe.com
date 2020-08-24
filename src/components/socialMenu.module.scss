@@ -1,0 +1,35 @@
+@import "../styles/variables";
+@import "../styles/media-queries";
+
+.menu-container {
+  margin-top: 0.8em;
+  max-width: 100%;
+
+  @include respond-above(sm) {
+    max-width: 20em;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    max-width: 10em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+    li {
+      margin: 0;
+
+      a {
+        text-decoration: none;
+
+        img {
+          transition: 200ms;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
