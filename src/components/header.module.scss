@@ -7,57 +7,59 @@
   margin: 1.5em 0 2em 0;
 
   @include respond-above(xs) {
+    margin: 0.5em 0 2em 0;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
-}
 
-.mh-logo {
-  text-decoration: none;
-  font-size: 2rem;
-  transition: 200ms;
-  font-weight: bold;
-  letter-spacing: 0.3em;
-  margin-bottom: 0.5em;
+  .mh-logo {
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 200ms;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.5em;
 
-  @include respond-above(xs) {
+    @include respond-above(xs) {
+      margin: 0;
+    }
+
+    &:hover {
+      color: $tb-lighten;
+    }
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
     margin: 0;
+
+    @include respond-above(xs) {
+      margin: 0;
+      width: 20em;
+    }
+
+    li {
+      display: inline;
+      margin: 0;
+
+      .nav-item {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: 200ms;
+        font-weight: bold;
+
+        &:hover {
+          color: $tb-lighten;
+        }
+      }
+
+      .active-nav-item {
+        color: $tb-lighten;
+      }
+    }
   }
-
-  &:hover {
-    color: $tb-lighten;
-  }
-}
-
-.main-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0;
-
-  @include respond-above(xs) {
-    margin: 0;
-    width: 20em;
-  }
-}
-
-.main-nav li {
-  display: inline;
-  margin: 0;
-}
-
-.nav-item {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: 200ms;
-  font-weight: bold;
-
-  &:hover {
-    color: $tb-lighten;
-  }
-}
-
-.active-nav-item {
-  color: $tb-lighten;
 }

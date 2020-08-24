@@ -8,10 +8,7 @@ import headerStyles from "./header.module.scss"
 const Header = () => {
   return (
     <header className={headerStyles.mainHeader}>
-      <Link
-        className={headerStyles.mhLogo}
-        to="/"
-      >
+      <Link className={headerStyles.mhLogo} to="/">
         GAD
       </Link>
       <nav className={headerStyles.mainNav}>
@@ -53,8 +50,8 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <SocialMenu />
       </nav>
+      <SocialMenu />
     </header>
   )
 }
