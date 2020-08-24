@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Head = ({ title }) => {
-  // PROPS DECONSTRUCTED
   const data = useStaticQuery(graphql`
     query {
       site {

@@ -4,14 +4,11 @@
 .topContent {
   margin: 0 0 3em 0;
 
-  // @include respond-above(sm) {
-  //   padding: 0 1em;
-  //   text-align: center;
-  // }
+  @include respond-above(sm) {
+    padding: 0 5em;
+  }
 
   p {
-    margin: 0;
     line-height: 2rem;
-    font-size: 1rem;
   }
 }
