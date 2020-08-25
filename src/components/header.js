@@ -40,7 +40,7 @@ const Header = () => {
               Projects
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
@@ -48,7 +48,7 @@ const Header = () => {
             >
               Hire me
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <SocialMenu />
