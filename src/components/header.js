@@ -26,7 +26,7 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/about"
+              to="/blog/about-me"
             >
               About Me
             </Link>
