@@ -36,9 +36,18 @@ const Blog = props => {
       <h1 className={blogStyles.postTitle}>
         {props.data.contentfulBlogPost.title}
       </h1>
-      <p className={blogStyles.postDate}>
-        {props.data.contentfulBlogPost.publishedDate}
-      </p>
+      <div className={blogStyles.postHeader}>
+        <div className={blogStyles.userContainer}>
+          <div className={blogStyles.avatar}></div>
+          <div className={blogStyles.publishInformation}>
+            <p className={blogStyles.postDate}>
+              {props.data.contentfulBlogPost.publishedDate}
+            </p>
+          </div>
+        </div>
+        <div className={blogStyles.socialMenu}></div>
+      </div>
+
       {documentToReactComponents(
         props.data.contentfulBlogPost.body.json,
         options
