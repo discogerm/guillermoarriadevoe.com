@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../components/layout"
@@ -15,6 +15,7 @@ export const query = graphql`
       body {
         json
       }
+      tags
     }
   }
 `
@@ -38,11 +39,25 @@ const Blog = props => {
       </h1>
       <div className={blogStyles.postHeader}>
         <div className={blogStyles.userContainer}>
-          <div className={blogStyles.avatar}></div>
+          <Link className={blogStyles.avatar} to="/blog/about-me">
+            <img
+              src={require("../assets/apple-touch-icon.png")}
+              alt="avatar"
+              width="50"
+            />
+          </Link>
+          <div className={blogStyles.name}>
+            <span>Guillermo Arria-Devoe</span>
+          </div>
           <div className={blogStyles.publishInformation}>
-            <p className={blogStyles.postDate}>
+            <span className={blogStyles.postDate}>
               {props.data.contentfulBlogPost.publishedDate}
-            </p>
+            </span>
+            <div className={blogStyles.postTags}>
+              {props.data.contentfulBlogPost.tags.map(tag => (
+                <span>{tag}</span>
+              ))}
+            </div>
           </div>
         </div>
         <div className={blogStyles.socialMenu}></div>
