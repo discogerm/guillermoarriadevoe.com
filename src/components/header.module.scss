@@ -38,14 +38,12 @@
     }
 
     .nav {
-
       min-width: 600px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       .main-nav ul {
-
         display: flex;
         justify-content: space-between;
         list-style-type: none;
@@ -81,6 +79,8 @@
 
   .hamburger-dropdown {
     margin: 0 1.5em;
+    transform: translateY(0%);
+    transition: 10s ease-in-out;
 
     .main-nav ul {
       height: 100px;
@@ -112,4 +112,22 @@
       }
     }
   }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
