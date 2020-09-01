@@ -74,7 +74,7 @@ const Header = () => {
           height={18}
           strokeWidth={2}
           rotate={0}
-          color="white"
+          color="#b8cbe0"
           borderRadius={0}
           animationDuration={0.5}
         />
