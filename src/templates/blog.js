@@ -37,30 +37,13 @@ const Blog = props => {
       <h1 className={blogStyles.postTitle}>
         {props.data.contentfulBlogPost.title}
       </h1>
+      <div className={blogStyles.postTags}>
+        {props.data.contentfulBlogPost.tags.map(tag => (
+          <span>{tag}</span>
+        ))}
+      </div>
       <div className={blogStyles.postHeader}>
-        <div className={blogStyles.userContainer}>
-          <Link className={blogStyles.avatar} to="/blog/about-me">
-            <img
-              src={require("../assets/apple-touch-icon.png")}
-              alt="avatar"
-              width="50"
-            />
-          </Link>
-          <div className={blogStyles.name}>
-            <span>Guillermo Arria-Devoe</span>
-          </div>
-          <div className={blogStyles.publishInformation}>
-            <span className={blogStyles.postDate}>
-              {props.data.contentfulBlogPost.publishedDate}
-            </span>
-            <div className={blogStyles.postTags}>
-              {props.data.contentfulBlogPost.tags.map(tag => (
-                <span>{tag}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className={blogStyles.socialMenu}>
+        <div className={blogStyles.menuContainer}>
           <ul className={blogStyles.menuList}>
             <li>
               <a
@@ -69,7 +52,7 @@ const Blog = props => {
                 rel="noopener"
               >
                 <img
-                  src="https://img.icons8.com/color/40/000000/linkedin.png"
+                  src="https://img.icons8.com/color/32/000000/linkedin.png"
                   alt="linkedin"
                 />
               </a>
@@ -81,7 +64,7 @@ const Blog = props => {
                 rel="noopener"
               >
                 <img
-                  src="https://img.icons8.com/fluent/40/000000/instagram-new.png"
+                  src="https://img.icons8.com/fluent/32/000000/instagram-new.png"
                   alt="instagram"
                 />
               </a>
@@ -93,7 +76,7 @@ const Blog = props => {
                 rel="noopener"
               >
                 <img
-                  src="https://img.icons8.com/nolan/40/github.png"
+                  src="https://img.icons8.com/nolan/32/github.png"
                   alt="github"
                 />
               </a>
@@ -101,12 +84,27 @@ const Blog = props => {
             <li>
               <a href="mailto:guillermo.arriadevoe@gmail.com">
                 <img
-                  src="https://img.icons8.com/ultraviolet/37/000000/email-open.png"
+                  src="https://img.icons8.com/ultraviolet/29/000000/email-open.png"
                   alt="email"
                 />
               </a>
             </li>
           </ul>
+        </div>
+        <div className={blogStyles.userCardContainer}>
+          <Link className={blogStyles.avatar} to="/blog/about-me">
+            <img
+              src={require("../assets/apple-touch-icon.png")}
+              alt="avatar"
+              width="50"
+            />
+          </Link>
+          <div className={blogStyles.publishingInformation}>
+            <span className={blogStyles.name}>Guillermo Arria-Devoe</span>
+            <span className={blogStyles.date}>
+              {props.data.contentfulBlogPost.publishedDate}
+            </span>
+          </div>
         </div>
       </div>
 
