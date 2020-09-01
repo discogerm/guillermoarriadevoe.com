@@ -1,64 +1,72 @@
 @import "../styles/variables";
 @import "../styles/media-queries";
 
-.main-header {
-  display: flex;
-  flex-direction: column;
-  margin: 1.5em 0 2em 0;
+.main-header-container {
+  width: 100%;
+  box-shadow: 0 0 10px 0 $terminal-blue;
+  margin-bottom: 2em;
 
-  @include respond-above(xs) {
-    margin: 0.5em 0 2em 0;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .mh-logo {
-    text-decoration: none;
-    font-size: 2rem;
-    transition: 200ms;
-    font-weight: bold;
-    letter-spacing: 0.3em;
-    margin-bottom: 0.5em;
-
-    @include respond-above(xs) {
-      margin: 0;
-    }
-
-    &:hover {
-      color: $tb-lighten;
-    }
-  }
-
-  .main-nav ul {
+  .main-header {
+    max-width: 1190px;
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
+    flex-direction: column;
+    margin: 0 1.5em;
+    padding-top: 1em;
 
     @include respond-above(xs) {
-      margin: 0;
-      width: 20em;
+      margin: 0.5em 0 2em 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    li {
-      display: inline;
-      margin: 0;
+    .mh-logo {
+      text-decoration: none;
+      font-size: 2rem;
+      transition: 200ms;
+      font-weight: bold;
+      letter-spacing: 0.3em;
+      margin-bottom: 0.5em;
 
-      .nav-item {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: 200ms;
-        font-weight: bold;
-
-        &:hover {
-          color: $tb-lighten;
-        }
+      @include respond-above(xs) {
+        margin: 0;
       }
 
-      .active-nav-item {
+      &:hover {
         color: $tb-lighten;
+      }
+    }
+
+    .main-nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0;
+
+      @include respond-above(xs) {
+        margin: 0;
+        width: 20em;
+      }
+
+      li {
+        display: inline;
+        margin: 0;
+
+        .nav-item {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 0.9rem;
+          transition: 200ms;
+          font-weight: bold;
+
+          &:hover {
+            color: $tb-lighten;
+          }
+        }
+
+        .active-nav-item {
+          color: $tb-lighten;
+        }
       }
     }
   }
