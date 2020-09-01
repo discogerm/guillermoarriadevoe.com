@@ -12,13 +12,13 @@
 
   .menu-list {
     list-style-type: none;
-    width: 15em;
+    width: 10em;
     display: flex;
     justify-content: space-between;
     margin: 0;
 
     @include respond-above(sm) {
-      width: 10em;
+      // width: 10em;
     }
 
     li {

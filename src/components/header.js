@@ -56,6 +56,10 @@ const Header = () => {
   }
 
   const displayNavigation = selector => {
+    // if (menuOpen) {
+    //   handleClick()
+    // }
+
     return (
       <div className={selector}>
         <nav className={headerStyles.mainNav}>
@@ -110,7 +114,7 @@ const Header = () => {
         <Link className={headerStyles.mhLogo} to="/">
           GAD
         </Link>
-        {size.width > 1200
+        {size.width > 800
           ? displayNavigation(headerStyles.nav)
           : displayHamburgerMenu()}
       </header>
