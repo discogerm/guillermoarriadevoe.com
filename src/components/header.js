@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 import HamburgerMenu from "react-hamburger-menu"
@@ -12,6 +12,31 @@ const Header = () => {
   const handleClick = () => {
     setMenuOpen(!menuOpen)
   }
+
+  const useWindowSize = () => {
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    })
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        })
+      }
+
+      window.addEventListener("resize", handleResize)
+      handleResize()
+
+      return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
+    return windowSize
+  }
+
+  const size = useWindowSize()
 
   const displayHamburgerMenu = () => {
     return (
@@ -85,7 +110,7 @@ const Header = () => {
         <Link className={headerStyles.mhLogo} to="/">
           GAD
         </Link>
-        {window.innerWidth > 1200
+        {size.width > 1200
           ? displayNavigation(headerStyles.nav)
           : displayHamburgerMenu()}
       </header>
