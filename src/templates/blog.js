@@ -60,7 +60,7 @@ const Blog = props => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/guillermo-arria-devoe/"
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
                 target="__blank"
                 rel="noopener"
               >
