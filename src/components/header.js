@@ -13,38 +13,56 @@ const Header = () => {
     setMenuOpen(!menuOpen)
   }
 
-  let content = (
-    <div className={headerStyles.hamburgerDropdown}>
-      <nav className={headerStyles.mainNav}>
-        <ul>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/blog/about-me"
-            >
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
-              to="/projects"
-            >
-              Projects
-            </Link>
-          </li>
-          {/* <li>
+  const displayHamburgerMenu = () => {
+    return (
+      <HamburgerMenu
+        className={headerStyles.hamburgerButton}
+        isOpen={menuOpen}
+        menuClicked={() => handleClick()}
+        width={25}
+        height={18}
+        strokeWidth={2}
+        rotate={0}
+        color="#b8cbe0"
+        borderRadius={0}
+        animationDuration={0.5}
+      />
+    )
+  }
+
+  const displayNavigation = selector => {
+    return (
+      <div className={selector}>
+        <nav className={headerStyles.mainNav}>
+          <ul>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                activeClassName={headerStyles.activeNavItem}
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                activeClassName={headerStyles.activeNavItem}
+                to="/blog/about-me"
+              >
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={headerStyles.navItem}
+                activeClassName={headerStyles.activeNavItem}
+                to="/projects"
+              >
+                Projects
+              </Link>
+            </li>
+            {/* <li>
             <Link
               className={headerStyles.navItem}
               onClick={()=>handleLinkClick() }
@@ -54,11 +72,12 @@ const Header = () => {
               Hire me
             </Link>
           </li> */}
-        </ul>
-      </nav>
-      <SocialMenu />
-    </div>
-  )
+          </ul>
+        </nav>
+        <SocialMenu />
+      </div>
+    )
+  }
 
   return (
     <div className={headerStyles.mainHeaderContainer}>
@@ -66,20 +85,11 @@ const Header = () => {
         <Link className={headerStyles.mhLogo} to="/">
           GAD
         </Link>
-        <HamburgerMenu
-          className={headerStyles.hamburgerButton}
-          isOpen={menuOpen}
-          menuClicked={() => handleClick()}
-          width={25}
-          height={18}
-          strokeWidth={2}
-          rotate={0}
-          color="#b8cbe0"
-          borderRadius={0}
-          animationDuration={0.5}
-        />
+        {window.innerWidth > 1200
+          ? displayNavigation(headerStyles.nav)
+          : displayHamburgerMenu()}
       </header>
-      {menuOpen ? content : null}
+      {menuOpen ? displayNavigation(headerStyles.hamburgerDropdown) : null}
     </div>
   )
 }
