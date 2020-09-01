@@ -23,12 +23,20 @@
   flex-direction: column;
   margin-bottom: 2em;
 
+
+  @include respond-above(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
   .menu-container {
+      
     margin-bottom: 1em;
 
     @include respond-above(sm) {
-      margin-top: 0;
-      max-width: 20em;
+      order: 2;
+      margin: 0;
     }
 
     .menu-list {
@@ -39,7 +47,7 @@
       margin: 0;
 
       @include respond-above(sm) {
-        width: 10em;
+          margin-top: 0.5em;
       }
 
       li {
