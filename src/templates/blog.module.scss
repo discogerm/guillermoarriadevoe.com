@@ -1,0 +1,14 @@
+.post-header {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+
+    .user-container {
+        display: flex;
+        border: 1px solid white;
+    }
+
+    .social-menu {
+        border: 1px solid grey;
+    }
+}
