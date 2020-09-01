@@ -16,6 +16,7 @@ export const query = graphql`
         json
       }
       tags
+      slug
     }
   }
 `
@@ -47,6 +48,18 @@ const Blog = props => {
           <ul className={blogStyles.menuList}>
             <li>
               <a
+                href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
+                target="__blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://img.icons8.com/fluent/32/000000/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://www.linkedin.com/in/guillermo-arria-devoe/"
                 target="__blank"
                 rel="noopener"
@@ -59,33 +72,13 @@ const Blog = props => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/guillearria/"
-                target="__blank"
-                rel="noopener"
-              >
-                <img
-                  src="https://img.icons8.com/fluent/32/000000/instagram-new.png"
-                  alt="instagram"
-                />
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://github.com/arriadevoe/"
                 target="__blank"
                 rel="noopener"
               >
                 <img
-                  src="https://img.icons8.com/nolan/32/github.png"
-                  alt="github"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:guillermo.arriadevoe@gmail.com">
-                <img
-                  src="https://img.icons8.com/ultraviolet/29/000000/email-open.png"
-                  alt="email"
+                  src="https://img.icons8.com/color/32/000000/facebook.png"
+                  alt="facebook"
                 />
               </a>
             </li>
