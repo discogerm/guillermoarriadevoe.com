@@ -72,7 +72,7 @@ const Blog = props => {
             </li>
             <li>
               <a
-                href="https://github.com/arriadevoe/"
+                href={`https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
                 target="__blank"
                 rel="noopener"
               >
