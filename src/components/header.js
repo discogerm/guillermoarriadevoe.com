@@ -56,9 +56,7 @@ const Header = () => {
   }
 
   const displayNavigation = selector => {
-    // if (menuOpen) {
-    //   handleClick()
-    // }
+
 
     return (
       <div className={selector}>
@@ -118,7 +116,7 @@ const Header = () => {
           ? displayNavigation(headerStyles.nav)
           : displayHamburgerMenu()}
       </header>
-      {menuOpen ? displayNavigation(headerStyles.hamburgerDropdown) : null}
+      {menuOpen & size.width <= 800 ? displayNavigation(headerStyles.hamburgerDropdown) : null}
     </div>
   )
 }
