@@ -18,10 +18,11 @@
 
     @include respond-above(md) {
       margin: 0 auto;
-      padding: 0.5em 1.5em;
+      padding: 0.7em 1.5em 0.5em 1.5em;
     }
 
     .mh-logo {
+      font-family: 'Press Start 2P', cursive;
       text-decoration: none;
       font-size: 2rem;
       transition: 200ms;
