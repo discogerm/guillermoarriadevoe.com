@@ -19,5 +19,14 @@ module.exports = {
       }
     },
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Press Start 2P',
+        ],
+        display: 'swap'
+      }
+    }
   ]
 }
