@@ -7,7 +7,7 @@
 }
 
 .post {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 
   .post-title-container {
     display: flex;
@@ -74,6 +74,11 @@
 
     img {
       width: 100%;
+      transition: 200ms;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 
