@@ -69,9 +69,17 @@
     }
   }
 
+  .post-preview-image-container {
+    margin-bottom: 0.5em;
+
+    img {
+      width: 100%;
+    }
+  }
+
   .post-preview {
     .post-expand {
-      margin-top: 1rem;
+      margin-top: 1em;
 
       a {
         transition: 200ms;

@@ -19,6 +19,12 @@ const BlogPage = () => {
             preview {
               preview
             }
+            previewImage {
+              fluid {
+                src
+              }
+              title
+            }
           }
         }
       }
@@ -47,6 +53,9 @@ const BlogPage = () => {
                   {edge.node.tags.map(tag => (
                     <span>{tag}</span>
                   ))}
+                </div>
+                <div className={blogStyles.postPreviewImageContainer}>
+                    <img src={edge.node.previewImage.fluid.src} alt={edge.node.previewImage.title} />
                 </div>
                 <div className={blogStyles.postPreview}>
                   {edge.node.preview.preview}
