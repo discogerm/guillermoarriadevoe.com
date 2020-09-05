@@ -70,10 +70,6 @@
   }
 
   .post-preview {
-    @include respond-above(sm) {
-      font-size: 0.9rem;
-    }
-
     .post-expand {
       margin-top: 1rem;
 
