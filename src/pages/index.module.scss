@@ -84,9 +84,12 @@
       a {
         transition: 200ms;
         text-decoration: none;
+        border-bottom: 1px solid $tb-darken;
+        padding-bottom: 0.1em;
 
         &:hover {
           color: $tb-lighten;
+          border-bottom: 1px solid $terminal-blue;
         }
       }
     }

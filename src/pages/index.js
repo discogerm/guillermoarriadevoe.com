@@ -55,7 +55,12 @@ const BlogPage = () => {
                   ))}
                 </div>
                 <div className={blogStyles.postPreviewImageContainer}>
-                    <img src={edge.node.previewImage.fluid.src} alt={edge.node.previewImage.title} />
+                  <Link to={`/blog/${edge.node.slug}`}>
+                    <img
+                      src={edge.node.previewImage.fluid.src}
+                      alt={edge.node.previewImage.title}
+                    />
+                  </Link>
                 </div>
                 <div className={blogStyles.postPreview}>
                   {edge.node.preview.preview}
