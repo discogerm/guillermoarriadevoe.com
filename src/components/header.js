@@ -78,8 +78,7 @@ const Header = () => {
         </Link>
         <Media
           queries={{
-            small: "(max-width: 800px)",
-            medium: "(min-width: 800px)",
+            medium: "(min-width: 830px)",
           }}
         >
           {matches => (
@@ -93,14 +92,14 @@ const Header = () => {
       </header>
       <Media
         queries={{
-          small: "(max-width: 599px)",
-          medium: "(min-width: 800px)",
+          small: "(max-width: 829px)",
+          medium: "(min-width: 830px)",
         }}
       >
         {matches => (
           <Fragment>
-            {matches.medium ? null
-              : menuOpen ? displayNavigation(headerStyles.hamburgerDropdown)
+            {matches.small & menuOpen
+              ? displayNavigation(headerStyles.hamburgerDropdown)
               : null}
           </Fragment>
         )}
