@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, Fragment } from "react"
 import { Link } from "gatsby"
+import Media from "react-media"
 
 import HamburgerMenu from "react-hamburger-menu"
 import SocialMenu from "./socialMenu"
@@ -12,31 +13,6 @@ const Header = () => {
   const handleClick = () => {
     setMenuOpen(!menuOpen)
   }
-
-  const useWindowSize = () => {
-    const [windowSize, setWindowSize] = useState({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    })
-
-    useEffect(() => {
-      function handleResize() {
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        })
-      }
-
-      window.addEventListener("resize", handleResize)
-      handleResize()
-
-      return () => window.removeEventListener("resize", handleResize)
-    }, [])
-
-    return windowSize
-  }
-
-  const size = useWindowSize()
 
   const displayHamburgerMenu = () => {
     return (
@@ -56,8 +32,6 @@ const Header = () => {
   }
 
   const displayNavigation = selector => {
-
-
     return (
       <div className={selector}>
         <nav className={headerStyles.mainNav}>
@@ -89,16 +63,6 @@ const Header = () => {
                 Projects
               </Link>
             </li>
-            {/* <li>
-            <Link
-              className={headerStyles.navItem}
-              onClick={()=>handleLinkClick() }
-              activeClassName={headerStyles.activeNavItem}
-              to="/"
-            >
-              Hire me
-            </Link>
-          </li> */}
           </ul>
         </nav>
         <SocialMenu />
@@ -112,11 +76,35 @@ const Header = () => {
         <Link className={headerStyles.mhLogo} to="/">
           GAD
         </Link>
-        {size.width > 800
-          ? displayNavigation(headerStyles.nav)
-          : displayHamburgerMenu()}
+        <Media
+          queries={{
+            small: "(max-width: 800px)",
+            medium: "(min-width: 800px)",
+          }}
+        >
+          {matches => (
+            <Fragment>
+              {matches.medium
+                ? displayNavigation(headerStyles.nav)
+                : displayHamburgerMenu()}
+            </Fragment>
+          )}
+        </Media>
       </header>
-      {menuOpen & size.width <= 800 ? displayNavigation(headerStyles.hamburgerDropdown) : null}
+      <Media
+        queries={{
+          small: "(max-width: 599px)",
+          medium: "(min-width: 800px)",
+        }}
+      >
+        {matches => (
+          <Fragment>
+            {matches.medium ? null
+              : menuOpen ? displayNavigation(headerStyles.hamburgerDropdown)
+              : null}
+          </Fragment>
+        )}
+      </Media>
     </div>
   )
 }
