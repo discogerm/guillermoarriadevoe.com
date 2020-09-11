@@ -54,18 +54,20 @@ const BlogPage = () => {
                     <span>{tag}</span>
                   ))}
                 </div>
-                <div className={blogStyles.postPreviewImageContainer}>
-                  <Link to={`/blog/${edge.node.slug}`}>
-                    <img
-                      src={edge.node.previewImage.fluid.src}
-                      alt={edge.node.previewImage.title}
-                    />
-                  </Link>
-                </div>
-                <div className={blogStyles.postPreview}>
-                  {edge.node.preview.preview}
-                  <div className={blogStyles.postExpand}>
-                    <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
+                <div className={blogStyles.postPreviewContainer}>
+                  <div className={blogStyles.postPreviewImageContainer}>
+                    <Link to={`/blog/${edge.node.slug}`}>
+                      <img
+                        src={edge.node.previewImage.fluid.src}
+                        alt={edge.node.previewImage.title}
+                      />
+                    </Link>
+                  </div>
+                  <div className={blogStyles.postPreview}>
+                    {edge.node.preview.preview}
+                    <div className={blogStyles.postExpand}>
+                      <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
+                    </div>
                   </div>
                 </div>
               </li>
