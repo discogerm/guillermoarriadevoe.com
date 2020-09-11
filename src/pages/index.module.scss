@@ -70,15 +70,21 @@
   }
 
   .post-preview-container {
-    display: flex;
-    justify-content: space-between;
+    @include respond-above(md) {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .post-preview-image-container {
       margin-bottom: 0.5em;
-      width: 48%;
-      overflow: hidden;
-      
+
+      @include respond-above(md) {
+        margin-bottom: 0;
+        width: 45%;
+      }
+
       img {
+        width: 100%;
         transition: 200ms;
 
         &:hover {
@@ -88,7 +94,10 @@
     }
 
     .post-preview {
-      width: 50%;
+      @include respond-above(md) {
+        width: 50%;
+      }
+
       .post-expand {
         margin-top: 1em;
 
