@@ -8,9 +8,10 @@ Feel free to use this project for your own website. Getting started is easy.
 
 1.  **Add Contentful environment variables**
 
-    Create a [Contentful](https://www.contentful.com) account if you don't have one, then create an .env file in the main directory with the following two variables.
+    Create both a [Contentful](https://www.contentful.com) account and a new a API key. When you're done, create a new .env file in the main directory with the following two variables. 
 
     ```sh
+    # sample values
     CONTENTFUL_ACCESS_TOKEN=xz7BD_x3-0abv-cilmaq0c2fFHblKrZZXaha5k6QM
     CONTENTFUL_SPACE_ID=k10e2ml19krm8
     ```
@@ -20,6 +21,10 @@ Feel free to use this project for your own website. Getting started is easy.
     Navigate into your new site’s directory and start it up. Replace GraphQL queries where necessary.
 
     ```sh
-    cd my-portfolio/
+    cd your-new-portfolio/
     gatsby develop
     ```
+
+3. **Publishing Content**
+
+  Blog pages can be created by publishing Contentful content under a content model titled **Blog Post.**  Portfolio project entries can be created by publishing content under a content model titled **Portfolio Project.** Refer to the GraphQL queries found in the "pages" directory for all currently included content model fields.
