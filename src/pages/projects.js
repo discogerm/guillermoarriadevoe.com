@@ -40,6 +40,7 @@ const IndexPage = () => {
           node {
             order
             title
+            technologyUsed
             description {
               description
             }
@@ -67,12 +68,15 @@ const IndexPage = () => {
           enrolled in Lambda School's Data Science program and looking for work.
         </IntroText>
         <div className={indexStyles.cardContainer}>
-          {projects.map(p => (
+          {data.allContentfulPortfolioProject.edges.map(edge => (
             <ProjectCard
-              url={p.url}
-              title={p.title}
-              desc={p.desc}
-              github={p.github}
+            title={edge.node.title}
+            technologyUsed={edge.node.technologyUsed}
+            description={edge.node.description.description}
+            gitHubUrlTitle={edge.node.gitHubUrlTitle}
+            gitHubUrl={edge.node.gitHubUrl}
+            projectUrlTitle={edge.node.projectUrlTitle}
+            projectUrl={edge.node.projectUrl}
             />
           ))}
         </div>

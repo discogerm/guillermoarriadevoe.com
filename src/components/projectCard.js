@@ -7,8 +7,8 @@ const ProjectCard = props => {
     <div className={cardStyles.card}>
       {/* <img src={require(`../assets/${props.imgUrl}`)} alt={props.imgAlt} /> */}
       <h2 className={cardStyles.cardTitle}>{props.title}</h2>
-      <div className={cardStyles.technologyTags}>
-        {props.technologyTags.map(tag => (
+      <div className={cardStyles.technologyUsed}>
+        {props.technologyUsed.map(tag => (
           <span>{tag}</span>
         ))}
       </div>
