@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby" // GATSBY BUILT-IN ROUTING
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -33,6 +33,31 @@ const projects = [
 ]
 
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulPortfolioProject(sort: { fields: order, order: DESC }) {
+        edges {
+          node {
+            order
+            title
+            description {
+              description
+            }
+            gitHubUrlTitle
+            gitHubUrl
+            projectUrlTitle
+            projectUrl
+            previewImage {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <div>
