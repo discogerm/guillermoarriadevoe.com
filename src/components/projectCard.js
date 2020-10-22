@@ -19,11 +19,11 @@ const ProjectCard = props => {
       </div>
       <p className={cardStyles.cardDes}>{props.description}</p>
       <div className={cardStyles.cardGithub}>
-        <img src="https://img.icons8.com/nolan/24/github.png" alt="github" />
-        <a href={props.githubUrl} target="__blank" rel="noopener">
-          {props.githubUrlTitle}
+        <a href={props.gitHubUrl} target="__blank" rel="noopener">
+          {props.gitHubUrlTitle}
         </a>
       </div>
+      {props.githubUrlTitle}
       <a href={props.projectUrl} target="__blank" rel="noopener">
         {props.projectUrlTitle}
       </a>

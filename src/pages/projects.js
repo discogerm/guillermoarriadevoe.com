@@ -72,6 +72,7 @@ const IndexPage = () => {
             <ProjectCard
             title={edge.node.title}
             technologyUsed={edge.node.technologyUsed}
+            previewImage={edge.node.previewImage}
             description={edge.node.description.description}
             gitHubUrlTitle={edge.node.gitHubUrlTitle}
             gitHubUrl={edge.node.gitHubUrl}
