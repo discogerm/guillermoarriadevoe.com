@@ -13,7 +13,7 @@
   padding: 0 1.5rem;
   flex-grow: 1;
 
-  @include respond-above(m) {
+  @include respond-above(md) {
     padding: 0;
   }
 }
