@@ -13,6 +13,11 @@ const ProjectCard = props => {
           />
         </div>
         <h3 className={cardStyles.cardTitle}>{props.title}</h3>
+        <div className={cardStyles.technologyTags}>
+          {props.technologyUsed.map(tag => (
+            <span>{tag}</span>
+          ))}
+        </div>
         <p className={cardStyles.cardDes}>{props.description}</p>
       </div>
       <div className={cardStyles.linkContainer}>
