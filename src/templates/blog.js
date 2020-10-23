@@ -2,10 +2,17 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
+import blogStyles from "./blog.module.scss"
+
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-import blogStyles from "./blog.module.scss"
+import { IconContext } from "react-icons"
+import {
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiFillTwitterSquare,
+} from "react-icons/ai"
 
 export const query = graphql`
   query($slug: String!) {
@@ -35,9 +42,9 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title}></Head>
-      <h1 className={blogStyles.postTitle}>
+      <h2 className={blogStyles.postTitle}>
         {props.data.contentfulBlogPost.title}
-      </h1>
+      </h2>
       <div className={blogStyles.postTags}>
         {props.data.contentfulBlogPost.tags.map(tag => (
           <span>{tag}</span>
@@ -52,10 +59,11 @@ const Blog = props => {
                 target="__blank"
                 rel="noopener"
               >
-                <img
-                  src="https://img.icons8.com/fluent/32/000000/twitter.png"
-                  alt="twitter"
-                />
+                <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+                  <div>
+                    <AiFillTwitterSquare />
+                  </div>
+                </IconContext.Provider>
               </a>
             </li>
             <li>
@@ -64,10 +72,11 @@ const Blog = props => {
                 target="__blank"
                 rel="noopener"
               >
-                <img
-                  src="https://img.icons8.com/color/32/000000/linkedin.png"
-                  alt="linkedin"
-                />
+                <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+                  <div>
+                    <AiFillLinkedin />
+                  </div>
+                </IconContext.Provider>
               </a>
             </li>
             <li>
@@ -76,10 +85,11 @@ const Blog = props => {
                 target="__blank"
                 rel="noopener"
               >
-                <img
-                  src="https://img.icons8.com/color/32/000000/facebook.png"
-                  alt="facebook"
-                />
+                <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+                  <div>
+                    <AiFillFacebook />
+                  </div>
+                </IconContext.Provider>
               </a>
             </li>
           </ul>
