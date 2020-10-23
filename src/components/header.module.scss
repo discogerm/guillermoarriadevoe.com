@@ -15,7 +15,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // margin: 0;
     padding: 1em 2em;
     position: relative;
     box-shadow: 0 0 5px 0 black;
@@ -26,11 +25,10 @@
     }
 
     .mh-logo {
+      height: 1.7em;
       font-family: "Press Start 2P", cursive;
       text-decoration: none;
       transition: 200ms;
-      font-weight: bold;
-      letter-spacing: 0.3em;
 
       @include respond-above(xs) {
         margin: 0;
@@ -82,8 +80,12 @@
   }
 }
 .hamburger-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 6em;
+  padding: 0 2em;
   background-color: $border-blue;
-  padding: 0.5em 2em;
   border-bottom: 5px solid $friendly-blue;
 
   .nav-list {
