@@ -12,20 +12,15 @@ const ProjectCard = props => {
             alt={props.previewImage.title}
           />
         </div>
-        <h2 className={cardStyles.cardTitle}>{props.title}</h2>
-        <div className={cardStyles.technologyTags}>
-          {props.technologyUsed.map(tag => (
-            <span>{tag}</span>
-          ))}
-        </div>
+        <h3 className={cardStyles.cardTitle}>{props.title}</h3>
         <p className={cardStyles.cardDes}>{props.description}</p>
       </div>
       <div className={cardStyles.linkContainer}>
         <a href={props.gitHubUrl} target="__blank" rel="noopener">
-          {props.gitHubUrlTitle}
+        &#10230; {props.gitHubUrlTitle} 
         </a>
         <a href={props.projectUrl} target="__blank" rel="noopener">
-          {props.projectUrlTitle}
+        &#10230; {props.projectUrlTitle}
         </a>
       </div>
     </div>
