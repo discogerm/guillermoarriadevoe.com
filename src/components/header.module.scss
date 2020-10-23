@@ -103,11 +103,10 @@
       margin: 0;
 
       .nav-item {
-        font-family: "Ubuntu", sans-serif;
         display: inline-block;
         text-decoration: none;
         transition: 200ms;
-        font-weight: bold;
+        // font-weight: bold;
 
         &:hover {
           color: $tb-lighten;
