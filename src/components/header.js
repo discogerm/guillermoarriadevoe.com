@@ -78,7 +78,7 @@ const Header = () => {
         </Link>
         <Media
           queries={{
-            medium: "(min-width: 830px)",
+            medium: "(min-width: 1000px)",
           }}
         >
           {matches => (
@@ -92,8 +92,7 @@ const Header = () => {
       </header>
       <Media
         queries={{
-          small: "(max-width: 829px)",
-          medium: "(min-width: 830px)",
+          small: "(max-width: 999px)",
         }}
       >
         {matches => (
