@@ -39,16 +39,9 @@ const BlogPage = () => {
           <ol className={blogStyles.postContainer}>
             {data.allContentfulBlogPost.edges.map(edge => (
               <li className={blogStyles.postCard}>
-                <div className={blogStyles.postTitleContainer}>
-                  <h3 className={blogStyles.postTitle}>
-                    <Link to={`/blog/${edge.node.slug}`}>
-                      {edge.node.title}
-                    </Link>
-                  </h3>
-                  {/* <p className={blogStyles.postDate}>
-                    {edge.node.publishedDate}
-                  </p> */}
-                </div>
+                <h3 className={blogStyles.postTitle}>
+                  <Link to={`/blog/${edge.node.slug}`}>{edge.node.title}</Link>
+                </h3>
                 <div className={blogStyles.postTags}>
                   {edge.node.tags.map(tag => (
                     <span>{tag}</span>

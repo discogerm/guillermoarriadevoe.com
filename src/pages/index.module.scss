@@ -9,34 +9,21 @@
   .post-card {
     margin-bottom: 2em;
 
-    .post-title-container {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
+    .post-title {
+      margin-bottom: 0.5em;
+      font-weight: 400;
 
       @include respond-above(sm) {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        font-size: 1.7rem;
+        width: 75%;
       }
 
-      .post-title {
-        margin-bottom: 0.4em;
-        font-weight: 400;
+      a {
+        transition: 200ms;
+        text-decoration: none;
 
-        @include respond-above(sm) {
-          font-size: 1.7rem;
-          width: 75%;
-        }
-
-        a {
-          transition: 200ms;
-          text-decoration: none;
-
-          &:hover {
-            color: $tb-lighten;
-          }
+        &:hover {
+          color: $tb-lighten;
         }
       }
 
