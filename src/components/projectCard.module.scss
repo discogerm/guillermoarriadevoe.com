@@ -1,5 +1,6 @@
 @import "../styles/variables";
 @import "../styles//media-queries";
+@import "../styles//mixins";
 
 .card {
   display: flex;
@@ -16,20 +17,11 @@
   }
 
   .technology-tags {
-    display: flex;
-    flex-wrap: wrap;
+    @include span-flex-wrap();
     margin-bottom: 0.8em;
     
     span {
-      line-height: 1em;
-      background-size: 0;
-      font-size: 0.7rem;
-      background: green;
-      border-radius: 0.1em;
-      padding: 0.4em 1em;
-      font-weight: bold;
-      margin-right: 0.5em;
-      margin-bottom: 0.5em;
+      @include span-tag();
     }
   }
 

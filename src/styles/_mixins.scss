@@ -1,3 +1,8 @@
+@mixin span-flex-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @mixin span-tag() {
   line-height: 1em;
   background-size: 0;

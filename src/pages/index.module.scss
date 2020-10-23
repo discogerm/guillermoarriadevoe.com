@@ -54,14 +54,13 @@
   }
 
   .post-tags {
-    display: flex;
-    flex-wrap: wrap;
+    @include span-flex-wrap();
     border-bottom: 2px solid $tb-darken;
     padding-bottom: 0.4em;
     margin-bottom: 1.2em;
 
     span {
-      @include span-tag()
+      @include span-tag();
     }
   }
 

@@ -1,16 +1,13 @@
 @import "../styles/variables";
 @import "../styles/media-queries";
+@import "../styles//mixins";
 
 .post-tags {
+  @include span-flex-wrap();
   margin-bottom: 1.5em;
 
   span {
-    font-size: 0.7rem;
-    background: green;
-    border-radius: 0.1em;
-    padding: 0.4em 1em;
-    font-weight: bold;
-    margin-right: 0.5em;
+    @include span-tag()
   }
 }
 
