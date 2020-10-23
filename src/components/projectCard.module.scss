@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 0.2em solid $border-blue;
+  border: 1px solid $tb-darken;
   border-radius: 0.2em;
   padding: 1.25em;
   margin-bottom: 1em;
@@ -14,6 +14,10 @@
 
   @include respond-above(sm) {
     max-width: 49%;
+  }
+
+  .card-title {
+    font-weight: 400;
   }
 
   .technology-tags {
