@@ -6,7 +6,7 @@
   max-width: 100%;
 
   @include respond-above(sm) {
-  margin-top: 0;
+    margin-top: 0;
     max-width: 20em;
   }
 
@@ -23,18 +23,16 @@
 
     li {
       margin: 0;
+      transition: 200ms;
 
       a {
         text-decoration: none;
+      }
 
-        img {
-          transition: 200ms;
-
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
 }
+

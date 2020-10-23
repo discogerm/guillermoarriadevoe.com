@@ -2,6 +2,10 @@ import React from "react"
 
 import socialStyles from "./socialMenu.module.scss"
 
+import { IconContext } from "react-icons"
+import { AiFillLinkedin } from "react-icons/ai"
+import { FaInstagramSquare } from "react-icons/fa"
+
 const Footer = () => {
   return (
     <div className={socialStyles.menuContainer}>
@@ -12,10 +16,11 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <img
-              src="https://img.icons8.com/color/40/000000/linkedin.png"
-              alt="linkedin"
-            />
+            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+              <div>
+                <AiFillLinkedin />
+              </div>
+            </IconContext.Provider>
           </a>
         </li>
         <li>
@@ -24,10 +29,11 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <img
-              src="https://img.icons8.com/fluent/40/000000/instagram-new.png"
-              alt="instagram"
-            />
+            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+              <div>
+                <FaInstagramSquare />
+              </div>
+            </IconContext.Provider>
           </a>
         </li>
         <li>
