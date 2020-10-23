@@ -84,6 +84,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   height: 8em;
   padding: 0 2em;
   background-color: $border-blue;
@@ -91,7 +92,7 @@
 
   .nav-list {
     margin: 0;
-    width: 15em;
+    width: 17em;
     display: flex;
     justify-content: space-between;
     list-style-type: none;

@@ -42,7 +42,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
-              Home
+              Blog Home
             </Link>
           </li>
           <li>
