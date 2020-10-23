@@ -10,7 +10,7 @@
 .content {
   width: 100%;
   max-width: 900px;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   flex-grow: 1;
 
   @include respond-above(md) {
