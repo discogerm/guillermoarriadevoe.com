@@ -4,8 +4,10 @@
 .main-header-container {
   width: 100%;
   box-shadow: 0 0 1px 0 $terminal-blue;
-  margin-bottom: 2em;
   background: $indie-dark;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 
   .main-header {
     max-width: 1190px;
@@ -24,7 +26,6 @@
     .mh-logo {
       font-family: 'Press Start 2P', cursive;
       text-decoration: none;
-      // font-size: 1.5rem;
       transition: 200ms;
       font-weight: bold;
       letter-spacing: 0.3em;
