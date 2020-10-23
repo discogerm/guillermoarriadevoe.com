@@ -2,9 +2,12 @@
 @import "../styles//media-queries";
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 0.2em solid $border-blue;
   border-radius: 0.2em;
-  padding: 1.5em;
+  padding: 1.25em;
   margin-bottom: 1em;
   transition: 200ms;
 
@@ -14,17 +17,13 @@
 
   .links-container {
     display: flex;
-
-    img {
-      margin: 0;
-    }
+    justify-content: space-between;
 
     a {
       text-decoration: none;
       transition: 200ms;
       font-size: 0.9em;
-      color: $footer-link;
-      margin: auto 0.5em;
+      color: $tb-darken;
 
       &:hover {
         color: $terminal-blue;
