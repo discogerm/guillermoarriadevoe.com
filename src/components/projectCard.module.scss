@@ -15,7 +15,29 @@
     max-width: 49%;
   }
 
-  .links-container {
+  .technology-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.8em;
+    
+    span {
+      line-height: 1em;
+      background-size: 0;
+      font-size: 0.7rem;
+      background: green;
+      border-radius: 0.1em;
+      padding: 0.3em 0.7em;
+      font-weight: bold;
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+
+      @include respond-above(sm) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .link-container {
     display: flex;
     justify-content: space-between;
 
