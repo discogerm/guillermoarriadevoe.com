@@ -3,7 +3,7 @@ import React from "react"
 import socialStyles from "./socialMenu.module.scss"
 
 import { IconContext } from "react-icons"
-import { AiFillLinkedin } from "react-icons/ai"
+import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai"
 import { FaInstagramSquare } from "react-icons/fa"
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+            <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
               <div>
                 <AiFillLinkedin />
               </div>
@@ -29,7 +29,7 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+            <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
               <div>
                 <FaInstagramSquare />
               </div>
@@ -42,18 +42,20 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <img
-              src="https://img.icons8.com/nolan/40/github.png"
-              alt="github"
-            />
+            <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
+              <div>
+                <AiFillGithub />
+              </div>
+            </IconContext.Provider>
           </a>
         </li>
         <li>
           <a href="mailto:guillermo.arriadevoe@gmail.com">
-            <img
-              src="https://img.icons8.com/ultraviolet/37/000000/email-open.png"
-              alt="email"
-            />
+          <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
+              <div>
+                <AiFillMail />
+              </div>
+            </IconContext.Provider>
           </a>
         </li>
       </ul>
