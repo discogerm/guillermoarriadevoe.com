@@ -1,0 +1,11 @@
+@mixin span-tag() {
+  line-height: 1em;
+  background-size: 0;
+  font-size: 0.7rem;
+  background: green;
+  border-radius: 0.1em;
+  padding: 0.4em 1em;
+  font-weight: bold;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}

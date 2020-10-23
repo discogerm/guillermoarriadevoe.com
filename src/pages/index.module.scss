@@ -1,5 +1,6 @@
 @import "../styles/variables";
 @import "../styles//media-queries";
+@import "../styles//mixins";
 
 .posts {
   list-style-type: none;
@@ -53,17 +54,14 @@
   }
 
   .post-tags {
+    display: flex;
+    flex-wrap: wrap;
     border-bottom: 2px solid $tb-darken;
     padding-bottom: 0.4em;
     margin-bottom: 1.2em;
 
     span {
-      font-size: 0.7rem;
-      background: green;
-      border-radius: 0.1em;
-      padding: 0.4em 1em;
-      font-weight: bold;
-      margin-right: 0.5em;
+      @include span-tag()
     }
   }
 
