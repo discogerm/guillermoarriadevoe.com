@@ -36,9 +36,9 @@ const BlogPage = () => {
       <div>
         <Head title="Blog" />
         <div>
-          <ol className={blogStyles.posts}>
+          <ol className={blogStyles.postContainer}>
             {data.allContentfulBlogPost.edges.map(edge => (
-              <li className={blogStyles.post}>
+              <li className={blogStyles.postCard}>
                 <div className={blogStyles.postTitleContainer}>
                   <h3 className={blogStyles.postTitle}>
                     <Link to={`/blog/${edge.node.slug}`}>
