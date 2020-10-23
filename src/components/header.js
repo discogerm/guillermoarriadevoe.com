@@ -1,25 +1,26 @@
-import React, { useState, Fragment } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import Media from "react-media"
-
-import HamburgerMenu from "react-hamburger-menu"
-import SocialMenu from "./socialMenu"
 
 import headerStyles from "./header.module.scss"
+
+import Media from "react-media"
+import HamburgerMenu from "react-hamburger-menu"
+
+import SocialMenu from "./socialMenu"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const handleClick = () => {
+  const openMenu = () => {
     setMenuOpen(!menuOpen)
   }
 
-  const displayHamburgerMenu = () => {
+  const displayHamburgerBtn = () => {
     return (
       <HamburgerMenu
         className={headerStyles.hamburgerButton}
         isOpen={menuOpen}
-        menuClicked={() => handleClick()}
+        menuClicked={() => openMenu()}
         width={25}
         height={18}
         strokeWidth={2}
@@ -34,38 +35,36 @@ const Header = () => {
   const displayNavigation = selector => {
     return (
       <div className={selector}>
-        <nav className={headerStyles.mainNav}>
-          <ul>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                activeClassName={headerStyles.activeNavItem}
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                activeClassName={headerStyles.activeNavItem}
-                to="/blog/about-me"
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                activeClassName={headerStyles.activeNavItem}
-                to="/projects"
-              >
-                Projects
-              </Link>
-            </li>
-          </ul>
-        </nav>
         <SocialMenu />
+        <ul className={headerStyles.navList}>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/blog/about-me"
+            >
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/projects"
+            >
+              Projects
+            </Link>
+          </li>
+        </ul>
       </div>
     )
   }
@@ -81,26 +80,26 @@ const Header = () => {
             medium: "(min-width: 1000px)",
           }}
         >
-          {matches => (
-            <Fragment>
-              {matches.medium
-                ? displayNavigation(headerStyles.nav)
-                : displayHamburgerMenu()}
-            </Fragment>
+          {screen => (
+            <>
+              {screen.medium
+                ? displayNavigation(headerStyles.navBar)
+                : displayHamburgerBtn()}
+            </>
           )}
         </Media>
       </header>
       <Media
         queries={{
-          small: "(max-width: 999px)",
+          medium: "(max-width: 999px)",
         }}
       >
-        {matches => (
-          <Fragment>
-            {matches.small & menuOpen
+        {screen => (
+          <>
+            {screen.medium & menuOpen
               ? displayNavigation(headerStyles.hamburgerDropdown)
               : null}
-          </Fragment>
+          </>
         )}
       </Media>
     </div>
