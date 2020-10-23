@@ -63,8 +63,8 @@ const BlogPage = () => {
                       />
                     </Link>
                   </div>
-                  <div className={blogStyles.postPreview}>
-                    {edge.node.preview.preview}
+                  <div className={blogStyles.postPreviewText}>
+                    <p>{edge.node.preview.preview}</p>
                     <div className={blogStyles.postExpand}>
                       <Link to={`/blog/${edge.node.slug}`}>
                         &#x27f6; Read more{" "}
