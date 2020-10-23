@@ -1,12 +1,9 @@
 @import "../styles/variables";
 @import "../styles/media-queries";
 
-.menu-container {
-  // margin-top: 0.8em;
-  // max-width: 100%;
-  
+.menu-container { 
   @include respond-above(sm) {
-    margin-top: 0;
+    // margin-top: 0;
     max-width: 20em;
   }
   
@@ -15,7 +12,8 @@
     display: flex;
     justify-content: space-between;
     width: 8em;
-    margin: 0;
+    height: 1.5em;
+    margin: 0.4em 0;  
 
     @include respond-above(sm) {
       // width: 10em;

@@ -35,7 +35,6 @@ const Header = () => {
   const displayNavigation = selector => {
     return (
       <div className={selector}>
-        <SocialMenu />
         <ul className={headerStyles.navList}>
           <li>
             <Link
@@ -65,6 +64,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <SocialMenu />
       </div>
     )
   }

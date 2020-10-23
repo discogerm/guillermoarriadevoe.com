@@ -45,7 +45,7 @@
       align-items: center;
       justify-content: space-between;
 
-      .navContainer {
+      .nav-list {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
@@ -84,7 +84,6 @@
   padding: 0.5em 2em;
 
   .nav-list {
-    border: 1px solid pink;
     width: 15em;
     display: flex;
     // flex-direction: column;
