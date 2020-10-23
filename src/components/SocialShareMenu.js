@@ -1,6 +1,6 @@
 import React from "react"
 
-import blogStyles from "./blog.module.scss"
+import blogStyles from "./SocialShareMenu.module.scss"
 
 import { IconContext } from "react-icons"
 import {
@@ -15,7 +15,7 @@ const SocialShareMenu = props => {
       <ul className={blogStyles.menuList}>
         <li>
           <a
-            href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
+            href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.shareableLink}`}
             target="__blank"
             rel="noopener"
           >
@@ -28,7 +28,7 @@ const SocialShareMenu = props => {
         </li>
         <li>
           <a
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.shareableLink}`}
             target="__blank"
             rel="noopener"
           >
@@ -41,7 +41,7 @@ const SocialShareMenu = props => {
         </li>
         <li>
           <a
-            href={`https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
+            href={`https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.shareableLink}`}
             target="__blank"
             rel="noopener"
           >

@@ -6,6 +6,7 @@ import blogStyles from "./blog.module.scss"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import SocialShareMenu from "../components/SocialShareMenu"
 
 import { IconContext } from "react-icons"
 import {
@@ -51,49 +52,7 @@ const Blog = props => {
         ))}
       </div>
       <div className={blogStyles.postHeader}>
-        <div className={blogStyles.menuContainer}>
-          <ul className={blogStyles.menuList}>
-            <li>
-              <a
-                href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
-                target="__blank"
-                rel="noopener"
-              >
-                <IconContext.Provider value={{ color: "blue", size: "2em" }}>
-                  <div>
-                    <AiFillTwitterSquare />
-                  </div>
-                </IconContext.Provider>
-              </a>
-            </li>
-            <li>
-              <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
-                target="__blank"
-                rel="noopener"
-              >
-                <IconContext.Provider value={{ color: "blue", size: "2em" }}>
-                  <div>
-                    <AiFillLinkedin />
-                  </div>
-                </IconContext.Provider>
-              </a>
-            </li>
-            <li>
-              <a
-                href={`https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fguillermoarriadevoe.com%2Fblog%2F${props.data.contentfulBlogPost.slug}`}
-                target="__blank"
-                rel="noopener"
-              >
-                <IconContext.Provider value={{ color: "blue", size: "2em" }}>
-                  <div>
-                    <AiFillFacebook />
-                  </div>
-                </IconContext.Provider>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <SocialShareMenu shareableLink={props.data.contentfulBlogPost.slug} />
         <div className={blogStyles.userCardContainer}>
           <Link className={blogStyles.avatar} to="/blog/about-me">
             <img
