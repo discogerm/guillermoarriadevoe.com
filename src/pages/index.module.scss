@@ -39,9 +39,11 @@
 
     .post-date {
       display: inline-flex;
-      padding: 0.2em 0.5em;
+      line-height: 1em;
+      padding: 0.5em 0.6em;
       border: 1px solid $tb-darken;
       margin-bottom: 0.5em;
+      margin-top: 0.3em;
       font-size: 0.9rem;
 
       @include respond-above(sm) {
@@ -51,7 +53,7 @@
   }
 
   .post-tags {
-    border-bottom: 1px solid $tb-darken;
+    border-bottom: 2px solid $tb-darken;
     padding-bottom: 0.4em;
     margin-bottom: 1.2em;
 
@@ -100,12 +102,11 @@
         a {
           transition: 200ms;
           text-decoration: none;
-          border-bottom: 1px solid $tb-darken;
           padding-bottom: 0.1em;
+          color: $tb-darken;
 
           &:hover {
-            color: $tb-lighten;
-            border-bottom: 1px solid $terminal-blue;
+            color: $terminal-blue;
           }
         }
       }

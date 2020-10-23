@@ -66,7 +66,7 @@ const BlogPage = () => {
                   <div className={blogStyles.postPreview}>
                     {edge.node.preview.preview}
                     <div className={blogStyles.postExpand}>
-                      <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
+                      <Link to={`/blog/${edge.node.slug}`}>&#x27f6; Read more </Link>
                     </div>
                   </div>
                 </div>
