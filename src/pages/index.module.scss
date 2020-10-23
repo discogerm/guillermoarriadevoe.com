@@ -57,9 +57,9 @@
 
     .post-tags {
       @include span-flex-wrap();
-      border-bottom: 1px solid $tb-darken;
-      padding-bottom: 0.8em;
-      margin-bottom: 1.2em;
+      // border-bottom: 1px solid $tb-darken;
+      // padding-bottom: 0.8em;
+      margin-bottom: 0.6em;
 
       span {
         @include span-tag();
@@ -96,17 +96,24 @@
         }
 
         .post-expand {
+          display: flex;
+          justify-content: space-between;
           margin-top: 1em;
 
           a {
-            transition: 200ms;
             text-decoration: none;
-            padding-bottom: 0.1em;
             color: $tb-darken;
+            transition: 200ms;
+            // padding-bottom: 0.1em;
 
             &:hover {
               color: $terminal-blue;
             }
+          }
+
+          .post-date {
+            font-size: 0.9em;
+            color: $tb-darken;
           }
         }
       }

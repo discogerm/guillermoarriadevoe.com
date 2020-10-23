@@ -45,9 +45,9 @@ const BlogPage = () => {
                       {edge.node.title}
                     </Link>
                   </h3>
-                  <p className={blogStyles.postDate}>
+                  {/* <p className={blogStyles.postDate}>
                     {edge.node.publishedDate}
-                  </p>
+                  </p> */}
                 </div>
                 <div className={blogStyles.postTags}>
                   {edge.node.tags.map(tag => (
@@ -66,7 +66,12 @@ const BlogPage = () => {
                   <div className={blogStyles.postPreview}>
                     {edge.node.preview.preview}
                     <div className={blogStyles.postExpand}>
-                      <Link to={`/blog/${edge.node.slug}`}>&#x27f6; Read more </Link>
+                      <Link to={`/blog/${edge.node.slug}`}>
+                        &#x27f6; Read more{" "}
+                      </Link>
+                      <p className={blogStyles.postDate}>
+                        {edge.node.publishedDate}
+                      </p>
                     </div>
                   </div>
                 </div>
