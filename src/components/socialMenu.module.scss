@@ -4,7 +4,7 @@
 .menu-container { 
   @include respond-above(sm) {
     // margin-top: 0;
-    max-width: 20em;
+    // max-width: 20em;
   }
   
   .menu-list {
