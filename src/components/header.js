@@ -74,7 +74,7 @@ const Header = () => {
     <div className={headerStyles.mainHeaderContainer}>
       <header className={headerStyles.mainHeader}>
         <Link className={headerStyles.mhLogo} to="/">
-          GAD
+          DISCOGERM
         </Link>
         <Media
           queries={{
