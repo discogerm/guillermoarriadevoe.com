@@ -27,7 +27,7 @@ const Header = () => {
         rotate={0}
         color="#b8cbe0"
         borderRadius={0}
-        animationDuration={0.5}
+        animationDuration={0.7}
       />
     )
   }
