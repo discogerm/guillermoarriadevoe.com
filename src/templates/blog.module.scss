@@ -4,7 +4,7 @@
 
 .post-tags {
   @include span-flex-wrap();
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
 
   span {
     @include span-tag()
@@ -14,7 +14,7 @@
 .post-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
 
 
   @include respond-above(sm) {

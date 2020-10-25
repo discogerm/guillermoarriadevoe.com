@@ -62,11 +62,11 @@ const Blog = props => {
           </div>
         </div>
       </div>
-
       {documentToReactComponents(
         props.data.contentfulBlogPost.body.json,
         options
       )}
+      <SocialShareMenu shareableLink={props.data.contentfulBlogPost.slug} />
     </Layout>
   )
 }
