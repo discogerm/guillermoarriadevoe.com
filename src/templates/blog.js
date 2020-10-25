@@ -42,7 +42,7 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title}></Head>
-      <div className={blogStyles.postPreviewImageContainer}>
+      <div className={blogStyles.postHeaderImageContainer}>
         <img
           src={props.data.contentfulBlogPost.previewImage.fluid.src}
           alt={props.data.contentfulBlogPost.previewImage.title}

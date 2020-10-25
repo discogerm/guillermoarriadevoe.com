@@ -2,9 +2,21 @@
 @import "../styles/media-queries";
 @import "../styles//mixins";
 
+.post-header-image-container {
+  img {
+    margin-bottom: 0.9em;
+  }
+}
+
+.post-title {
+  // font-weight: normal;
+  line-height: 1.7em;
+  margin-bottom: 0.5em;
+}
+
 .post-tags {
   @include span-flex-wrap();
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
 
   span {
     @include span-tag()
