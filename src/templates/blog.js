@@ -18,6 +18,12 @@ export const query = graphql`
       }
       tags
       slug
+      previewImage {
+        fluid {
+          src
+        }
+        title
+      }
     }
   }
 `
@@ -36,6 +42,12 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title}></Head>
+      <div className={blogStyles.postPreviewImageContainer}>
+        <img
+          src={props.data.contentfulBlogPost.previewImage.fluid.src}
+          alt={props.data.contentfulBlogPost.previewImage.title}
+        />
+      </div>
       <h2 className={blogStyles.postTitle}>
         {props.data.contentfulBlogPost.title}
       </h2>
