@@ -24,6 +24,7 @@ module.exports = {
       options: {
         fonts: [
           'Press Start 2P',
+          'Nunito Sans'
         ],
         display: 'swap'
       }
