@@ -8,13 +8,6 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import SocialShareMenu from "../components/SocialShareMenu"
 
-import { IconContext } from "react-icons"
-import {
-  AiFillLinkedin,
-  AiFillFacebook,
-  AiFillTwitterSquare,
-} from "react-icons/ai"
-
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
