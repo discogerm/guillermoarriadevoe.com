@@ -107,6 +107,7 @@
           text-decoration: none;
           transition: 200ms;
           font-weight: bold;
+          font-size: 0.9em;
 
           &:hover {
             color: $tb-lighten;
@@ -115,7 +116,6 @@
 
         .active-nav-item {
           color: $tb-lighten;
-          // border-bottom: 1px solid $tb-lighten;
         }
       }
     }
