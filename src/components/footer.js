@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 
 import footerStyles from "./footer.module.scss"
 
+import SocialMenu from "./socialMenu"
+
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(2020)
 
@@ -13,10 +15,13 @@ const Footer = () => {
 
   return (
     <footer>
-      <p className={footerStyles.footerContent}>
-        &copy; 2019-{currentYear} by Guillermo Arria-Devoe.{" "}
-        <a href="mailto:guillermo.arriadevoe@gmail.com">Questions?</a>
-      </p>
+      <div className={footerStyles.contentContainer}>
+        <SocialMenu />
+        <p className={footerStyles.footerContent}>
+          &copy; 2019-{currentYear} by Guillermo Arria-Devoe.{" "}
+          <a href="mailto:guillermo.arriadevoe@gmail.com">Questions?</a>
+        </p>
+      </div>
     </footer>
   )
 }
