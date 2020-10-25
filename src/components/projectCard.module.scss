@@ -6,18 +6,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // border: 1px solid $tb-darken;
   border-radius: 0.2em;
-  // padding: 1.25em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   transition: 200ms;
 
   @include respond-above(sm) {
     max-width: 49%;
-  }
-
-  &:hover {
-    box-shadow: 10px 5px 5px black;
   }
 
   .image-container {
@@ -28,7 +22,6 @@
 
   .card-title {
     margin-bottom: 0.9em;
-    font-weight: 400;
   }
 
   .technology-tags {
@@ -43,14 +36,14 @@
   .link-container {
     display: flex;
     justify-content: space-between;
-    max-width: 16em;
+    max-width: 100%;
     color: $tb-darken;
 
     a {
       color: $tb-darken;
       text-decoration: none;
       transition: 200ms;
-      font-size: 0.8em;
+      font-size: 0.9em;
 
       &:hover {
         color: $terminal-blue;

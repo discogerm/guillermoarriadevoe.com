@@ -12,7 +12,7 @@ const ProjectCard = props => {
             alt={props.previewImage.title}
           />
         </div>
-        <h3 className={cardStyles.cardTitle}>{props.title}</h3>
+        <h2 className={cardStyles.cardTitle}>{props.title}</h2>
         <div className={cardStyles.technologyTags}>
           {props.technologyUsed.map(tag => (
             <span>{tag}</span>
