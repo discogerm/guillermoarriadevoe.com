@@ -27,13 +27,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-remark-prismjs`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        classPrefix: "language-",
-        inlineCodeMarker: '›',
-        showLineNumbers: false,
-        noInlineHighlight: false,
-        escapeEntities: {},
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {},
+          },
+        ],
       },
     },
   ],
