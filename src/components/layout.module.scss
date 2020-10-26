@@ -13,8 +13,4 @@
   padding: 0 2rem;
   flex-grow: 1;
   padding-top: 6em;
-
-  @include respond-above(md) {
-    padding: 0;
-  }
 }
