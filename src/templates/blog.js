@@ -36,6 +36,10 @@ const Blog = props => {
         const url = node.data.target.fields.file["en-US"].url
         return <img src={url} alt={alt} />
       },
+      "embedded-entry-inline": node => {
+        const data = node.data.target.fields.data["en-US"]
+        return <div>{data}</div>
+      }
     },
   }
 
