@@ -82,6 +82,7 @@ const Blog = props => {
         props.data.contentfulBlogPost.body.json,
         options
       )}
+      <b>Share this article:</b>
       <SocialShareMenu shareableLink={props.data.contentfulBlogPost.slug} />
     </Layout>
   )
