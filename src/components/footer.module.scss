@@ -5,7 +5,7 @@ footer {
   // border: 10px solid pink;
   width: 100%;
   border-top: 0.2em solid $border-blue;
-  margin-top: 2em;
+  margin-top: 2.5em;
 
   .content-container {
     display: flex;
@@ -13,9 +13,21 @@ footer {
     align-items: center;
     margin-top: 0.6em;
 
+    @include respond-above(sm) {
+      width: 35em;
+      margin: 0.3em auto;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
     .footer-content {
       font-size: 0.6em;
       margin-bottom: 1em;
+
+      @include respond-above(sm) {
+        margin: 0;
+      }
     }
   }
 }
