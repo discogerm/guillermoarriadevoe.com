@@ -6,28 +6,35 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Guillermo Arria-Devoe',
-    author: 'Guillermo Arria-Devoe'
+    title: "Guillermo Arria-Devoe",
+    author: "Guillermo Arria-Devoe",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: "gatsby-source-contentful",
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-      }
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
     },
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: [
-          'Press Start 2P',
-          'Nunito Sans'
-        ],
-        display: 'swap'
-      }
-    }
-  ]
+        fonts: ["Press Start 2P", "Nunito Sans"],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-remark-prismjs`,
+      options: {
+        classPrefix: "language-",
+        inlineCodeMarker: '›',
+        showLineNumbers: false,
+        noInlineHighlight: false,
+        escapeEntities: {},
+      },
+    },
+  ],
 }
