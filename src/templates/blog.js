@@ -46,15 +46,15 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title}></Head>
+      <h1 className={blogStyles.postTitle}>
+        {props.data.contentfulBlogPost.title}
+      </h1>
       <div className={blogStyles.postHeaderImageContainer}>
         <img
           src={props.data.contentfulBlogPost.previewImage.fluid.src}
           alt={props.data.contentfulBlogPost.previewImage.title}
         />
       </div>
-      <h2 className={blogStyles.postTitle}>
-        {props.data.contentfulBlogPost.title}
-      </h2>
       <div className={blogStyles.postTags}>
         {props.data.contentfulBlogPost.tags.map(tag => (
           <span>{tag}</span>
