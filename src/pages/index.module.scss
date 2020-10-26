@@ -12,11 +12,6 @@
     .post-title {
       margin-bottom: 0.4em;
 
-      @include respond-above(sm) {
-        font-size: 1.7rem;
-        width: 75%;
-      }
-
       a {
         transition: 200ms;
         text-decoration: none;
@@ -43,8 +38,6 @@
 
     .post-tags {
       @include span-flex-wrap();
-      // border-bottom: 1px solid $tb-darken;
-      // padding-bottom: 0.8em;
       margin-bottom: 0.6em;
 
       span {
