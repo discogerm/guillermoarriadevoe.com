@@ -40,8 +40,8 @@ const IndexPage = () => {
       <div>
         <Head title="Home" />
         <IntroText>
-          Guillermo Arria-Devoe is a Florida-based software engineer, currently
-          enrolled in Lambda School's Data Science program and looking for work.
+          Guillermo Arria-Devoe is a flexible software engineer nearing graduation
+          from Lambda School's Data Science program and looking for work.
         </IntroText>
         <div className={indexStyles.cardContainer}>
           {data.allContentfulPortfolioProject.edges.map(edge => (
