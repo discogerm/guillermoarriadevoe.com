@@ -41,13 +41,13 @@
     }
 
     .nav-bar {
-      width: 25px;
+      width: 34em;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      @include respond-above(md) {
-        width: 34em;
+      span {
+        width: 25px;
       }
 
       .nav-list {
