@@ -42,12 +42,10 @@
     }
 
     .nav-bar {
-      @include respond-above (md) {
-        width: 34em;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+      width: 34em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       .nav-list {
         display: flex;
