@@ -18,7 +18,6 @@ const Header = () => {
   const displayHamburgerBtn = () => {
     return (
       <HamburgerMenu
-        className={headerStyles.hamburgerButton}
         isOpen={menuOpen}
         menuClicked={() => openMenu()}
         width={25}

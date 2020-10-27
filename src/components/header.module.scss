@@ -40,15 +40,15 @@
       }
     }
 
-    .hamburger-button {
-      max-width: 25px;
-    }
-
     .nav-bar {
-      min-width: 600px;
+      width: 25px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @include respond-above(md) {
+        width: 34em;
+      }
 
       .nav-list {
         display: flex;
