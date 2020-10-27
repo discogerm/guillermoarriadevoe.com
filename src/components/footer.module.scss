@@ -2,7 +2,6 @@
 @import "../styles/media-queries";
 
 footer {
-  // border: 10px solid pink;
   width: 100%;
   border-top: 0.2em solid $border-blue;
   margin-top: 2.5em;
@@ -11,7 +10,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.6em;
+    // margin-top: 0.4em;
 
     @include respond-above(sm) {
       width: 35em;
