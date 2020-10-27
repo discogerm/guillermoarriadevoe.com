@@ -3,7 +3,7 @@
 @import "../styles//mixins";
 
 .menu-container {      
-    margin-bottom: 1.4em;
+    margin-bottom: 1.2em;
 
     @include respond-above(sm) {
       order: 2;
