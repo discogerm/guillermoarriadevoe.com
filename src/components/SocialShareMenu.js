@@ -19,7 +19,7 @@ const SocialShareMenu = props => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+            <IconContext.Provider value={{ size: "2em" }}>
               <div>
                 <AiFillTwitterSquare />
               </div>
@@ -32,7 +32,7 @@ const SocialShareMenu = props => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+            <IconContext.Provider value={{ size: "2em" }}>
               <div>
                 <AiFillLinkedin />
               </div>
@@ -45,7 +45,7 @@ const SocialShareMenu = props => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "2em" }}>
+            <IconContext.Provider value={{ size: "2em" }}>
               <div>
                 <AiFillFacebook />
               </div>

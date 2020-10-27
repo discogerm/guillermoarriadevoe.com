@@ -16,7 +16,7 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
+            <IconContext.Provider value={{ size: "1.5em" }}>
               <div>
                 <AiFillLinkedin />
               </div>
@@ -29,7 +29,7 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
+            <IconContext.Provider value={{ size: "1.5em" }}>
               <div>
                 <FaInstagramSquare />
               </div>
@@ -42,7 +42,7 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
+            <IconContext.Provider value={{ size: "1.5em" }}>
               <div>
                 <AiFillGithub />
               </div>
@@ -51,7 +51,7 @@ const Footer = () => {
         </li>
         <li>
           <a href="mailto:guillermo.arriadevoe@gmail.com">
-          <IconContext.Provider value={{ color: "blue", size: "1.5em" }}>
+          <IconContext.Provider value={{ size: "1.5em" }}>
               <div>
                 <AiFillMail />
               </div>
