@@ -25,9 +25,6 @@
       box-shadow: none;
     }
 
-    span {
-      width: 25px;
-    }
 
     .mh-logo {
       height: 1.5em;
@@ -45,10 +42,12 @@
     }
 
     .nav-bar {
-      width: 34em;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include respond-above (md) {
+        width: 34em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
       .nav-list {
         display: flex;
