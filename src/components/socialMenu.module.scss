@@ -1,12 +1,7 @@
 @import "../styles/variables";
 @import "../styles/media-queries";
 
-.menu-container { 
-  @include respond-above(sm) {
-    // margin-top: 0;
-    // max-width: 20em;
-  }
-  
+.menu-container {   
   .menu-list {
     list-style-type: none;
     display: flex;
@@ -16,11 +11,11 @@
     margin: 1em 0;  
 
     @include respond-above(sm) {
-      // width: 10em;
+      margin: 0.7em 0;  
+      height: 2em;
     }
 
     li {
-      // margin: 0;
       transition: 200ms;
 
       a {
