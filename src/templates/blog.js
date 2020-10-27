@@ -3,8 +3,7 @@ import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import blogStyles from "./blog.module.scss"
-import 'prismjs/themes/prism-solarizedlight.css'
-
+import "prismjs/themes/prism-solarizedlight.css"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -40,8 +39,12 @@ const Blog = props => {
       },
       "embedded-entry-inline": node => {
         const data = node.data.target.fields.data["en-US"]
-        return <code className="language-test">{data}</code>
-      }
+        return (
+          <code className="language-python" style={{ maxWidth: "375px", overflow: "wrap" }}>
+            {data}
+          </code>
+        )
+      },
     },
   }
 
