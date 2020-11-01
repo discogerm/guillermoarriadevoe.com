@@ -18,6 +18,7 @@ const Header = () => {
   const displayHamburgerBtn = () => {
     return (
       <HamburgerMenu
+        className={headerStyles.hamburgerBtn}
         isOpen={menuOpen}
         menuClicked={() => openMenu()}
         width={25}
@@ -74,35 +75,48 @@ const Header = () => {
         <Link className={headerStyles.mhLogo} to="/">
           DISCOGERM
         </Link>
-        <Media
-          queries={{
-            medium: "(min-width: 1000px)",
-          }}
-        >
-          {screen => (
-            <>
-              {screen.medium
-                ? displayNavigation(headerStyles.navBar)
-                : displayHamburgerBtn()}
-            </>
-          )}
-        </Media>
+        {displayNavigation(headerStyles.navBar)}
+        {displayHamburgerBtn()}
       </header>
-      <Media
-        queries={{
-          medium: "(max-width: 999px)",
-        }}
-      >
-        {screen => (
-          <>
-            {screen.medium & menuOpen
-              ? displayNavigation(headerStyles.hamburgerDropdown)
-              : null}
-          </>
-        )}
-      </Media>
+      {displayNavigation(headerStyles.hamburgerDropdown)}
     </div>
   )
 }
 
 export default Header
+
+// return (
+//   <div className={headerStyles.mainHeaderContainer}>
+//     <header className={headerStyles.mainHeader}>
+//       <Link className={headerStyles.mhLogo} to="/">
+//         DISCOGERM
+//       </Link>
+//       <Media
+//         queries={{
+//           medium: "(min-width: 1000px)",
+//         }}
+//       >
+//         {screen => (
+//           <>
+//             {screen.medium
+//               ? displayNavigation(headerStyles.navBar)
+//               : displayHamburgerBtn()}
+//           </>
+//         )}
+//       </Media>
+//     </header>
+//     <Media
+//       queries={{
+//         medium: "(max-width: 999px)",
+//       }}
+//     >
+//       {screen => (
+//         <>
+//           {screen.medium & menuOpen
+//             ? displayNavigation(headerStyles.hamburgerDropdown)
+//             : null}
+//         </>
+//       )}
+//     </Media>
+//   </div>
+// )

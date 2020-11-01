@@ -42,10 +42,14 @@
     }
 
     .nav-bar {
-      width: 34em;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: none;
+      
+      @include respond-above(sm){
+        width: 34em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
       .nav-list {
         display: flex;
@@ -90,6 +94,10 @@
     padding: 0 2em;
     background-color: $border-blue;
     border-bottom: 4px solid $friendly-blue;
+
+    @include respond-above(sm){
+      display: none;
+    }
 
     .nav-list {
       margin: 0;
