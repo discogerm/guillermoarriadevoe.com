@@ -39,11 +39,7 @@ const Blog = props => {
       },
       "embedded-entry-inline": node => {
         const data = node.data.target.fields.data["en-US"]
-        return (
-          <code>
-            {data}
-          </code>
-        )
+        return <td dangerouslySetInnerHTML={{ __html: data }} />
       },
     },
   }
