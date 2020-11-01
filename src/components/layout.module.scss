@@ -12,9 +12,9 @@
   max-width: 900px;
   padding: 0 1.5em;
   flex-grow: 1;
-  padding-top: 10.5em;
+  padding-top: 10em;
 
   @include respond-above(sm) {
-    padding-top: 8em;
+    padding-top: 7em;
   }
 }

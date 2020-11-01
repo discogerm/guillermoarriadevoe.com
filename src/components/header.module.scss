@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 1;
   top: 0;
-
+  
   .main-header {
     max-width: 1080px;
     display: flex;
@@ -100,7 +100,6 @@
     align-items: center;
     padding: 0.7em 2em;
     background-color: $border-blue;
-    border-bottom: 8px solid $indie-dark;
 
     @include respond-above(sm) {
       display: none;
