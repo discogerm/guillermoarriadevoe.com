@@ -17,7 +17,7 @@ const Footer = () => {
     <footer>
       <div className={footerStyles.contentContainer}>
         <SocialMenu />
-        <p className={footerStyles.footerContent}>
+        <p className={footerStyles.copyright}>
           &copy; 2019-{currentYear} by Guillermo Arria-Devoe.{" "}
           <a href="mailto:guillermo.arriadevoe@gmail.com">Questions?</a>
         </p>
