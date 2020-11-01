@@ -1,10 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
-
-import Media from "react-media"
-import HamburgerMenu from "react-hamburger-menu"
 
 import SocialMenu from "./socialMenu"
 
