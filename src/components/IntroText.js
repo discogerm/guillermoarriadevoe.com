@@ -1,6 +1,6 @@
 import React from "react"
 
-import introTextStyles from "./introText.module.scss"
+import introTextStyles from "./IntroText.module.scss"
 
 const IntroText = props => {
   return (

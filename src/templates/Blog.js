@@ -2,10 +2,10 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import blogStyles from "./blog.module.scss"
+import blogStyles from "./Blog.module.scss"
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from "../components/Layout"
+import Head from "../components/Head"
 import SocialShareMenu from "../components/SocialShareMenu"
 
 export const query = graphql`

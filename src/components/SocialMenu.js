@@ -1,6 +1,6 @@
 import React from "react"
 
-import socialStyles from "./socialMenu.module.scss"
+import socialStyles from "./SocialMenu.module.scss"
 
 import { IconContext } from "react-icons"
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai"

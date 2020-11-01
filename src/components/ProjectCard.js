@@ -1,6 +1,6 @@
 import React from "react"
 
-import cardStyles from "./projectCard.module.scss"
+import cardStyles from "./ProjectCard.module.scss"
 
 const ProjectCard = props => {
   return (

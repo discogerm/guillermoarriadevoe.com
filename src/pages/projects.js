@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import Layout from "../components/layout"
-import Head from "../components/head"
-import IntroText from "../components/introText"
-import ProjectCard from "../components/projectCard"
+import Layout from "../components/Layout"
+import Head from "../components/Head"
+import IntroText from "../components/IntroText"
+import ProjectCard from "../components/ProjectCard"
 
-import indexStyles from "./projects.module.scss"
+import projectStyles from "./projects.module.scss"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -43,7 +43,7 @@ const IndexPage = () => {
           Guillermo Arria-Devoe is a flexible software engineer nearing graduation
           from Lambda School's Data Science program and looking for work.
         </IntroText>
-        <div className={indexStyles.cardContainer}>
+        <div className={projectStyles.cardContainer}>
           {data.allContentfulPortfolioProject.edges.map(edge => (
             <ProjectCard
             title={edge.node.title}

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 
-import footerStyles from "./footer.module.scss"
+import footerStyles from "./Footer.module.scss"
 
-import SocialMenu from "./socialMenu"
+import SocialMenu from "./SocialMenu"
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(2020)
