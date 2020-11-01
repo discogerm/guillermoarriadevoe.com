@@ -9,22 +9,9 @@ import HamburgerMenu from "react-hamburger-menu"
 import SocialMenu from "./socialMenu"
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [menuStyle, setMenuStyle] = useState({ display: "none" })
-
-  const openMenu = () => {
-    setMenuOpen(!menuOpen)
-
-    if (menuOpen) {
-      setMenuStyle({ display: "none" })
-    } else {
-      setMenuStyle({ display: "flex" })
-    }
-  }
-
-  const displayNavigation = (selector, dropdownStyles = {}) => {
+  const displayNavigation = selector => {
     return (
-      <div className={selector} style={dropdownStyles}>
+      <div className={selector}>
         <ul className={headerStyles.navList}>
           <li>
             <Link
@@ -54,7 +41,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <SocialMenu />
       </div>
     )
   }
@@ -66,20 +52,9 @@ const Header = () => {
           DISCOGERM
         </Link>
         {displayNavigation(headerStyles.navBar)}
-        <HamburgerMenu
-          className={headerStyles.hamburgerBtn}
-          isOpen={menuOpen}
-          menuClicked={() => openMenu()}
-          width={25}
-          height={18}
-          strokeWidth={2}
-          rotate={0}
-          color="#b8cbe0"
-          borderRadius={0}
-          animationDuration={0.7}
-        />
+        <SocialMenu />
       </header>
-      {displayNavigation(headerStyles.hamburgerDropdown, menuStyle)}
+      {displayNavigation(headerStyles.hamburgerDropdown)}
     </div>
   )
 }
