@@ -43,7 +43,7 @@
     .nav-bar {
       display: none;
 
-      @include respond-above(sm) {
+      @include respond-above(md) {
         width: 34em;
         display: flex;
         align-items: center;
@@ -84,7 +84,7 @@
     }
 
     .hamburger-btn {
-      @include respond-above(sm) {
+      @include respond-above(md) {
         display: none;
       }
     }
@@ -100,7 +100,7 @@
     background-color: $border-blue;
     border-bottom: 4px solid $friendly-blue;
 
-    @include respond-above(sm) {
+    @include respond-above(md) {
       display: none;
     }
 

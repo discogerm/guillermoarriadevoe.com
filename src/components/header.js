@@ -18,28 +18,11 @@ const Header = () => {
     if (menuOpen) {
       setMenuStyle({ display: "none" })
     } else {
-      setMenuStyle({ display: "flex"})
+      setMenuStyle({ display: "flex" })
     }
   }
 
-  const displayHamburgerBtn = () => {
-    return (
-      <HamburgerMenu
-        className={headerStyles.hamburgerBtn}
-        isOpen={menuOpen}
-        menuClicked={() => openMenu()}
-        width={25}
-        height={18}
-        strokeWidth={2}
-        rotate={0}
-        color="#b8cbe0"
-        borderRadius={0}
-        animationDuration={0.7}
-      />
-    )
-  }
-
-  const displayNavigation = (selector, dropdownStyles={}) => {
+  const displayNavigation = (selector, dropdownStyles = {}) => {
     return (
       <div className={selector} style={dropdownStyles}>
         <ul className={headerStyles.navList}>
@@ -83,7 +66,18 @@ const Header = () => {
           DISCOGERM
         </Link>
         {displayNavigation(headerStyles.navBar)}
-        {displayHamburgerBtn()}
+        <HamburgerMenu
+          className={headerStyles.hamburgerBtn}
+          isOpen={menuOpen}
+          menuClicked={() => openMenu()}
+          width={25}
+          height={18}
+          strokeWidth={2}
+          rotate={0}
+          color="#b8cbe0"
+          borderRadius={0}
+          animationDuration={0.7}
+        />
       </header>
       {displayNavigation(headerStyles.hamburgerDropdown, menuStyle)}
     </div>
