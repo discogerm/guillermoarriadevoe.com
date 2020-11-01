@@ -19,14 +19,13 @@
     position: relative;
     box-shadow: 0 0 5px 0 black;
 
-    @include respond-above(md) {
+    @include respond-above(sm) {
       margin: 0 auto;
-      padding: 0.6em 2em;
       box-shadow: none;
     }
 
     .mh-logo {
-      height: 1.5em;
+      height: 1.7em;
       font-family: "Press Start 2P", cursive;
       text-decoration: none;
       transition: 200ms;
@@ -44,7 +43,6 @@
       display: none;
 
       @include respond-above(sm) {
-        width: 34em;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,7 +54,7 @@
         list-style-type: none;
         margin: 0;
 
-        @include respond-above(xs) {
+        @include respond-above(sm) {
           width: 20em;
         }
 
