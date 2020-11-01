@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 2em;
+    padding: 1.5em 1.5em;
     position: relative;
     box-shadow: 0 0 5px 0 black;
 
@@ -25,13 +25,14 @@
     }
 
     .mh-logo {
-      height: 1.7em;
+      height: 1.6em;
       font-family: "Press Start 2P", cursive;
       text-decoration: none;
       transition: 200ms;
 
-      @include respond-above(xs) {
-        margin: 0;
+      @include respond-above(sm) {
+        height: 1.7em;
+
       }
 
       &:hover {
@@ -55,6 +56,10 @@
         margin: 0;
 
         @include respond-above(sm) {
+          width: 17em;
+        }
+
+        @include respond-above(md) {
           width: 20em;
         }
 
