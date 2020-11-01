@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import blogStyles from "./blog.module.scss"
-// import "prismjs/themes/prism-solarizedlight.css"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
