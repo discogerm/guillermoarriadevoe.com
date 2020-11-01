@@ -10,9 +10,16 @@ import SocialMenu from "./socialMenu"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [menuStyle, setMenuStyle] = useState({ display: "none" })
 
   const openMenu = () => {
     setMenuOpen(!menuOpen)
+
+    if (menuOpen) {
+      setMenuStyle({ display: "none" })
+    } else {
+      setMenuStyle({ display: "flex"})
+    }
   }
 
   const displayHamburgerBtn = () => {
@@ -32,9 +39,9 @@ const Header = () => {
     )
   }
 
-  const displayNavigation = selector => {
+  const displayNavigation = (selector, dropdownStyles={}) => {
     return (
-      <div className={selector}>
+      <div className={selector} style={dropdownStyles}>
         <ul className={headerStyles.navList}>
           <li>
             <Link
@@ -78,7 +85,7 @@ const Header = () => {
         {displayNavigation(headerStyles.navBar)}
         {displayHamburgerBtn()}
       </header>
-      {displayNavigation(headerStyles.hamburgerDropdown)}
+      {displayNavigation(headerStyles.hamburgerDropdown, menuStyle)}
     </div>
   )
 }

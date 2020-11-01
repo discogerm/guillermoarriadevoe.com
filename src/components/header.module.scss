@@ -25,7 +25,6 @@
       box-shadow: none;
     }
 
-
     .mh-logo {
       height: 1.5em;
       font-family: "Press Start 2P", cursive;
@@ -43,8 +42,8 @@
 
     .nav-bar {
       display: none;
-      
-      @include respond-above(sm){
+
+      @include respond-above(sm) {
         width: 34em;
         display: flex;
         align-items: center;
@@ -83,6 +82,12 @@
         }
       }
     }
+
+    .hamburger-btn {
+      @include respond-above(sm) {
+        display: none;
+      }
+    }
   }
 
   .hamburger-dropdown {
@@ -95,7 +100,7 @@
     background-color: $border-blue;
     border-bottom: 4px solid $friendly-blue;
 
-    @include respond-above(sm){
+    @include respond-above(sm) {
       display: none;
     }
 
