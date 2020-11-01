@@ -25,17 +25,6 @@ module.exports = {
         fonts: ["Press Start 2P", "Nunito Sans"],
         display: "swap",
       },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {},
-          },
-        ],
-      },
-    },
+    }
   ],
 }
