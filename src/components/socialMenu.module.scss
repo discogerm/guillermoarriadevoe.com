@@ -6,14 +6,9 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 11em;
-    height: 1.5em;
-    margin: 1em 0;  
-
-    @include respond-above(sm) {
-      margin: 0.7em 0;  
-      height: 2em;
-    }
+    width: 9em;
+    height: 1.8em;
+    margin: 0;  
 
     li {
       transition: 200ms;

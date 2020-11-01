@@ -43,7 +43,7 @@
     .nav-bar {
       display: none;
 
-      @include respond-above(md) {
+      @include respond-above(sm) {
         width: 34em;
         display: flex;
         align-items: center;
@@ -95,25 +95,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
     background-color: $border-blue;
     border-bottom: 4px solid $friendly-blue;
 
-    @include respond-above(md) {
+    @include respond-above(sm) {
       display: none;
     }
 
     .nav-list {
       margin: 0;
-      width: 20em;
+      width: 18em;
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      // padding: 0.7em 0;
-
-      @include respond-above(sm) {
-        width: 20em;
-      }
 
       li {
         display: inline;

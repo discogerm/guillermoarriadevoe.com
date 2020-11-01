@@ -16,10 +16,8 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ size: "2em" }}>
-              <div>
-                <AiFillLinkedin />
-              </div>
+            <IconContext.Provider value={{ size: "1.8em" }}>
+              <AiFillLinkedin />
             </IconContext.Provider>
           </a>
         </li>
@@ -29,10 +27,8 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ size: "2em" }}>
-              <div>
-                <FaInstagramSquare />
-              </div>
+            <IconContext.Provider value={{ size: "1.8em" }}>
+              <FaInstagramSquare />
             </IconContext.Provider>
           </a>
         </li>
@@ -42,19 +38,15 @@ const Footer = () => {
             target="__blank"
             rel="noopener"
           >
-            <IconContext.Provider value={{ size: "2em" }}>
-              <div>
-                <AiFillGithub />
-              </div>
+            <IconContext.Provider value={{ size: "1.8em" }}>
+              <AiFillGithub />
             </IconContext.Provider>
           </a>
         </li>
         <li>
           <a href="mailto:guillermo.arriadevoe@gmail.com">
-          <IconContext.Provider value={{ size: "2em" }}>
-              <div>
-                <AiFillMail />
-              </div>
+            <IconContext.Provider value={{ size: "1.8em" }}>
+              <AiFillMail />
             </IconContext.Provider>
           </a>
         </li>
