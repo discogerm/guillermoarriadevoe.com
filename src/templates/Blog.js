@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import ScriptTag from "react-script-tag"
+// import ScriptTag from "react-script-tag"
+import Gist from 'react-gist'
 
 import blogStyles from "./Blog.module.scss"
 
@@ -38,13 +39,10 @@ const Blog = props => {
         return <img src={url} alt={alt} />
       },
       "embedded-entry-inline": node => {
-        const src = node.data.target.fields.json["en-US"].src
+        const file = node.data.target.fields.json["en-US"].file
+        const gist_id = node.data.target.fields.json["en-US"].gist_id
         return (
-          <ScriptTag
-            isHydrating={true}
-            type="text/javascript"
-            src={src}
-          />
+          <Gist id={gist_id} file={file} />
         )
       },
     },
