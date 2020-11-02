@@ -21,8 +21,8 @@ export const query = graphql`
       tags
       slug
       previewImage {
-        fluid {
-          src
+        file {
+          url
         }
         title
       }
@@ -56,7 +56,7 @@ const Blog = props => {
       </h1>
       <div className={blogStyles.postHeaderImageContainer}>
         <img
-          src={props.data.contentfulBlogPost.previewImage.fluid.src}
+          src={props.data.contentfulBlogPost.previewImage.file.url}
           alt={props.data.contentfulBlogPost.previewImage.title}
         />
       </div>
