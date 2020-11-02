@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import ScriptTag from "react-script-tag"
 
 import blogStyles from "./Blog.module.scss"
 
@@ -37,8 +38,14 @@ const Blog = props => {
         return <img src={url} alt={alt} />
       },
       "embedded-entry-inline": node => {
-        const data = node.data.target.fields.data["en-US"]
-        return <td dangerouslySetInnerHTML={{ __html: data }} />
+        const src = node.data.target.fields.json["en-US"].src
+        return (
+          <ScriptTag
+            isHydrating={true}
+            type="text/javascript"
+            src={src}
+          />
+        )
       },
     },
   }

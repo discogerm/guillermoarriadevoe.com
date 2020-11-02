@@ -26,6 +26,7 @@
     "npm": "^6.14.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-gist": "^1.2.2",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.11.0",
     "react-script-tag": "^1.1.2"
