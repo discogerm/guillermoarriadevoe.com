@@ -46,7 +46,7 @@ const Header = () => {
     <div className={headerStyles.mainHeaderContainer}>
       <header className={headerStyles.mainHeader}>
         <Link className={headerStyles.mhLogo} to="/">
-          DISCOGERM
+          GADV
         </Link>
         {displayNavigation(headerStyles.navBar)}
         <SocialMenu />

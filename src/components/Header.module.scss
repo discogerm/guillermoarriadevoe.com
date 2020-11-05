@@ -10,7 +10,7 @@
   top: 0;
   
   .main-header {
-    max-width: 1080px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,13 +25,14 @@
     }
 
     .mh-logo {
-      height: 1.6em;
+      height: 1.3em;
       font-family: "Press Start 2P", cursive;
       text-decoration: none;
       transition: 200ms;
+      font-size: 1.2em;
 
       @include respond-above(sm) {
-        height: 1.7em;
+        // height: 1.4em;
 
       }
 
