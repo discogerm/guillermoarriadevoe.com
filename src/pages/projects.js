@@ -41,20 +41,21 @@ const IndexPage = () => {
       <div>
         <Head title="Home" />
         <IntroText>
-          Guillermo Arria-Devoe is a flexible software engineer nearing graduation
-          from Lambda School's Data Science program and looking for work.
+          Guillermo Arria-Devoe is a flexible software engineer nearing
+          graduation from Lambda School's Data Science program and looking for
+          work.
         </IntroText>
         <div className={projectStyles.cardContainer}>
           {data.allContentfulPortfolioProject.edges.map(edge => (
             <ProjectCard
-            title={edge.node.title}
-            technologyUsed={edge.node.technologyUsed}
-            previewImage={edge.node.previewImage}
-            description={edge.node.description.description}
-            gitHubUrlTitle={edge.node.gitHubUrlTitle}
-            gitHubUrl={edge.node.gitHubUrl}
-            projectUrlTitle={edge.node.projectUrlTitle}
-            projectUrl={edge.node.projectUrl}
+              title={edge.node.title}
+              technologyUsed={edge.node.technologyUsed}
+              previewImage={edge.node.previewImage}
+              description={edge.node.description.description}
+              gitHubUrlTitle={edge.node.gitHubUrlTitle}
+              gitHubUrl={edge.node.gitHubUrl}
+              projectUrlTitle={edge.node.projectUrlTitle}
+              projectUrl={edge.node.projectUrl}
             />
           ))}
         </div>

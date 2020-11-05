@@ -7,12 +7,16 @@ const ProjectCard = props => {
     <div className={cardStyles.card}>
       <div className={cardStyles.topContent}>
         <div className={cardStyles.imageContainer}>
-          <img
-            src={props.previewImage.fluid.src}
-            alt={props.previewImage.title}
-          />
+          <a href={props.projectUrl}>
+            <img
+              src={props.previewImage.fluid.src}
+              alt={props.previewImage.title}
+            />
+          </a>
         </div>
-        <h2 className={cardStyles.cardTitle}>{props.title}</h2>
+        <h2 className={cardStyles.cardTitle}>
+          <a href={props.projectUrl}>{props.title}</a>
+        </h2>
         <div className={cardStyles.technologyTags}>
           {props.technologyUsed.map(tag => (
             <span>{tag}</span>
@@ -21,12 +25,8 @@ const ProjectCard = props => {
         <p className={cardStyles.cardDes}>{props.description}</p>
       </div>
       <div className={cardStyles.linkContainer}>
-        <a href={props.gitHubUrl} target="__blank" rel="noopener">
-        &#10230; {props.gitHubUrlTitle} 
-        </a>
-        <a href={props.projectUrl} target="__blank" rel="noopener">
-        &#10230; {props.projectUrlTitle}
-        </a>
+        <a href={props.gitHubUrl}>&#10230; {props.gitHubUrlTitle}</a>
+        <a href={props.projectUrl}>&#10230; {props.projectUrlTitle}</a>
       </div>
     </div>
   )
