@@ -34,7 +34,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://github.com/discogerm/"
+            href="https://github.com/arriadevoe/"
             target="__blank"
             rel="noopener"
           >
