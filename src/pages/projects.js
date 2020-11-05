@@ -28,6 +28,7 @@ const IndexPage = () => {
               fluid {
                 src
               }
+              title
             }
           }
         }

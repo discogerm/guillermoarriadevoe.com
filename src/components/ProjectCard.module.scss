@@ -15,6 +15,12 @@
   }
 
   .image-container {
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
     img {
       margin-bottom: 0.7em;
     }
