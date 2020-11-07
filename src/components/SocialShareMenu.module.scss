@@ -5,7 +5,7 @@
 .menu-container {      
     margin-bottom: 0.4em;
 
-    @include respond-above(sm) {
+    @include respond-above(xs) {
       order: 2;
       margin: 0;
     }

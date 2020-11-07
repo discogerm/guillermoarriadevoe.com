@@ -67,7 +67,7 @@ const Blog = props => {
       </div>
       <div className={blogStyles.postHeader}>
         <SocialShareMenu shareableLink={props.data.contentfulBlogPost.slug} />
-        <div className={blogStyles.userCardContainer}>
+        <div className={blogStyles.authorContainer}>
           <Link className={blogStyles.avatar} to="/blog/about-me">
             <img
               src={require("../assets/apple-touch-icon.png")}

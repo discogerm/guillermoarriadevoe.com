@@ -28,13 +28,13 @@
   margin-bottom: 1.6em;
 
 
-  @include respond-above(sm) {
+  @include respond-above(xs) {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
   }
 
-  .user-card-container {
+  .author-container {
     display: flex;
     align-items: center;
 
