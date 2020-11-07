@@ -9,7 +9,7 @@ const ProjectCard = props => {
         <div className={cardStyles.imageContainer}>
           <a href={props.projectUrl}>
             <img
-              src={props.previewImage.fluid.src}
+              src={props.previewImage.file.url}
               alt={props.previewImage.title}
             />
           </a>

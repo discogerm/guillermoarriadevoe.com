@@ -24,8 +24,8 @@ const IndexPage = () => {
             projectUrlTitle
             projectUrl
             previewImage {
-              fluid {
-                src
+              file {
+                url
               }
               title
             }
