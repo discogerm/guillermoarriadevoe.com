@@ -3,8 +3,10 @@
 
 footer {
   width: 100%;
-  border-top: 0.2em solid $border-blue;
+  background: $indie-dark;
   margin-top: 2.5em;
+  box-shadow: 0 0 2px 0 black;
+
 
   .content-container {
     display: flex;
