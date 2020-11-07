@@ -32,7 +32,7 @@
       font-size: 1.2em;
 
       @include respond-above(sm) {
-        // height: 1.4em;
+        height: 1.5em;
 
       }
 
@@ -57,7 +57,7 @@
         margin: 0;
 
         @include respond-above(sm) {
-          width: 17em;
+          width: 18em;
         }
 
         @include respond-above(md) {
