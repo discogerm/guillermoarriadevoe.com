@@ -15,7 +15,7 @@
 
 .post-tags {
   @include span-flex-wrap();
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
 
   span {
     @include span-tag()
