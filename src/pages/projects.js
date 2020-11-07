@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
-import IntroText from "../components/IntroText"
 import ProjectCard from "../components/ProjectCard"
 
 import projectStyles from "./projects.module.scss"
