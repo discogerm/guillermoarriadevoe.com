@@ -10,10 +10,10 @@ import projectStyles from "./projects.module.scss"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulPortfolioProject(sort: { fields: order, order: ASC }) {
+      allContentfulPortfolioProject(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
-            order
+            publishedDate(formatString: "MMMM Do, YYYY")
             title
             technologyUsed
             description {
