@@ -17,7 +17,7 @@
 
 .post-tags {
   @include span-flex-wrap();
-  margin-bottom: 0.7em;
+  margin-bottom: 0.8em;
 
   span {
     @include span-tag();
@@ -40,8 +40,8 @@
     align-items: center;
 
     .avatar {
-      height: 50px;
-      background: $terminal-blue;
+      height: 35px;
+      background: $night-owl;
       border-radius: 2em;
 
       img {
@@ -50,8 +50,9 @@
     }
 
     .publishing-information {
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       font-size: 0.9rem;
       margin-left: 0.6em;
 

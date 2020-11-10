@@ -14,7 +14,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      publishedDate(formatString: "MMMM Do, YYYY")
+      publishedDate(formatString: "MMM DD, YYYY")
       body {
         json
       }
@@ -66,13 +66,12 @@ const Blog = props => {
         ))}
       </div>
       <div className={blogStyles.postHeader}>
-        {/* <SocialShareMenu shareableLink={props.data.contentfulBlogPost.slug} /> */}
         <div className={blogStyles.authorContainer}>
           <Link className={blogStyles.avatar} to="/blog/about-me">
             <img
               src={require("../assets/apple-touch-icon.png")}
               alt="avatar"
-              width="50"
+              width="40"
             />
           </Link>
           <div className={blogStyles.publishingInformation}>
