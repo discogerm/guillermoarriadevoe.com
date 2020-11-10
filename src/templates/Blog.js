@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-// import ScriptTag from "react-script-tag"
 import Gist from 'react-gist'
 
 import blogStyles from "./Blog.module.scss"
