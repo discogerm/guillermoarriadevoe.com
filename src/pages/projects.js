@@ -19,9 +19,7 @@ const IndexPage = () => {
             description {
               description
             }
-            gitHubUrlTitle
             gitHubUrl
-            projectUrlTitle
             projectUrl
             previewImage {
               file {
@@ -46,9 +44,7 @@ const IndexPage = () => {
               technologyUsed={edge.node.technologyUsed}
               previewImage={edge.node.previewImage}
               description={edge.node.description.description}
-              gitHubUrlTitle={edge.node.gitHubUrlTitle}
               gitHubUrl={edge.node.gitHubUrl}
-              projectUrlTitle={edge.node.projectUrlTitle}
               projectUrl={edge.node.projectUrl}
             />
           ))}

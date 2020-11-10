@@ -25,8 +25,8 @@ const ProjectCard = props => {
         <p className={cardStyles.cardDes}>{props.description}</p>
       </div>
       <div className={cardStyles.linkContainer}>
-        <a href={props.gitHubUrl}>&#10230; {props.gitHubUrlTitle}</a>
-        <a href={props.projectUrl}>&#10230; {props.projectUrlTitle}</a>
+        <a href={props.gitHubUrl}>&#10230; Explore on GitHub</a>
+        <a href={props.projectUrl}>&#10230; View Deployed</a>
       </div>
     </div>
   )
