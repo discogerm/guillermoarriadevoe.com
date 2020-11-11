@@ -30,11 +30,6 @@
       transition: 200ms;
       font-size: 2em;
 
-      @include respond-above(sm) {
-        height: 1.5em;
-
-      }
-
       &:hover {
         color: $tb-lighten;
       }
