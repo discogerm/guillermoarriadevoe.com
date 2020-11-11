@@ -14,7 +14,7 @@ body {
 }
 
 p {
-  @include respond-above(md) {
+  @include respond-above(sm) {
     font-size: 0.9em;
   }
 }
