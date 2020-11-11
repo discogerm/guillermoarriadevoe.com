@@ -16,7 +16,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
-              Blog Home
+              Blog
             </Link>
           </li>
           <li>
