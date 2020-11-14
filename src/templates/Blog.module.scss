@@ -4,7 +4,6 @@
 
 .post-header-image-container {
   img {
-    // border-radius: 0.2em;
     width: 100%;
     margin-bottom: 0.4em;
   }
@@ -33,17 +32,18 @@
   }
 
   .author-container {
+    width: 100%;
     display: flex;
     align-items: center;
-
-    @include respond-above(xs) {
-      width: 100%;
-    }
 
     .avatar {
       height: 35px;
       background: $terminal-blue;
       border-radius: 2em;
+
+      @include respond-above(xs) {
+        height: 38px;
+      }
 
       img {
         margin: 0;
