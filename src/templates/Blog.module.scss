@@ -30,13 +30,15 @@
 
   @include respond-above(xs) {
     flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
   }
 
   .author-container {
     display: flex;
     align-items: center;
+
+    @include respond-above(xs) {
+      width: 100%;
+    }
 
     .avatar {
       height: 35px;
