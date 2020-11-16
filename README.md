@@ -6,9 +6,11 @@ Feel free to use this project for your own website. Getting started is easy.
 
 ## 🚀 Quick start
 
-1.  **Add Contentful environment variables**
+1. **Clone Project**
 
-    Create both a [Contentful](https://www.contentful.com) account and a new a API key. When you're done, create a new .env file in the main directory with the following two variables. 
+2.  **Add Contentful Environment Variables**
+
+    Create a [Contentful](https://www.contentful.com) account and along with a new [Personal Access Token](https://www.contentful.com/developers/docs/references/authentication/#the-content-management-api). When you're done, create a new .env file in the main directory with the following two variables. 
 
     ```sh
     # sample values
@@ -16,7 +18,7 @@ Feel free to use this project for your own website. Getting started is easy.
     CONTENTFUL_SPACE_ID=k10e2ml19krm8
     ```
 
-2.  **Start developing.**
+3.  **Start Developing**
 
     Navigate into your new site’s directory and start it up. Replace GraphQL queries where necessary.
 
@@ -25,6 +27,6 @@ Feel free to use this project for your own website. Getting started is easy.
     gatsby develop
     ```
 
-3. **Publishing Content**
+4. **Publishing Content**
     
     Blog pages can be created by publishing Contentful content under a content model titled **Blog Post.**  Portfolio project entries can be created by publishing content under a content model titled **Portfolio Project.** Refer to the GraphQL queries found in the "pages" directory for all currently included content model fields.
