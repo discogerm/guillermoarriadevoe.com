@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import cardStyles from "./BlogPostCard.module.scss"
 
-export default BlogPostCard = (props) => {
+const BlogPostCard = props => {
   return (
     <li className={cardStyles.postCard}>
       <h2 className={cardStyles.postTitle}>
@@ -34,3 +34,5 @@ export default BlogPostCard = (props) => {
     </li>
   )
 }
+
+export default BlogPostCard
