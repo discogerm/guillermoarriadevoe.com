@@ -1,8 +1,9 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import Head from "../components/Head"
+import BlogPostCard from "../components/BlogPostCard"
 
 import blogStyles from "./index.module.scss"
 
@@ -38,37 +39,14 @@ const BlogPage = () => {
         <div>
           <ol className={blogStyles.postContainer}>
             {data.allContentfulBlogPost.edges.map(edge => (
-              <li className={blogStyles.postCard}>
-                <h2 className={blogStyles.postTitle}>
-                  <Link to={`/blog/${edge.node.slug}`}>{edge.node.title}</Link>
-                </h2>
-                <div className={blogStyles.postTags}>
-                  {edge.node.tags.map(tag => (
-                    <span>{tag}</span>
-                  ))}
-                </div>
-                <div className={blogStyles.postPreviewContainer}>
-                  <div className={blogStyles.postPreviewImageContainer}>
-                    <Link to={`/blog/${edge.node.slug}`}>
-                      <img
-                        src={edge.node.previewImage.fluid.src}
-                        alt={edge.node.previewImage.title}
-                      />
-                    </Link>
-                  </div>
-                  <div className={blogStyles.postPreviewText}>
-                    <p>{edge.node.preview.preview}</p>
-                    <div className={blogStyles.postExpand}>
-                      <Link to={`/blog/${edge.node.slug}`}>
-                        &#x27f6; Read more{" "}
-                      </Link>
-                      <p className={blogStyles.postDate}>
-                        {edge.node.publishedDate}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
+              <BlogPostCard
+                slug={edge.node.slug}
+                title={edge.node.title}
+                tags={edge.node.tags}
+                previewImage={edge.node.previewImage}
+                preview={edge.node.preview}
+                publishedDate={edge.node.publishedDate}
+              />
             ))}
           </ol>
         </div>
