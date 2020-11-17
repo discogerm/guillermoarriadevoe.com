@@ -7,27 +7,27 @@ export default BlogPostCard = (props) => {
   return (
     <li className={cardStyles.postCard}>
       <h2 className={cardStyles.postTitle}>
-        <Link to={`/blog/${edge.node.slug}`}>{edge.node.title}</Link>
+        <Link to={`/blog/${props.slug}`}>{props.title}</Link>
       </h2>
       <div className={cardStyles.postTags}>
-        {edge.node.tags.map(tag => (
+        {props.tags.map(tag => (
           <span>{tag}</span>
         ))}
       </div>
       <div className={cardStyles.postPreviewContainer}>
         <div className={cardStyles.postPreviewImageContainer}>
-          <Link to={`/blog/${edge.node.slug}`}>
+          <Link to={`/blog/${props.slug}`}>
             <img
-              src={edge.node.previewImage.fluid.src}
-              alt={edge.node.previewImage.title}
+              src={props.previewImage.fluid.src}
+              alt={props.previewImage.title}
             />
           </Link>
         </div>
         <div className={cardStyles.postPreviewText}>
-          <p>{edge.node.preview.preview}</p>
+          <p>{props.preview.preview}</p>
           <div className={cardStyles.postExpand}>
-            <Link to={`/blog/${edge.node.slug}`}>&#x27f6; Read more </Link>
-            <p className={cardStyles.postDate}>{edge.node.publishedDate}</p>
+            <Link to={`/blog/${props.slug}`}>&#x27f6; Read more </Link>
+            <p className={cardStyles.postDate}>{props.publishedDate}</p>
           </div>
         </div>
       </div>
