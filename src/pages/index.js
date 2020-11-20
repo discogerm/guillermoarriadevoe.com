@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 import BlogPostCard from "../components/BlogPostCard"
+import TagFilters from "../components/TagFilters"
 
 import blogStyles from "./index.module.scss"
 
@@ -32,31 +33,12 @@ const BlogPage = () => {
     }
   `)
 
-  const create_tag_collection = edges => {
-    var tag_collection = []
-
-    edges.map(edge => tag_collection.push(...edge.node.tags))
-
-    let unique = [...new Set(tag_collection)]
-    return unique
-  }
-
   return (
     <Layout>
       <div>
         <Head title="Blog" />
         <div>
-          {/* <div>{create_tag_collection(data.allContentfulBlogPost.edges)}</div> */}
           {/* <div>
-            {data.allContentfulBlogPost.edges.map(edge => {
-              if (edge.node.tags.includes("Personal")) {
-                return <div>{edge.node.tags}</div>
-              } else {
-                return null
-              }
-            })}
-          </div> */}
-          <div>
             {data.allContentfulBlogPost.edges.map(edge =>
               edge.node.tags.includes("Personal") ? (
                 <div>{edge.node.tags}</div>
@@ -64,7 +46,7 @@ const BlogPage = () => {
                 []
               )
             )}
-          </div>
+          </div> */}
           <ol className={blogStyles.postContainer}>
             {data.allContentfulBlogPost.edges.map(edge => (
               <BlogPostCard
