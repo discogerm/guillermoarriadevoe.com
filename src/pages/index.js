@@ -33,12 +33,19 @@ const BlogPage = () => {
     }
   `)
 
+  const selectFilter = e => {
+    console.log(e.target.textContent)
+  }
+
   return (
     <Layout>
       <div>
         <Head title="Blog" />
         <div>
-          <TagFilters edges={data.allContentfulBlogPost.edges} />
+          <TagFilters
+            edges={data.allContentfulBlogPost.edges}
+            selectFilter={selectFilter}
+          />
           {/* <div>
             {data.allContentfulBlogPost.edges.map(edge =>
               edge.node.tags.includes("Personal") ? (
