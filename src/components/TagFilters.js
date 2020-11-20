@@ -13,11 +13,12 @@ const TagFilters = props => {
   }
 
   return (
-    <ol>
+    <div className={filterStyles.tagContainer}>
+      <span className={filterStyles.description}>Filter by Topic:</span>
       {create_tag_collection(props.edges).map(tag => (
-        <li>{tag}</li>
+        <span>{tag}</span>
       ))}
-    </ol>
+    </div>
   )
 }
 

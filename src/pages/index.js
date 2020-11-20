@@ -38,6 +38,7 @@ const BlogPage = () => {
       <div>
         <Head title="Blog" />
         <div>
+          <TagFilters edges={data.allContentfulBlogPost.edges} />
           {/* <div>
             {data.allContentfulBlogPost.edges.map(edge =>
               edge.node.tags.includes("Personal") ? (
