@@ -3,13 +3,13 @@
   flex-wrap: wrap;
 }
 
-@mixin span-tag() {
+@mixin span-tag($color: green) {
   line-height: 1em;
   background-size: 0;
   font-size: 0.65rem;
   font-weight: 600;
   font-weight: bold;
-  background: green;
+  background: $color;
   border-radius: 0.1em;
   padding: 0.45em 0.9em;
   margin-right: 0.5em;
