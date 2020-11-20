@@ -10,8 +10,8 @@ const BlogPostCard = props => {
         <Link to={`/blog/${props.slug}`}>{props.title}</Link>
       </h2>
       <div className={cardStyles.postTags}>
-        {props.tags.map(tag => (
-          <span>{tag}</span>
+        {props.tags.map((tag, i) => (
+          <span key={i}>{tag}</span>
         ))}
       </div>
       <div className={cardStyles.postPreviewContainer}>
