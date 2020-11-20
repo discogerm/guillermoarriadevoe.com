@@ -47,26 +47,34 @@ const BlogPage = () => {
             edges={data.allContentfulBlogPost.edges}
             selectFilter={selectFilter}
           />
-          {/* <div>
-            {data.allContentfulBlogPost.edges.map(edge =>
-              edge.node.tags.includes(currentFilter) ? (
-                <div>{edge.node.tags}</div>
-              ) : (
-                []
-              )
-            )}
-          </div> */}
           <ol className={blogStyles.postContainer}>
-            {data.allContentfulBlogPost.edges.map(edge => (
-              <BlogPostCard
-                slug={edge.node.slug}
-                title={edge.node.title}
-                tags={edge.node.tags}
-                previewImage={edge.node.previewImage}
-                preview={edge.node.preview}
-                publishedDate={edge.node.publishedDate}
-              />
-            ))}
+            {currentFilter === "Show All"
+              ? data.allContentfulBlogPost.edges.map(edge => (
+                  <BlogPostCard
+                    key={edge.node.slug}
+                    slug={edge.node.slug}
+                    title={edge.node.title}
+                    tags={edge.node.tags}
+                    previewImage={edge.node.previewImage}
+                    preview={edge.node.preview}
+                    publishedDate={edge.node.publishedDate}
+                  />
+                ))
+              : data.allContentfulBlogPost.edges.map(edge =>
+                  edge.node.tags.includes(currentFilter) ? (
+                    <BlogPostCard
+                      key={edge.node.slug}
+                      slug={edge.node.slug}
+                      title={edge.node.title}
+                      tags={edge.node.tags}
+                      previewImage={edge.node.previewImage}
+                      preview={edge.node.preview}
+                      publishedDate={edge.node.publishedDate}
+                    />
+                  ) : (
+                    []
+                  )
+                )}
           </ol>
         </div>
       </div>
