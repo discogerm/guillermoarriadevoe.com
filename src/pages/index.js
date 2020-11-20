@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
@@ -9,6 +9,7 @@ import TagFilters from "../components/TagFilters"
 import blogStyles from "./index.module.scss"
 
 const BlogPage = () => {
+  const [currentFilter, setCurrentFilter] = useState("Show All")
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
@@ -34,7 +35,7 @@ const BlogPage = () => {
   `)
 
   const selectFilter = e => {
-    console.log(e.target.textContent)
+    setCurrentFilter(e.target.textContent)
   }
 
   return (
@@ -48,7 +49,7 @@ const BlogPage = () => {
           />
           {/* <div>
             {data.allContentfulBlogPost.edges.map(edge =>
-              edge.node.tags.includes("Personal") ? (
+              edge.node.tags.includes(currentFilter) ? (
                 <div>{edge.node.tags}</div>
               ) : (
                 []

@@ -15,6 +15,7 @@ const TagFilters = props => {
   return (
     <div className={filterStyles.tagContainer}>
       <span className={filterStyles.description}>Filter by Topic:</span>
+      <span onClick={(e) => props.selectFilter(e)}>Show All</span>
       {create_tag_collection(props.edges).map(tag => (
         <span onClick={(e) => props.selectFilter(e)}>{tag}</span>
       ))}
