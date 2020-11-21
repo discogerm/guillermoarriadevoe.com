@@ -18,7 +18,7 @@ const TagFilters = props => {
       <button onClick={e => props.selectFilter(e)}>Show All</button>
       {create_tag_collection(props.edges).map((tag, i) => (
         <button key={i} onClick={e => props.selectFilter(e)}>
-          #{tag}
+          {tag}
         </button>
       ))}
     </div>
