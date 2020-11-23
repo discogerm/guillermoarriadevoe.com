@@ -4,13 +4,31 @@
   margin-bottom: 0.8em;
 }
 
-@mixin span-tag($color: green, $font-size: 0.65rem) {
+@mixin span-tags() {
   line-height: 1em;
-  font-size: $font-size;
+  font-size: 0.65rem;
   font-weight: bold;
-  background: $color;
+  background: green;
   border-radius: 0.1em;
   padding: 0.45em 0.9em;
   margin-right: 0.5em;
   margin-bottom: 0.7em;
+}
+
+@mixin button-tags() {
+  line-height: 1em;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background: $indie-dark;
+  padding: 0.45em 0.9em;
+  margin-right: 0.5em;
+  margin-bottom: 0.7em;
+  border: 0;
+  border-radius: 1em;
+  padding: 0.6em 1em;
+  transition: 200ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }

@@ -17,7 +17,7 @@
   @include span-tag-container();
 
   span {
-    @include span-tag();
+    @include span-tags();
   }
 }
 
