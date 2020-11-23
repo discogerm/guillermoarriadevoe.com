@@ -33,12 +33,7 @@
     }
 
     .post-tags {
-      @include span-flex-wrap();
-      margin-bottom: 0.8em;
-
-      span {
-        @include span-tag();
-      }
+      @include filter-tags()
     }
 
     .post-preview-container {
