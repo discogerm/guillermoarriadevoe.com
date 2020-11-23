@@ -3,6 +3,7 @@
 
 .tag-container {
   @include span-tag-container();
+  margin-bottom: 1em;
 
   button {
     @include button-tags();
