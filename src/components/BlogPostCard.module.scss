@@ -33,7 +33,11 @@
     }
 
     .post-tags {
-      @include filter-tags()
+      @include span-tag-container();
+
+      span {
+        @include span-tag();
+      }
     }
 
     .post-preview-container {

@@ -2,8 +2,7 @@
 @import "../styles/variables";
 
 .tag-container {
-  @include span-flex-wrap();
-  margin-bottom: 0.8em;
+  @include span-tag-container();
 
   .description {
     @include span-tag($night-owl);
