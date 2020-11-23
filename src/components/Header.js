@@ -51,7 +51,7 @@ const Header = () => {
         {displayNavigation(headerStyles.navBar)}
         <SocialMenu />
       </header>
-      {displayNavigation(headerStyles.hamburgerDropdown)}
+      {displayNavigation(headerStyles.navDropdown)}
     </div>
   )
 }

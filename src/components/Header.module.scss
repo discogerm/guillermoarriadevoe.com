@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  
+
   .main-header {
     max-width: 1000px;
     display: flex;
@@ -40,7 +40,6 @@
 
       @include respond-above(sm) {
         display: flex;
-        align-items: center;
         justify-content: space-between;
       }
 
@@ -80,15 +79,9 @@
         }
       }
     }
-
-    .hamburger-btn {
-      @include respond-above(md) {
-        display: none;
-      }
-    }
   }
 
-  .hamburger-dropdown {
+  .nav-dropdown {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
