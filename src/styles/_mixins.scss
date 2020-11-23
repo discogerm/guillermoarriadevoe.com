@@ -4,11 +4,9 @@
   margin-bottom: 0.8em;
 }
 
-@mixin span-tag($color: green) {
+@mixin span-tag($color: green, $font-size: 0.65rem) {
   line-height: 1em;
-  background-size: 0;
-  font-size: 0.65rem;
-  font-weight: 600;
+  font-size: $font-size;
   font-weight: bold;
   background: $color;
   border-radius: 0.1em;

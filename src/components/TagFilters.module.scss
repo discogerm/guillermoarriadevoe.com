@@ -4,15 +4,18 @@
 .tag-container {
   @include span-tag-container();
 
-  .description {
-    @include span-tag($night-owl);
-  }
-
   button {
     font-size: 100%;
     font-family: inherit;
     border: 0;
     padding: 0;
-    @include span-tag($indie-dark);
+    @include span-tag($indie-dark, 0.7rem);
+    border-radius: 1em;
+    padding: 0.6em 1em;
+    transition: 200ms;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
