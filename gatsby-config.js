@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Guillermo Arria-Devoe",
-    author: "Guillermo Arria-Devoe",
+    title: "William Arria-Devoe",
+    author: "William Arria-Devoe",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
