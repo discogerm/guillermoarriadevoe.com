@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Goldman", "Roboto", "Dancing Script"],
+        fonts: ["Mr Dafoe"],
         display: "swap",
       },
     },
