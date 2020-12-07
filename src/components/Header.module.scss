@@ -50,11 +50,11 @@
         margin: 0;
 
         @include respond-above(sm) {
-          width: 18em;
+          width: 15em;
         }
 
         @include respond-above(md) {
-          width: 20em;
+          width: 18em;
         }
 
         li {
