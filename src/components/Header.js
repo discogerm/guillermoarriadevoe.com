@@ -46,7 +46,7 @@ const Header = () => {
     <div className={headerStyles.mainHeaderContainer}>
       <header className={headerStyles.mainHeader}>
         <Link className={headerStyles.mhLogo} to="/">
-          GADv
+          Guillermo Arria-Devoe
         </Link>
         {displayNavigation(headerStyles.navBar)}
         <SocialMenu />
