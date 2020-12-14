@@ -1,3 +1,5 @@
+@import "./media-queries";
+
 @mixin span-tag-container() {
   display: flex;
   flex-wrap: wrap;
@@ -6,13 +8,17 @@
 
 @mixin span-tags() {
   line-height: 1em;
-  font-size: 0.65rem;
   font-weight: bold;
+  font-size: 0.7rem;
   background: green;
   border-radius: 0.1em;
   padding: 0.45em 0.9em;
   margin-right: 0.5em;
   margin-bottom: 0.7em;
+  
+  @include respond-above(sm) {
+    font-size: 0.65rem;
+  }
 }
 
 @mixin button-tags() {
