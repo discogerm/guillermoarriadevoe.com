@@ -45,7 +45,7 @@ const BlogPage = () => {
         <div>
           <TagFilters
             edges={data.allContentfulBlogPost.edges}
-            selectFilter={selectFilter}
+            onClickHandler={selectFilter}
           />
           <ol className={blogStyles.postContainer}>
             {currentFilter === "Show All"
