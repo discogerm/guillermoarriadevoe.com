@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function Dropdown({ title, items, multiSelect = false }) {
+function Dropdown(props) {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState([])
 
@@ -26,7 +26,10 @@ function Dropdown({ title, items, multiSelect = false }) {
         onClick={() => toggle()}
       >
         <div className="title">
-          <p>Some Title</p>
+          <p>{props.title}</p>
+        </div>
+        <div className="action">
+          <p>{open ? 'Close' : 'Open'}</p>
         </div>
       </div>
     </div>

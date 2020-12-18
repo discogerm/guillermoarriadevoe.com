@@ -44,7 +44,12 @@ const BlogPage = () => {
       <div>
         <Head title="Blog" />
         <div>
-          <DropdownFilters />
+          <DropdownFilters
+            title="Filters"
+            multiSelect={false}
+            edges={data.allContentfulBlogPost.edges}
+            onClickHandler={selectFilter}
+          />
           <TagFilters
             edges={data.allContentfulBlogPost.edges}
             onClickHandler={selectFilter}
