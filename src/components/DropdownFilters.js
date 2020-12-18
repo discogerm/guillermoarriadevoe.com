@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 
+import ddStyles from"./DropdownFilters.module.scss"
+
 function Dropdown(props) {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState([])
@@ -16,7 +18,7 @@ function Dropdown(props) {
   }
 
   return (
-    <div className="dd-wrapper">
+    <div className={ddStyles.ddWrapper}>
       <div
         tabIndex={0}
         className="dd-header"
@@ -24,10 +26,10 @@ function Dropdown(props) {
         onKeyPress={() => toggle()}
         onClick={() => toggle()}
       >
-        <div className="title">
-          <p>{props.title}</p>
+        <div className="dd-header__title">
+          <p className="dd-header__title--bold">{props.title}</p>
         </div>
-        <div className="action">
+        <div className="dd-header__action">
           <p>{open ? "Close" : "Open"}</p>
         </div>
       </div>
