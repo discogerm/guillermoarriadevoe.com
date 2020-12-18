@@ -24,7 +24,7 @@ function Dropdown({ title, items, multiSelect = false }) {
         onClick={}
       >
         <div className="title">
-          <p>{filter}</p>
+          <p>Some Title</p>
         </div>
       </div>
     </div>
