@@ -6,7 +6,6 @@ function Dropdown(props) {
 
   const toggle = () => setOpen(!open)
 
-  // How many times is this running?
   const create_tag_collection = edges => {
     var tagCollection = []
 
@@ -32,12 +31,18 @@ function Dropdown(props) {
           <p>{open ? "Close" : "Open"}</p>
         </div>
       </div>
-      {open &&
-        create_tag_collection(props.edges).map((tag, i) => (
-          <button key={i} onClick={e => props.onClickHandler(e)}>
-            {tag}
-          </button>
-        ))}
+      {open && (
+        <ul className="dd-list">
+          <li className="dd-list-item">
+            <button onClick={e => props.onClickHandler(e)}>Show All</button>
+          </li>
+          {create_tag_collection(props.edges).map((tag, i) => (
+            <li key={i} className="dd-list-item">
+              <button onClick={e => props.onClickHandler(e)}>{tag}</button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
