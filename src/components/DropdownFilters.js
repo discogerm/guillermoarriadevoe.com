@@ -4,6 +4,8 @@ function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false)
   const [selection, setSelection] = useState([])
 
+  const toggle = () => setOpen(!open)
+
   // How many times is this running?
   const create_tag_collection = edges => {
     var tagCollection = []
@@ -20,8 +22,8 @@ function Dropdown({ title, items, multiSelect = false }) {
         tabIndex={0}
         className="dd-header"
         role="button"
-        onKeyPress={}
-        onClick={}
+        onKeyPress={() => toggle()}
+        onClick={() => toggle()}
       >
         <div className="title">
           <p>Some Title</p>

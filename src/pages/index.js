@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 import BlogPostCard from "../components/BlogPostCard"
 import TagFilters from "../components/TagFilters"
+import DropdownFilters from "../components/DropdownFilters"
 
 import blogStyles from "./index.module.scss"
 
@@ -43,6 +44,7 @@ const BlogPage = () => {
       <div>
         <Head title="Blog" />
         <div>
+          <DropdownFilters />
           <TagFilters
             edges={data.allContentfulBlogPost.edges}
             onClickHandler={selectFilter}
