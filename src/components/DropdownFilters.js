@@ -29,9 +29,15 @@ function Dropdown(props) {
           <p>{props.title}</p>
         </div>
         <div className="action">
-          <p>{open ? 'Close' : 'Open'}</p>
+          <p>{open ? "Close" : "Open"}</p>
         </div>
       </div>
+      {open &&
+        create_tag_collection(props.edges).map((tag, i) => (
+          <button key={i} onClick={e => props.onClickHandler(e)}>
+            {tag}
+          </button>
+        ))}
     </div>
   )
 }
