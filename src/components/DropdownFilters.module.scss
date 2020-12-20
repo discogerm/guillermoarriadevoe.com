@@ -12,9 +12,15 @@
       width: 100%;
       padding: 0 20px;
       border: 1px solid red;
+      background-color: $indie-dark;
   
       .title {
         font-weight: bold;
+        margin: 0;
+      }
+
+      .action p {
+        margin: 0;
       }
     }
   
