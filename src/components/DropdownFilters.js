@@ -21,25 +21,25 @@ function Dropdown(props) {
     <div className={ddStyles.ddWrapper}>
       <div
         tabIndex={0}
-        className="dd-header"
+        className={ddStyles.ddHeader}
         role="button"
         onKeyPress={() => toggle()}
         onClick={() => toggle()}
       >
-        <div className="dd-header__title">
-          <p className="dd-header__title--bold">{props.title}</p>
+        <div>
+          <p className={ddStyles.title}>{props.title}</p>
         </div>
-        <div className="dd-header__action">
+        <div className={ddStyles.action}>
           <p>{open ? "Close" : "Open"}</p>
         </div>
       </div>
       {open && (
-        <ul className="dd-list">
-          <li className="dd-list-item">
+        <ul className={ddStyles.ddList}>
+          <li className={ddStyles.item}>
             <button onClick={e => props.onClickHandler(e)}>Show All</button>
           </li>
           {create_tag_collection(props.edges).map((tag, i) => (
-            <li key={i} className="dd-list-item">
+            <li key={i} className={ddStyles.item}>
               <button onClick={e => props.onClickHandler(e)}>{tag}</button>
             </li>
           ))}
