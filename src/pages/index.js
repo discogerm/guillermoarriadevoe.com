@@ -50,10 +50,10 @@ const BlogPage = () => {
             edges={data.allContentfulBlogPost.edges}
             onClickHandler={selectFilter}
           />
-          <TagFilters
+          {/* <TagFilters
             edges={data.allContentfulBlogPost.edges}
             onClickHandler={selectFilter}
-          />
+          /> */}
           <ol className={blogStyles.postContainer}>
             {currentFilter === "Show All"
               ? data.allContentfulBlogPost.edges.map(edge => (
