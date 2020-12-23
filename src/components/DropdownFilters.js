@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import ddStyles from"./DropdownFilters.module.scss"
+import ddStyles from "./DropdownFilters.module.scss"
 
 function Dropdown(props) {
   const [open, setOpen] = useState(false)
@@ -11,9 +11,13 @@ function Dropdown(props) {
   const create_tag_collection = edges => {
     var tagCollection = []
 
-    edges.map(edge => tagCollection.push(...edge.node.tags))
+    edges.forEach(edge => tagCollection.push(...edge.node.tags))
 
     let uniqueTags = [...new Set(tagCollection)]
+    uniqueTags.sort(function(a, b) {
+      return a.length - b.length
+    })
+
     return uniqueTags
   }
 
