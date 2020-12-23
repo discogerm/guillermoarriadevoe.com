@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 import BlogPostCard from "../components/BlogPostCard"
-import TagFilters from "../components/TagFilters"
 import DropdownFilters from "../components/DropdownFilters"
 
 import blogStyles from "./index.module.scss"
@@ -50,10 +49,6 @@ const BlogPage = () => {
             edges={data.allContentfulBlogPost.edges}
             onClickHandler={selectFilter}
           />
-          {/* <TagFilters
-            edges={data.allContentfulBlogPost.edges}
-            onClickHandler={selectFilter}
-          /> */}
           <ol className={blogStyles.postContainer}>
             {currentFilter === "Show All"
               ? data.allContentfulBlogPost.edges.map(edge => (
