@@ -2,7 +2,7 @@
 
 A progressive web application featuring my work and who I am. Designed and coded by yours truly using Gatsby, React, SCSS, GraphQL, and Contentful for content delivery.
 
-Feel free to use this project for your own website. Getting started is easy.
+Feel free to use this project for your own website. Getting started is a breeze.
 
 ## 🚀 Quick start
 
@@ -10,7 +10,7 @@ Feel free to use this project for your own website. Getting started is easy.
 
 2.  **Add Contentful Environment Variables**
 
-    Create a [Contentful](https://www.contentful.com) account and along with a new [Personal Access Token](https://www.contentful.com/developers/docs/references/authentication/#the-content-management-api). When you're done, create a new .env file in the main directory with the following two variables. 
+    First create a [Contentful](https://www.contentful.com) account. Then create a new [Personal Access Token](https://www.contentful.com/developers/docs/references/authentication/#the-content-management-api). When you're done, create a new .env file in the main app directory with the following two variables. 
 
     ```sh
     # sample values
@@ -29,4 +29,4 @@ Feel free to use this project for your own website. Getting started is easy.
 
 4. **Publishing Content**
     
-    Blog pages can be created by publishing Contentful content under a content model titled **Blog Post.**  Portfolio project entries can be created by publishing content under a content model titled **Portfolio Project.** Refer to the GraphQL queries found in the "pages" directory for all currently included content model fields.
+    Blog pages can be created by publishing content under a content model titled **Blog Post.**  Portfolio project entries can be created by publishing content under a content model titled **Portfolio Project.** Refer to the GraphQL queries found in the "pages" directory for all currently included content model fields.
