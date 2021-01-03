@@ -66,15 +66,15 @@ const Blog = props => {
       </div>
       <div className={blogStyles.postHeader}>
         <div className={blogStyles.authorContainer}>
-          <Link className={blogStyles.avatar} to="/blog/about-me">
+          {/* <Link className={blogStyles.avatar} to="/blog/about-me">
             <img
               src={require("../assets/apple-touch-icon.png")}
               alt="avatar"
               width="40"
             />
-          </Link>
+          </Link> */}
           <div className={blogStyles.publishingInformation}>
-            <span className={blogStyles.name}>Guillermo Arria-Devoe</span>
+            <span className={blogStyles.name}>By <b>Guillermo Arria-Devoe</b></span>
             <span className={blogStyles.date}>
               {props.data.contentfulBlogPost.publishedDate}
             </span>
