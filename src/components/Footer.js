@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
 import footerStyles from "./Footer.module.scss"
 
-// import SocialMenu from "./SocialMenu"
 
 const Footer = () => {
-  const [currentYear, setCurrentYear] = useState(2020)
-
-  useEffect(() => {
-    const d = new Date()
-    const year = d.getFullYear()
-    setCurrentYear(year)
-  }, [])
-
   return (
     <footer>
       <div className={footerStyles.contentContainer}>

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Gist from 'react-gist'
 
@@ -66,13 +66,6 @@ const Blog = props => {
       </div>
       <div className={blogStyles.postHeader}>
         <div className={blogStyles.authorContainer}>
-          {/* <Link className={blogStyles.avatar} to="/blog/about-me">
-            <img
-              src={require("../assets/apple-touch-icon.png")}
-              alt="avatar"
-              width="40"
-            />
-          </Link> */}
           <div className={blogStyles.publishingInformation}>
             <span className={blogStyles.name}>By <b>Guillermo Arria-Devoe</b></span>
             <span className={blogStyles.date}>
