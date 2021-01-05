@@ -4,7 +4,6 @@ import ddStyles from "./DropdownFilters.module.scss"
 
 function Dropdown(props) {
   const [open, setOpen] = useState(true)
-  const [selection, setSelection] = useState([])
 
   const toggle = () => setOpen(!open)
 
