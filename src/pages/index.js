@@ -10,6 +10,7 @@ import blogStyles from "./index.module.scss"
 
 const BlogPage = () => {
   const [currentFilter, setCurrentFilter] = useState("Show All")
+
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
@@ -35,6 +36,20 @@ const BlogPage = () => {
   `)
 
   const selectFilter = e => {
+    // Multi-Filter Solution (Bad UX)
+    // if (e.target.textContent === "Show All") {
+    //   setCurrentFilter(e.target.textContent)
+    // } else {
+    //   if (currentFilter === "Show All") {
+    //     setCurrentFilter([e.target.textContent])
+    //   } else {
+    //     if (!currentFilter.includes(e.target.textContent)) {
+    //       setCurrentFilter([...currentFilter, e.target.textContent])
+    //     }
+    //   }
+    // }
+
+    // Single Filter
     setCurrentFilter(e.target.textContent)
   }
 
