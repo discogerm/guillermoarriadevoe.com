@@ -20,9 +20,6 @@ const BlogPage = () => {
             publishedDate(formatString: "MMMM Do, YYYY")
             slug
             tags
-            preview {
-              preview
-            }
             previewImage {
               fluid {
                 src
