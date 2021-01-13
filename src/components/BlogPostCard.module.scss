@@ -17,19 +17,19 @@
         }
       }
 
-      .post-date {
-        display: inline-flex;
-        line-height: 1em;
-        padding: 0.5em 0.6em;
-        border: 1px solid $tb-darken;
-        margin-bottom: 0.5em;
-        margin-top: 0.3em;
-        font-size: 0.9rem;
+      // .post-date {
+      //   display: inline-flex;
+      //   line-height: 1em;
+      //   padding: 0.5em 0.6em;
+      //   border: 1px solid $tb-darken;
+      //   margin-bottom: 0.5em;
+      //   margin-top: 0.3em;
+      //   font-size: 0.9rem;
 
-        @include respond-above(sm) {
-          font-size: 0.8rem;
-        }
-      }
+      //   @include respond-above(sm) {
+      //     font-size: 0.8rem;
+      //   }
+      // }
     }
 
     .post-tags {
