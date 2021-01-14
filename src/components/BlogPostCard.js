@@ -23,11 +23,9 @@ const BlogPostCard = props => {
             <span key={i}>{tag}</span>
           ))}
         </div>
-        <div className={cardStyles.postPreviewText}>
-          <div className={cardStyles.postExpand}>
-            <Link to={`/blog/${props.slug}`}>&#x27f6; Read more </Link>
-            <p className={cardStyles.postDate}>{props.publishedDate}</p>
-          </div>
+        <div className={cardStyles.postExpand}>
+          <Link to={`/blog/${props.slug}`}>&#x27f6; Read more </Link>
+          <p className={cardStyles.postDate}>{props.publishedDate}</p>
         </div>
       </div>
     </li>
