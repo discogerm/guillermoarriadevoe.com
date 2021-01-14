@@ -4,10 +4,12 @@
 
 .post-card {
   margin-bottom: 2em;
+  max-width: 47%;
 
   .post-preview-container {
     @include respond-above(sm) {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
     }
 
@@ -15,8 +17,6 @@
       margin-bottom: 0.5em;
 
       @include respond-above(sm) {
-        margin-bottom: 0;
-        width: 45%;
       }
 
       img {
