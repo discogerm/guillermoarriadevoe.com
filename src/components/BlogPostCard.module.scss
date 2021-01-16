@@ -3,6 +3,9 @@
 @import "../styles//mixins";
 
 .post-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid yellowgreen;
   width: 100%;
 }

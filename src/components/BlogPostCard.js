@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { IconContext } from "react-icons"
-import { FaReact } from "react-icons/fa"
+import { FaReact, FaChevronRight } from "react-icons/fa"
 
 import cardStyles from "./BlogPostCard.module.scss"
 
@@ -33,13 +33,17 @@ const BlogPostCard = props => {
     //   </div>
     // </li>
     <li className={cardStyles.postCard}>
-      <div>
+      <div className={cardStyles.postIcon}>
         <IconContext.Provider value={{ size: "2em" }}>
           <FaReact />
         </IconContext.Provider>
       </div>
       <div>{"Blog Post"}</div>
-      <div>{">"}</div>
+      <div className={cardStyles.postChevron}>
+        <IconContext.Provider value={{ size: "1em" }}>
+          <FaChevronRight />
+        </IconContext.Provider>
+      </div>
     </li>
   )
 }
