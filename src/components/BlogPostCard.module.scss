@@ -4,10 +4,33 @@
 
 .post-card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border: 1px solid yellowgreen;
-  width: 100%;
+  min-height: 4em;
+
+  .post-icon {
+    height: 2em;
+  }
+  
+  .post-title {
+    max-width: 80%;
+    font-weight: bold;
+    line-height: normal;
+    padding-left: 0.6em;
+
+    &:hover {
+      color: $tb-lighten;
+    }
+  }
+
+  .post-chevron {
+    margin-left: auto;
+    height: 1.5em;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 // .post-card {

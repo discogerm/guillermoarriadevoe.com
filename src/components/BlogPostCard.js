@@ -32,19 +32,21 @@ const BlogPostCard = props => {
     //     </div>
     //   </div>
     // </li>
-    <li className={cardStyles.postCard}>
-      <div className={cardStyles.postIcon}>
-        <IconContext.Provider value={{ size: "2em" }}>
-          <FaReact />
-        </IconContext.Provider>
-      </div>
-      <div>{"Blog Post"}</div>
-      <div className={cardStyles.postChevron}>
-        <IconContext.Provider value={{ size: "1em" }}>
-          <FaChevronRight />
-        </IconContext.Provider>
-      </div>
-    </li>
+    <Link to={`/blog/${props.slug}`}>
+      <li className={cardStyles.postCard}>
+        <div className={cardStyles.postIcon}>
+          <IconContext.Provider value={{ size: "2em" }}>
+            <FaReact />
+          </IconContext.Provider>
+        </div>
+        <div className={cardStyles.postTitle}>{props.title}</div>
+        <div className={cardStyles.postChevron}>
+          <IconContext.Provider value={{ size: "1em" }}>
+            <FaChevronRight />
+          </IconContext.Provider>
+        </div>
+      </li>
+    </Link>
   )
 }
 
