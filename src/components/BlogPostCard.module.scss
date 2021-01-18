@@ -5,8 +5,9 @@
 .post-card {
   display: flex;
   align-items: center;
-  border: 1px solid yellowgreen;
+  background: $indie-dark;
   min-height: 4em;
+  padding: 1em 1em;
 
   .post-icon {
     height: 2em;
