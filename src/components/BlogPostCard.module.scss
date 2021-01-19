@@ -11,17 +11,36 @@
 
   .post-icon {
     height: 2em;
+    padding-right: 0.6em;
   }
-  
-  .post-title {
-    max-width: 80%;
-    font-weight: bold;
-    line-height: normal;
-    padding-left: 0.6em;
 
-    &:hover {
-      color: $tb-lighten;
-      text-decoration: underline;
+  .post-content {
+    max-width: 80%;
+
+    .post-title {
+      font-weight: bold;
+      line-height: normal;
+
+      &:hover {
+        color: $tb-lighten;
+        text-decoration: underline;
+      }
+    }
+
+    .post-tags-wrapper {
+      display: none;
+
+      @include respond-above(sm) {
+        display: flex;
+      }
+
+      .post-tags-icon {
+        padding-right: 0.3em;
+      }
+
+      .post-tags {
+        font-size: 0.9em;
+      }
     }
   }
 
