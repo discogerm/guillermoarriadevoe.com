@@ -49,7 +49,7 @@ const BlogPostCard = props => {
             </div>
             <div className={cardStyles.postTags}>
               {props.tags.map((tag, i) => (
-                <span key={i}>{tag}, </span>
+                <span key={i}>{ (i ? ', ' : '') + tag}</span>
               ))}
             </div>
           </div>

@@ -32,10 +32,12 @@
 
       @include respond-above(sm) {
         display: flex;
+        align-items: center;
       }
 
       .post-tags-icon {
         padding-right: 0.3em;
+        height: 1.5em;
       }
 
       .post-tags {
