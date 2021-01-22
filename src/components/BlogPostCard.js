@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { IconContext } from "react-icons"
-import { FaReact, FaChevronRight, FaTags } from "react-icons/fa"
+import { FaReact, FaChevronRight, FaTags, FaFileUpload } from "react-icons/fa"
 
 import cardStyles from "./BlogPostCard.module.scss"
 
@@ -41,15 +41,21 @@ const BlogPostCard = props => {
         </div>
         <div className={cardStyles.postContent}>
           <div className={cardStyles.postTitle}>{props.title}</div>
-          <div className={cardStyles.postTagsWrapper}>
+          <div className={cardStyles.postSubHeading}>
+            <div className={cardStyles.postPublishedDateIcon}>
+              <IconContext.Provider value={{ size: "0.9em" }}>
+                <FaFileUpload />
+              </IconContext.Provider>
+            </div>
+            <span className={cardStyles.postPublishedDate}>{props.publishedDate}</span>
             <div className={cardStyles.postTagsIcon}>
               <IconContext.Provider value={{ size: "0.9em" }}>
-                <FaTags />{" "}
+                <FaTags />
               </IconContext.Provider>
             </div>
             <div className={cardStyles.postTags}>
               {props.tags.map((tag, i) => (
-                <span key={i}>{ (i ? ', ' : '') + tag}</span>
+                <span key={i}>{(i ? ", " : "") + tag}</span>
               ))}
             </div>
           </div>
