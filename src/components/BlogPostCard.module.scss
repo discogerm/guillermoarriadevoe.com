@@ -39,11 +39,16 @@
       .post-published-date-icon,
       .post-tags-icon {
         padding-right: 0.4em;
-        height: 1.8em;
+        height: 1.7em;
       }
 
       .post-published-date {
         padding-right: 1em;
+      }
+
+      .post-published-date,
+      .post-tags {
+        height: 1.7em;
       }
     }
   }
