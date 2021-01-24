@@ -20,21 +20,26 @@
 
     li {
       list-style-type: none;
-      margin: 0;
-      margin-right: 0.5em;
-      margin-bottom: 0.5em;
+      margin: 0 0.5em 0.5em 0;
 
       button {
+        display: flex;
+        align-items: center;
         background-color: $indie-dark;
         padding: 0.5em 1em;
         border: 0;
         outline: 1px solid $night-owl;
         width: 100%;
+        transition: 200ms;
 
         &:hover,
         &:focus {
           cursor: pointer;
           background-color: $friendly-blue;
+        }
+
+        span {
+          padding-left: 0.5em;
         }
       }
     }

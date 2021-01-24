@@ -11,7 +11,7 @@ import {
   FaDatabase,
   FaCode,
   FaBook,
-  FaMobileAlt
+  FaMobileAlt,
 } from "react-icons/fa"
 import { SiPython, SiJavascript } from "react-icons/si"
 
@@ -64,20 +64,20 @@ function Dropdown(props) {
       <ul className={ddStyles.ddList}>
         <li className={ddStyles.item}>
           <button onClick={e => props.onClickHandler(e)}>
-            <IconContext.Provider value={{ size: "1em" }}>
-              <FaTags />
+            <IconContext.Provider value={{ size: "1.2em" }}>
+              <FaTags className={ddStyles.icon} />
             </IconContext.Provider>
-            {" "}
-            Show All
+            <span>Show All</span>
           </button>
         </li>
         {create_tag_collection(props.edges).map((tag, i) => (
           <li key={i} className={ddStyles.item}>
             <button onClick={e => props.onClickHandler(e)}>
-              {selectIcon(tag)}
-              {" "}
-              {tag}
-              </button>
+              <IconContext.Provider value={{ size: "1.2em" }}>
+                {selectIcon(tag)}
+              </IconContext.Provider>
+              <span>{tag}</span>
+            </button>
           </li>
         ))}
       </ul>
