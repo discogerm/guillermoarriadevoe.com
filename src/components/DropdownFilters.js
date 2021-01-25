@@ -1,5 +1,20 @@
 import React, { useState } from "react"
 
+import { IconContext } from "react-icons"
+import {
+  FaCloud,
+  FaChevronRight,
+  FaTags,
+  FaFileUpload,
+  FaTree,
+  FaSmileBeam,
+  FaDatabase,
+  FaCode,
+  FaBook,
+  FaMobileAlt
+} from "react-icons/fa"
+import { SiPython, SiJavascript } from "react-icons/si"
+
 import ddStyles from "./DropdownFilters.module.scss"
 
 function Dropdown(props) {
@@ -18,6 +33,29 @@ function Dropdown(props) {
     })
 
     return uniqueTags
+  }
+
+  const selectIcon = tag => {
+    switch (tag) {
+      case "Python":
+        return <SiPython />
+      case "JavaScript":
+        return <SiJavascript />
+      case "Environment":
+        return <FaTree />
+      case "Personal":
+        return <FaSmileBeam />
+      case "Data":
+        return <FaDatabase />
+      case "Coding":
+        return <FaCode />
+      case "Research":
+        return <FaBook />
+      case "React Native":
+        return <FaMobileAlt />
+      default:
+        return <FaCloud />
+    }
   }
 
   return (
@@ -53,11 +91,21 @@ function Dropdown(props) {
       <span className={ddStyles.title}>TAGS</span>
       <ul className={ddStyles.ddList}>
         <li className={ddStyles.item}>
-          <button onClick={e => props.onClickHandler(e)}>Show All</button>
+          <button onClick={e => props.onClickHandler(e)}>
+            <IconContext.Provider value={{ size: "1em" }}>
+              <FaTags />
+            </IconContext.Provider>
+            {" "}
+            Show All
+          </button>
         </li>
         {create_tag_collection(props.edges).map((tag, i) => (
           <li key={i} className={ddStyles.item}>
-            <button onClick={e => props.onClickHandler(e)}>{tag}</button>
+            <button onClick={e => props.onClickHandler(e)}>
+              {selectIcon(tag)}
+              {" "}
+              {tag}
+              </button>
           </li>
         ))}
       </ul>

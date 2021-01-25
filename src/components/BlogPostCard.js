@@ -17,7 +17,6 @@ import cardStyles from "./BlogPostCard.module.scss"
 
 const BlogPostCard = props => {
   const selectIcon = tags => {
-    console.log('testing')
     switch (tags[0]) {
       case "Python":
         return <SiPython />
