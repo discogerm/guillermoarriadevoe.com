@@ -10,25 +10,6 @@
     margin-bottom: 0.3em;
   }
 
-  // .dd-header {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   cursor: pointer;
-  //   width: 100%;
-  //   padding: 2px 20px;
-  //   outline: 1px solid $night-owl;
-  //   background-color: $indie-dark;
-
-  //   .title {
-  //     font-weight: bold;
-  //     margin: 0;
-  //   }
-
-  //   .action p {
-  //     margin: 0;
-  //   }
-  // }
-
   .dd-list {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +19,6 @@
     width: 100%;
 
     li {
-      // flex: 1 0 auto;
       list-style-type: none;
       margin: 0;
       margin-right: 0.5em;
@@ -46,7 +26,6 @@
 
       button {
         background-color: $indie-dark;
-        // font-size: 0.9rem;
         padding: 0.5em 1em;
         border: 0;
         outline: 1px solid $night-owl;
