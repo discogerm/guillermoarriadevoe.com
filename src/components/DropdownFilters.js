@@ -50,7 +50,7 @@ function Dropdown(props) {
     //   )}
     // </div>
     <div className={ddStyles.ddWrapper}>
-      <span><b>TAGS</b></span>
+      <span className={ddStyles.title}>TAGS</span>
       <ul className={ddStyles.ddList}>
         <li className={ddStyles.item}>
           <button onClick={e => props.onClickHandler(e)}>Show All</button>
