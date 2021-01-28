@@ -21,33 +21,46 @@ function Dropdown(props) {
   }
 
   return (
+    // <div className={ddStyles.ddWrapper}>
+    //   <div
+    //     tabIndex={0}
+    //     className={ddStyles.ddHeader}
+    //     role="button"
+    //     onKeyPress={() => toggle()}
+    //     onClick={() => toggle()}
+    //   >
+    //     <div>
+    //       <p className={ddStyles.title}>{props.title}</p>
+    //     </div>
+    //     <div className={ddStyles.action}>
+    //       <p>{open ? "Close" : "Open"}</p>
+    //     </div>
+    //   </div>
+    //   {open && (
+    //     <ul className={ddStyles.ddList}>
+    //       <li className={ddStyles.item}>
+    //         <button onClick={e => props.onClickHandler(e)}>Show All</button>
+    //       </li>
+    //       {create_tag_collection(props.edges).map((tag, i) => (
+    //         <li key={i} className={ddStyles.item}>
+    //           <button onClick={e => props.onClickHandler(e)}>{tag}</button>
+    //         </li>
+    //       ))}
+    //     </ul>
+    //   )}
+    // </div>
     <div className={ddStyles.ddWrapper}>
-      <div
-        tabIndex={0}
-        className={ddStyles.ddHeader}
-        role="button"
-        onKeyPress={() => toggle()}
-        onClick={() => toggle()}
-      >
-        <div>
-          <p className={ddStyles.title}>{props.title}</p>
-        </div>
-        <div className={ddStyles.action}>
-          <p>{open ? "Close" : "Open"}</p>
-        </div>
-      </div>
-      {open && (
-        <ul className={ddStyles.ddList}>
-          <li className={ddStyles.item}>
-            <button onClick={e => props.onClickHandler(e)}>Show All</button>
+      <span><b>TAGS</b></span>
+      <ul className={ddStyles.ddList}>
+        <li className={ddStyles.item}>
+          <button onClick={e => props.onClickHandler(e)}>Show All</button>
+        </li>
+        {create_tag_collection(props.edges).map((tag, i) => (
+          <li key={i} className={ddStyles.item}>
+            <button onClick={e => props.onClickHandler(e)}>{tag}</button>
           </li>
-          {create_tag_collection(props.edges).map((tag, i) => (
-            <li key={i} className={ddStyles.item}>
-              <button onClick={e => props.onClickHandler(e)}>{tag}</button>
-            </li>
-          ))}
-        </ul>
-      )}
+        ))}
+      </ul>
     </div>
   )
 }
