@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import { IconContext } from "react-icons"
 import {
-  FaReact,
+  FaCloud,
   FaChevronRight,
   FaTags,
   FaFileUpload,
@@ -30,7 +30,7 @@ const BlogPostCard = props => {
       case "Data":
         return <FaDatabase />
       default:
-        return <FaReact />
+        return <FaCloud />
     }
   }
 
