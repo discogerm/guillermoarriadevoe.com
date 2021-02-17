@@ -1,11 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 
 import { IconContext } from "react-icons"
 import {
   FaCloud,
-  FaChevronRight,
   FaTags,
-  FaFileUpload,
   FaTree,
   FaSmileBeam,
   FaDatabase,
@@ -18,10 +16,6 @@ import { SiPython, SiJavascript } from "react-icons/si"
 import ddStyles from "./DropdownFilters.module.scss"
 
 function Dropdown(props) {
-  const [open, setOpen] = useState(true)
-
-  const toggle = () => setOpen(!open)
-
   const create_tag_collection = edges => {
     var tagCollection = []
 
