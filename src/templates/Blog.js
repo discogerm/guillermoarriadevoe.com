@@ -60,8 +60,8 @@ const Blog = props => {
         {props.data.contentfulBlogPost.title}
       </h1>
       <div className={blogStyles.postTags}>
-        {props.data.contentfulBlogPost.tags.map(tag => (
-          <span>{tag}</span>
+        {props.data.contentfulBlogPost.tags.map((tag, i) => (
+          <span key={i}>{tag}</span>
         ))}
       </div>
       <div className={blogStyles.postHeader}>
