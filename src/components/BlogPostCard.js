@@ -34,7 +34,7 @@ const BlogPostCard = props => {
   }
 
   return (
-    <Link to={`/blog/${props.slug}`}>
+    <Link className={cardStyles.postCardLink} to={`/blog/${props.slug}`}>
       <li className={cardStyles.postCard}>
         <div className={cardStyles.postIcon}>
           <IconContext.Provider value={{ size: "2em" }}>
